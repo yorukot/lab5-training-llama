@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ruff_cache/
+.cache/
+
+/data
+/outputs
+checkpoints/
+wandb/
+slurm-*.out
+*.log

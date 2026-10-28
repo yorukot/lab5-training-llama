@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "phase": "development, never confirmation",
+  "steps": 1000,
+  "seed": 42,
+  "matrix_decay": 0.05,
+  "family_gpu_hour_cap": 5.6,
+  "policy": "All five families receive up to 5.6 allocation GPU-hours of the 28-hour screening budget. These are caps, not promises to spend on failed methods. Profile first. Include infrastructure failures in actual cost. Expand a boundary optimum before a superiority claim, using remaining family budget; if it cannot be bracketed, report insufficient tuning. Retain the full published Muon anchor regardless of short-screen ranking.",
+  "families": [
+    {"method": "muon", "learning_rates": [0.0125, 0.025, 0.05], "variants": [{}]},
+    {"method": "matrix_adamw", "learning_rates": [0.001, 0.003, 0.009], "variants": [{}]},
+    {"method": "shampoo", "learning_rates": [0.001, 0.003, 0.009], "variants": [{}]},
+    {"method": "shampoo_shrink", "learning_rates": [0.001, 0.003, 0.009], "variants": [{"shrinkage": 0.1}]},
+    {"method": "soft_polar", "learning_rates": [0.0125, 0.025, 0.05], "variants": [
+      {"tau": 0.03, "iterations": 16, "match_update_norm": true},
+      {"tau": 0.1, "iterations": 12, "match_update_norm": true}
+    ]}
+  ],
+  "promotion": "Correct and finite updates; promising development PPL at equal tokens; then repeat seed43 and full3250-step horizon. Verify mechanism against parent/control and retune strongest baseline. No holdout access during selection.",
+  "known_prior": "soft_polar is a SoftMuon-family comparison, not a novel spectral map; shampoo_shrink is the finite-sample regularization hypothesis. TCD1 is deprioritized after its separately archived adverse screen."
+}

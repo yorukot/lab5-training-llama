@@ -1,0 +1,23 @@
+lab5-yoru-CM-562728: CL's recipe (the 3B SOTA: distillation KD_ALPHA=0.8 + EMA-Nesterov 0.6, gamma 0.99 per step, over 15-74% of the steps) scaled to 4.5B tokens; ~34,347 steps at 131k tokens (16 sequences, MICRO_BATCH 2); lrs by the same rule as BP/BY (x 4.5^-0.125 = x0.83 from 1B, DeepSeek LLM's fit eta_opt ~ C^-0.125): Muon 1.5e-3 -> 1.24e-3, AdamW (embedding, norms) 8.5e-3 -> 7.0e-3; wd so every group's tau = 1/(lr * wd * steps) stays 0.39: Muon 0.0602, embedding 0.0107; everything else as CL/BY (1% warmup, linear decay over the last 80%, normuon, NorMuon beta2 0.95, AdamW beta2 0.9873, Muon momentum 0.95, new data from job 552807, distillation from Llama 3.1 8B's cached top-32 (all rows, job 560351), seed 42); code as CL, unchanged; why: the user asked for a 4.5B run of the 3B SOTA before the 6B run; it gives a third point (1B CJ 15.324, 3B CL 12.635) on the distilled recipe's tokens-vs-ppl curve, checks the recipe over 1.5x CL's steps (EMA-Nesterov's switch-on jump, which was larger at 3B than at 1B; stability; the decay's payoff), and is a fallback model for the OJ; note: README allows each pair 3 runs of up to 64 H200-h; this one takes ~41 H200-h; expected: 11.6-11.9, most likely ~11.75 (CJ -> CL went as tokens^-0.176: 12.635 x 1.5^-0.176 = 11.77; or BY's no-KD curve 13.734 x 1.5^-0.2 = 12.67 less the gain extrapolated in log tokens, 8.0% -> 7.4%: 11.73); a lead over BY's curve all the way, with the jump right after 15%; ~5.1 h; how it transfers to 6B: on the 1B-3B line (~11.75) the 6B projection stays ~11.19 in-training (OJ ~11.3); above it means the gains fade faster with tokens and 6B lands higher (re-fit with three points); it also tells whether the lr rule still holds at 4.5x the 1B tokens; results: eval ppl 11.97 (11.966; -5.30% vs CL's 12.635), 5:03:19 on 8 GPUs (25a-hgpn026), ~40.4 H200-h; best run so far, but above the expected 11.6-11.9 (most likely ~11.75): CL -> CM went as tokens^-0.134, not CJ -> CL's -0.176, so the distilled recipe's returns shrink with tokens faster than the 1B-3B line said; the curve's shape is normal: at equal fractions CM led CL by 12.1% at 15%, the switch-on jump cut it to 10.4% at 20% (CM's eval rose 19.85 -> 20.10 from 15% to 20%), then 9.8% at 30%, 7.8% at 50%, 6.3% at 80%, 5.6% at the end; the lead at the end is x0.72 of the lead at 50% (CJ -> CL x0.74, BU -> BY x0.74), so the decay paid off as at 1B and 3B, and the smaller exponent shows all the way through the run, not only in the decay: no sign of a wrong lr or a broken schedule, just diminishing returns; for 6B: fitting loss = E + A x D^-a to CJ, CL and CM gives a ~0.35, E ~2.125 (ppl ~8.4) and 11.57 at 6B; letting the exponent keep falling (0.176 -> 0.134 -> ~0.115) gives 11.58; holding 0.134 gives 11.52; so 6B ~11.5-11.6 in-training, OJ ~11.65-11.75 (the 11.1-11.2 projected from CL was too low); for reference, Nathan's 4.5B run (w13-distill-4p5b) is 11.94 on his own eval, OJ ~12.08 by his 3B's +1.15%; CM would be OJ ~12.10 by CL's +1.15%, so about level; OJ job 4ed4c7c10ae74082a1ad4faadd02319a (HF yorukot/lab5-llama commit 052df51, model.safetensors sha256 865583f7...): OJ ppl 12.10 (12.0968 over 49,999 docs / 62.2M tokens; +1.09% over the in-training 11.966, CL +1.15%, BP +1.19%; -5.35% vs CL's OJ 12.780)
+---
+MODEL_ID = "meta-llama/Llama-3.2-1B"
+OPTIMIZER = "muon"  # "adamw" or "muon"
+MUON_VARIANT = "normuon"
+LEARNING_RATE = 1.24e-3  # Muon
+ADAM_LEARNING_RATE = 7.0e-3  # the AdamW params (embedding, norms)
+ADAM_BETA2 = 0.9873
+WEIGHT_DECAY = 0.0602  # Muon matrices
+EMBED_WEIGHT_DECAY = 0.0107  # the tied embedding
+SEQ_LEN = 8192
+GLOBAL_BATCH = 16  # sequences per optimizer step
+MICRO_BATCH = 2  # sequences per GPU per forward pass
+MAX_TOKENS = 4_500_000_000  # non-padding tokens
+DECAY_FRACTION = 0.8  # last 80% of the steps: decay to 0
+DECAY_TYPE = "linear"
+WARMUP_FRACTION = 0.01
+KD_ALPHA = 0.8  # the teacher's share of the target
+EMA_NESTEROV = 0.6  # largest lookahead beta; window 15-74% of the steps
+EMA_NESTEROV_GAMMA = 0.99  # default
+DATA_DIR = "/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit"  # sbatch --export=ALL,DATA_DIR=/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit,MAX_TOKENS=4500000000,MUON_VARIANT=normuon,GLOBAL_BATCH=16,MICRO_BATCH=2,ADAM_BETA2=0.9873,LEARNING_RATE=1.24e-3,ADAM_LEARNING_RATE=7.0e-3,WEIGHT_DECAY=0.0602,EMBED_WEIGHT_DECAY=0.0107,DECAY_FRACTION=0.8,WARMUP_FRACTION=0.01,KD_ALPHA=0.8,EMA_NESTEROV=0.6 script/train.sbatch CM
+
+warmup_steps 0.01, adam beta1 0.9, KD_ALPHA 0.8, Muon momentum 0.95, max_grad_norm 1.0, bf16, liger kernel, FA3, NCCL_SOCKET_IFNAME=lo; expected wall time ~5.1 h (1.5x CL's 3:25), ~41 H200-h

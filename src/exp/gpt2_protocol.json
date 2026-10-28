@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "status": "baseline_reproduction_before_optimizer_search",
+  "benchmark": "modded-nanogpt-track-3-fixed-architecture",
+  "user_selected": true,
+  "replaces": ["hg150m-20261016-v1", "lr150m-20261016-v1"],
+  "upstream_commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+  "reference_result": 36,
+  "reference_reported_mean_nll": 3.2787,
+  "reference_reported_trials": 10,
+  "reference_target_nll": 3.28,
+  "model": {
+    "description": "GPT-2-derived fixed optimizer benchmark, not original GPT-2",
+    "parameters": 162354816,
+    "layers": 12,
+    "width": 768,
+    "vocab_size": 50304,
+    "sequence_length": 1024,
+    "tied_embedding": false
+  },
+  "training": {
+    "steps": 3250,
+    "tokens_per_step": 524288,
+    "total_training_tokens": 1703936000,
+    "validation_tokens": 10485760,
+    "microbatch_sequences_per_gpu": 64,
+    "cooldown_fraction": 0.7,
+    "warmup_steps": 0,
+    "gradient_reduction": "sum, as in upstream; do not silently average",
+    "matrix_optimizer": {"name": "Muon", "lr": 0.025, "weight_decay": 0.05, "momentum": 0.95, "newton_schulz_steps": 12},
+    "aux_optimizer": {"name": "AdamW", "embedding_lr": 0.7, "head_lr": 0.004, "scalar_lr": 0.015, "weight_decay": 0.001, "betas": [0.8, 0.95], "eps": 1e-10}
+  },
+  "data": {
+    "repository": "kjj0/fineweb10B-gpt2",
+    "tokenizer": "gpt2",
+    "training_shards": 20,
+    "revision_policy": "pin dataset commit and every shard hash before training",
+    "validation_policy": "public benchmark validation for reproduction; reserve a distinct evaluation slice before candidate selection"
+  },
+  "evaluation": {
+    "quality_target_absolute_ppl_reduction": 0.5,
+    "quality_target_direction": "baseline PPL minus candidate PPL",
+    "quality_comparison": "matched end-to-end GPU-hour budget, plus fixed-token results",
+    "speed_comparison": "GPU-hours and wall time to the same preregistered PPL target",
+    "speed_minimum_reduction_fraction": null,
+    "speed_ppl_tolerance": null,
+    "speed_threshold_status": "user has not selected numerical thresholds; report frontier without inventing approval",
+    "include_in_end_to_end_time": ["imports", "initialization", "compilation", "data loading", "training", "validation", "logging"],
+    "also_report": ["upstream training-only time", "Slurm allocation GPU-hours", "peak memory", "tuning GPU-hours", "failures", "cold and reused compilation cache status"],
+    "do_not_use": "PPL divided by seconds as a universal utility score",
+    "confirmation": "lock baseline/candidate hyperparameters on development data before paired new-seed confirmation",
+    "claim_limits": ["published settings are validated anchors, not proven global optima", "one successful reproduction is not optimizer superiority", "PyTorch/CUDA/hardware differences require local reproduction"]
+  },
+  "wandb_project": "lab-training-llama"
+}

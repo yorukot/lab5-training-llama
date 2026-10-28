@@ -1,0 +1,59 @@
+[project]
+name = "lab5-training-llama"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0",
+    "huggingface-hub>=1.33.0",
+    "numpy>=2.5.3",
+    "tqdm>=4.70.1",
+    "transformers>=5.17",
+    "wandb>=0.30.0",
+    "zstandard>=0.25.0",
+]
+
+# Pick exactly one torch build:
+#   local (CPU only, for ty/editing): uv sync --extra cpu
+#   nano4 (H200, CUDA 13.0):          uv sync --extra cu130
+[project.optional-dependencies]
+cpu = [
+    "torch==2.14.0",
+    "accelerate",
+    "liger-kernel",
+]
+cu130 = [
+    "torch==2.14.0",
+    "accelerate",
+    "liger-kernel",
+    "flash-attn-3==3.0.0",
+]
+
+[tool.uv]
+conflicts = [[{ extra = "cpu" }, { extra = "cu130" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "pytorch-cu130", extra = "cu130" },
+]
+flash-attn-3 = [{ index = "pytorch-cu130", extra = "cu130" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.ty.analysis]
+# FA3 only exists in the cu130 build on nano4.
+allowed-unresolved-imports = ["flash_attn_interface"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+    "ty>=0.0.85",
+]

@@ -1,0 +1,9 @@
+{
+  "base": "gpt2-tcd-20261016-v1 frozen deployment",
+  "files": {
+    "gpt2_candidate.py": "1b7056dd88492776d0765a6a716644dee50ac196883b751336bca1873b2b2b67",
+    "gpt2_benchmark.py": "c2b2a74ead0223ec64844ee93b7ea09088986e028860fa68d56dc6bedbb73188",
+    "gpt2_benchmark.sbatch": "60918dcbe6db8cd4dbc942ceab60beb3fb2b2bd618cd80cfb99a8348cbbb8105",
+    "test_gpt2_candidate.py": "0e3f42adeb7d4f7f2c7585d0d177b8ed3c394c96255dc5c7bfe02e8a30d59da3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/KellerJordan/modded-nanogpt",
+  "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+  "files": {
+    "train_gpt_simple.py": {
+      "upstream_path": "records/track_3_optimization/train_gpt_simple.py",
+      "url": "https://raw.githubusercontent.com/KellerJordan/modded-nanogpt/4ea6b937337a4889b8cfe3f38a93d120048d8f71/records/track_3_optimization/train_gpt_simple.py",
+      "sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec"
+    },
+    "UPSTREAM_README.md": {
+      "upstream_path": "records/track_3_optimization/README.md",
+      "url": "https://raw.githubusercontent.com/KellerJordan/modded-nanogpt/4ea6b937337a4889b8cfe3f38a93d120048d8f71/records/track_3_optimization/README.md",
+      "sha256": "03d496e8d3157df21d2f0174e8c259527abf17b482eeeb00137472be8c23ff93"
+    },
+    "cached_fineweb10B.py": {
+      "upstream_path": "data/cached_fineweb10B.py",
+      "url": "https://raw.githubusercontent.com/KellerJordan/modded-nanogpt/4ea6b937337a4889b8cfe3f38a93d120048d8f71/data/cached_fineweb10B.py",
+      "sha256": "adcc9f7d81ed1ac115a66d08d94d8d3e5c7425cabaf856da1f1fb106af87d09b"
+    },
+    "LICENSE": {
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/KellerJordan/modded-nanogpt/4ea6b937337a4889b8cfe3f38a93d120048d8f71/LICENSE",
+      "sha256": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b"
+    }
+  }
+}

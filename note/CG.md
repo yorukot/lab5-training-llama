@@ -1,0 +1,22 @@
+lab5-yoru-CG-558665: CF with the EMA rate gamma 0.99 -> 0.997 (EMA_NESTEROV_GAMMA=0.997, a new env var read in src/ema_nesterov.py; averages ~333 steps = 4.4% of the run, the share gamma 0.99 covers at 150M's 2,289 steps); BU with EMA-Nesterov (EMA_NESTEROV=0.6): the lookahead beta = 0.6 * lr_t/lr_peak over 15-74% of the steps, 0 outside it; everything else as BU (normuon, Muon lr 1.5e-3 wd 0.224, AdamW lr 8.5e-3 for the tied embedding and norms with embedding wd 0.04, every group's tau 0.39, 1% warmup, new data from job 552807, NorMuon beta2 0.95, 131k tokens a step = 16 sequences, ~7,632 steps, MICRO_BATCH 2, AdamW beta2 0.9873, Muon momentum 0.95, linear decay over the last 80%, 1B non-padding tokens, seed 42), so the comparison with BU (17.027) is clean; code: src/ema_nesterov.py wraps every parameter's update in src/optimizer.py (the block matrices now sit in two param groups, attn and mlp, with the same lr and wd; with EMA_NESTEROV=0 the update is bit-identical to before, checked on CPU in src/exp/test_candidates.py); why: in the optimizer research (note/optimizer-research/05-results.md) EMA-Nesterov beat the tuned 150M NorMuon baseline (300M tokens, the same data and recipe) at all three seeds, paired mean -0.45% (-0.52%, -0.27%, -0.55%), with beta 0.3 tying 0.6 and a lower lr hurting it; on modded-nanogpt Track 3 (#39) it needed 3,125 steps against tuned Muon's 3,250; mechanism: the model's weights are a lookahead point x + beta*m, m an EMA of the per-step change, so motion that persists for longer than the EMA moves up to 1/(1-beta) = 2.5x as far while back-and-forth motion keeps its size (raising the lr instead scales both, and lost at 150M); CF and CG differ only in the EMA's length: CF keeps gamma per step as at 150M (0.99), CG keeps the window the same share of the run as at 150M (gamma 0.997, ~333 steps = 4.4%); expected: -0.2 to -0.5% vs BU (~16.95-16.99), ahead from ~20% on with the lead shrinking in the decay; level or worse means the 150M gain does not carry to 1B (its embedding is ~45% of its parameters vs ~21% here, and it runs 3.3x fewer steps); how it transfers to 6B: the 6B run keeps the batch, so beta and the window (fractions of the run) carry over as is; gamma per step (0.99) if CF beats CG, per run fraction (1 - 1/(0.044 * 45.8k steps) = 0.9995) if CG wins; +4.9 GB of fp32 state per GPU, about 1% more step time; results: eval ppl 16.94 (16.936; -0.53% vs BU's 17.027), 1:10:16 on 8 GPUs (25a-hgpn061); better than BU, slightly behind CF (16.921) at the end; smooth: no jump when the lookahead switches on (+0.2% at 15%, -0.77% at 20%), ahead from 20% on, most at 30% (-2.9%), then the lead shrinks (-1.8% at 50%, -1.5% at 75%, -0.75% at 95%, -0.53% at the end); the longer EMA averages the noisy early motion away, so it gains early, but holds less of it through the decay; for 6B: gamma per step (0.99, CF) rather than per run fraction
+---
+MODEL_ID = "meta-llama/Llama-3.2-1B"
+OPTIMIZER = "muon"  # "adamw" or "muon"
+MUON_VARIANT = "normuon"
+LEARNING_RATE = 1.5e-3  # Muon
+ADAM_LEARNING_RATE = 8.5e-3  # the AdamW params (embedding, norms)
+ADAM_BETA2 = 0.9873
+WEIGHT_DECAY = 0.224  # Muon matrices
+EMBED_WEIGHT_DECAY = 0.04  # the tied embedding
+SEQ_LEN = 8192
+GLOBAL_BATCH = 16  # sequences per optimizer step
+MICRO_BATCH = 2  # sequences per GPU per forward pass
+MAX_TOKENS = 1_000_000_000  # non-padding tokens
+DECAY_FRACTION = 0.8  # last 80% of the steps: decay to 0
+DECAY_TYPE = "linear"
+WARMUP_FRACTION = 0.01
+EMA_NESTEROV = 0.6  # largest lookahead beta; window 15-74% of the steps
+EMA_NESTEROV_GAMMA = 0.997
+DATA_DIR = "/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit"  # sbatch --export=ALL,DATA_DIR=/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit,MAX_TOKENS=1000000000,MUON_VARIANT=normuon,GLOBAL_BATCH=16,MICRO_BATCH=2,ADAM_BETA2=0.9873,LEARNING_RATE=1.5e-3,ADAM_LEARNING_RATE=8.5e-3,WEIGHT_DECAY=0.224,EMBED_WEIGHT_DECAY=0.04,DECAY_FRACTION=0.8,WARMUP_FRACTION=0.01,EMA_NESTEROV=0.6,EMA_NESTEROV_GAMMA=0.997 script/train.sbatch CG
+
+warmup_steps 0.01, adam beta1 0.9, Muon momentum 0.95, max_grad_norm 1.0, bf16, liger kernel, FA3, NCCL_SOCKET_IFNAME=lo; expected wall time ~69 min

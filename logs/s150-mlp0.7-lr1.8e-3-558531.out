@@ -1,0 +1,313 @@
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/u9603854/.netrc.
+wandb: Currently logged in as: yorukot (cerulean-labs) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 474d3fbad7f7920b
+wandb: Tracking run with wandb version 0.30.0
+wandb: Run data is saved locally in /work/u9603854/lab5-training-llama/experiments/screen150m-v1/wandb/run-20261016_163309-474d3fbad7f7920b
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mlp0.7-lr1.8e-3
+wandb: ⭐️ View project at https://wandb.ai/cerulean-labs/lab-training-llama
+wandb: 🚀 View run at https://wandb.ai/cerulean-labs/lab-training-llama/runs/474d3fbad7f7920b
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+{'loss': '10.39', 'grad_norm': '1.401', 'learning_rate': '0.0007826', 'tokens_per_second': '1.894e+05', 'total_tokens_seen': 1310642, 'peak_memory_bytes': 20479223296, 'epoch': '0.004369'}
+{'loss': '8.446', 'grad_norm': '2.908', 'learning_rate': '0.001565', 'tokens_per_second': '1.926e+05', 'total_tokens_seen': 2621262, 'peak_memory_bytes': 20479224320, 'epoch': '0.008737'}
+{'loss': '8.221', 'grad_norm': '3.356', 'learning_rate': '0.0018', 'tokens_per_second': '1.887e+05', 'total_tokens_seen': 3931847, 'peak_memory_bytes': 20479224320, 'epoch': '0.01311'}
+{'loss': '7.912', 'grad_norm': '2.624', 'learning_rate': '0.0018', 'tokens_per_second': '1.906e+05', 'total_tokens_seen': 5242383, 'peak_memory_bytes': 20479224320, 'epoch': '0.01747'}
+{'loss': '7.464', 'grad_norm': '1.994', 'learning_rate': '0.0018', 'tokens_per_second': '1.881e+05', 'total_tokens_seen': 6552874, 'peak_memory_bytes': 20479224320, 'epoch': '0.02184'}
+{'loss': '7.041', 'grad_norm': '1.063', 'learning_rate': '0.0018', 'tokens_per_second': '1.911e+05', 'total_tokens_seen': 7862799, 'peak_memory_bytes': 20479224320, 'epoch': '0.02621'}
+{'loss': '6.858', 'grad_norm': '1.071', 'learning_rate': '0.0018', 'tokens_per_second': '1.895e+05', 'total_tokens_seen': 9173443, 'peak_memory_bytes': 20479224320, 'epoch': '0.03058'}
+{'loss': '6.691', 'grad_norm': '0.7977', 'learning_rate': '0.0018', 'tokens_per_second': '1.852e+05', 'total_tokens_seen': 10483999, 'peak_memory_bytes': 20479224320, 'epoch': '0.03495'}
+{'loss': '6.635', 'grad_norm': '0.6548', 'learning_rate': '0.0018', 'tokens_per_second': '1.881e+05', 'total_tokens_seen': 11794607, 'peak_memory_bytes': 20479224320, 'epoch': '0.03932'}
+{'loss': '6.477', 'grad_norm': '0.5969', 'learning_rate': '0.0018', 'tokens_per_second': '1.958e+05', 'total_tokens_seen': 13105157, 'peak_memory_bytes': 20479224320, 'epoch': '0.04369'}
+{'loss': '6.432', 'grad_norm': '0.4681', 'learning_rate': '0.0018', 'tokens_per_second': '1.871e+05', 'total_tokens_seen': 14415657, 'peak_memory_bytes': 20479224320, 'epoch': '0.04806'}
+{'loss': '6.312', 'grad_norm': '0.9458', 'learning_rate': '0.0018', 'tokens_per_second': '1.876e+05', 'total_tokens_seen': 15726089, 'peak_memory_bytes': 20479224320, 'epoch': '0.05242'}
+{'loss': '6.218', 'grad_norm': '0.5308', 'learning_rate': '0.0018', 'tokens_per_second': '1.885e+05', 'total_tokens_seen': 17036651, 'peak_memory_bytes': 20479224320, 'epoch': '0.05679'}
+{'loss': '6.142', 'grad_norm': '0.7876', 'learning_rate': '0.0018', 'tokens_per_second': '1.913e+05', 'total_tokens_seen': 18347272, 'peak_memory_bytes': 20479224320, 'epoch': '0.06116'}
+{'loss': '6.085', 'grad_norm': '0.7411', 'learning_rate': '0.0018', 'tokens_per_second': '1.935e+05', 'total_tokens_seen': 19657899, 'peak_memory_bytes': 20479224320, 'epoch': '0.06553'}
+{'loss': '6', 'grad_norm': '0.6197', 'learning_rate': '0.0018', 'tokens_per_second': '1.828e+05', 'total_tokens_seen': 20968474, 'peak_memory_bytes': 20479224320, 'epoch': '0.0699'}
+{'loss': '5.927', 'grad_norm': '0.6511', 'learning_rate': '0.0018', 'tokens_per_second': '1.871e+05', 'total_tokens_seen': 22278983, 'peak_memory_bytes': 20479224320, 'epoch': '0.07427'}
+{'loss': '5.892', 'grad_norm': '0.6344', 'learning_rate': '0.0018', 'tokens_per_second': '1.922e+05', 'total_tokens_seen': 23589604, 'peak_memory_bytes': 20479224320, 'epoch': '0.07864'}
+{'loss': '5.808', 'grad_norm': '0.6931', 'learning_rate': '0.0018', 'tokens_per_second': '1.896e+05', 'total_tokens_seen': 24900156, 'peak_memory_bytes': 20479224320, 'epoch': '0.08301'}
+{'loss': '5.694', 'grad_norm': '0.5803', 'learning_rate': '0.0018', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 26210778, 'peak_memory_bytes': 20479224320, 'epoch': '0.08737'}
+{'loss': '5.683', 'grad_norm': '0.5647', 'learning_rate': '0.0018', 'tokens_per_second': '1.872e+05', 'total_tokens_seen': 27521344, 'peak_memory_bytes': 20479224320, 'epoch': '0.09174'}
+{'loss': '5.597', 'grad_norm': '0.7832', 'learning_rate': '0.0018', 'tokens_per_second': '1.896e+05', 'total_tokens_seen': 28831837, 'peak_memory_bytes': 20479224320, 'epoch': '0.09611'}
+{'eval_loss': '5.508', 'eval_perplexity': '246.7', 'eval_target_tokens': 2542539, 'epoch': '0.09961'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.02it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.02it/s]
+{'loss': '5.528', 'grad_norm': '0.7071', 'learning_rate': '0.0018', 'tokens_per_second': '1.896e+05', 'total_tokens_seen': 30142450, 'peak_memory_bytes': 43922771968, 'epoch': '0.1005'}
+{'loss': '5.47', 'grad_norm': '0.6683', 'learning_rate': '0.0018', 'tokens_per_second': '1.841e+05', 'total_tokens_seen': 31452991, 'peak_memory_bytes': 43922771968, 'epoch': '0.1048'}
+{'loss': '5.417', 'grad_norm': '0.7889', 'learning_rate': '0.0018', 'tokens_per_second': '1.915e+05', 'total_tokens_seen': 32763536, 'peak_memory_bytes': 43922771968, 'epoch': '0.1092'}
+{'loss': '5.378', 'grad_norm': '0.679', 'learning_rate': '0.0018', 'tokens_per_second': '1.85e+05', 'total_tokens_seen': 34074185, 'peak_memory_bytes': 43922771968, 'epoch': '0.1136'}
+{'loss': '5.243', 'grad_norm': '0.4655', 'learning_rate': '0.0018', 'tokens_per_second': '1.879e+05', 'total_tokens_seen': 35384822, 'peak_memory_bytes': 43922771968, 'epoch': '0.118'}
+{'loss': '5.253', 'grad_norm': '0.6103', 'learning_rate': '0.0018', 'tokens_per_second': '1.883e+05', 'total_tokens_seen': 36695298, 'peak_memory_bytes': 43922771968, 'epoch': '0.1223'}
+{'loss': '5.163', 'grad_norm': '0.5265', 'learning_rate': '0.0018', 'tokens_per_second': '1.852e+05', 'total_tokens_seen': 38005903, 'peak_memory_bytes': 43922771968, 'epoch': '0.1267'}
+{'loss': '5.086', 'grad_norm': '0.6217', 'learning_rate': '0.0018', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 39316520, 'peak_memory_bytes': 43922771968, 'epoch': '0.1311'}
+{'loss': '5.012', 'grad_norm': '0.6396', 'learning_rate': '0.0018', 'tokens_per_second': '1.909e+05', 'total_tokens_seen': 40627149, 'peak_memory_bytes': 43922771968, 'epoch': '0.1354'}
+{'loss': '4.967', 'grad_norm': '0.6934', 'learning_rate': '0.0018', 'tokens_per_second': '1.916e+05', 'total_tokens_seen': 41937708, 'peak_memory_bytes': 43922771968, 'epoch': '0.1398'}
+{'loss': '4.956', 'grad_norm': '0.728', 'learning_rate': '0.0018', 'tokens_per_second': '1.885e+05', 'total_tokens_seen': 43248346, 'peak_memory_bytes': 43922771968, 'epoch': '0.1442'}
+{'loss': '4.836', 'grad_norm': '0.6544', 'learning_rate': '0.0018', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 44558992, 'peak_memory_bytes': 43922771968, 'epoch': '0.1485'}
+{'loss': '4.743', 'grad_norm': '0.7038', 'learning_rate': '0.0018', 'tokens_per_second': '1.863e+05', 'total_tokens_seen': 45869539, 'peak_memory_bytes': 43922771968, 'epoch': '0.1529'}
+{'loss': '4.64', 'grad_norm': '0.8084', 'learning_rate': '0.0018', 'tokens_per_second': '1.887e+05', 'total_tokens_seen': 47180028, 'peak_memory_bytes': 43922771968, 'epoch': '0.1573'}
+{'loss': '4.593', 'grad_norm': '0.6294', 'learning_rate': '0.0018', 'tokens_per_second': '1.898e+05', 'total_tokens_seen': 48490617, 'peak_memory_bytes': 43922771968, 'epoch': '0.1616'}
+{'loss': '4.551', 'grad_norm': '0.5753', 'learning_rate': '0.0018', 'tokens_per_second': '1.864e+05', 'total_tokens_seen': 49801184, 'peak_memory_bytes': 43922771968, 'epoch': '0.166'}
+{'loss': '4.512', 'grad_norm': '0.568', 'learning_rate': '0.0018', 'tokens_per_second': '1.878e+05', 'total_tokens_seen': 51111710, 'peak_memory_bytes': 43922771968, 'epoch': '0.1704'}
+{'loss': '4.566', 'grad_norm': '0.6657', 'learning_rate': '0.0018', 'tokens_per_second': '1.845e+05', 'total_tokens_seen': 52416468, 'peak_memory_bytes': 43922771968, 'epoch': '0.1747'}
+{'loss': '4.373', 'grad_norm': '0.6782', 'learning_rate': '0.0018', 'tokens_per_second': '1.882e+05', 'total_tokens_seen': 53727056, 'peak_memory_bytes': 43922771968, 'epoch': '0.1791'}
+{'loss': '4.398', 'grad_norm': '0.7407', 'learning_rate': '0.0018', 'tokens_per_second': '1.857e+05', 'total_tokens_seen': 55037707, 'peak_memory_bytes': 43922771968, 'epoch': '0.1835'}
+{'loss': '4.37', 'grad_norm': '0.6574', 'learning_rate': '0.0018', 'tokens_per_second': '1.876e+05', 'total_tokens_seen': 56348310, 'peak_memory_bytes': 43922771968, 'epoch': '0.1879'}
+{'loss': '4.379', 'grad_norm': '0.5664', 'learning_rate': '0.0018', 'tokens_per_second': '1.894e+05', 'total_tokens_seen': 57658946, 'peak_memory_bytes': 43922771968, 'epoch': '0.1922'}
+{'loss': '4.379', 'grad_norm': '0.656', 'learning_rate': '0.0018', 'tokens_per_second': '1.817e+05', 'total_tokens_seen': 58969458, 'peak_memory_bytes': 43922771968, 'epoch': '0.1966'}
+{'eval_loss': '4.312', 'eval_perplexity': '74.56', 'eval_target_tokens': 2542539, 'epoch': '0.1992'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+{'loss': '4.366', 'grad_norm': '0.6045', 'learning_rate': '0.001798', 'tokens_per_second': '1.842e+05', 'total_tokens_seen': 60280045, 'peak_memory_bytes': 43922771968, 'epoch': '0.201'}
+{'loss': '4.322', 'grad_norm': '0.6114', 'learning_rate': '0.001788', 'tokens_per_second': '1.85e+05', 'total_tokens_seen': 61590662, 'peak_memory_bytes': 43922771968, 'epoch': '0.2053'}
+{'loss': '4.272', 'grad_norm': '0.541', 'learning_rate': '0.001778', 'tokens_per_second': '1.879e+05', 'total_tokens_seen': 62893909, 'peak_memory_bytes': 43922771968, 'epoch': '0.2097'}
+{'loss': '4.221', 'grad_norm': '0.5429', 'learning_rate': '0.001769', 'tokens_per_second': '1.936e+05', 'total_tokens_seen': 64204526, 'peak_memory_bytes': 43922771968, 'epoch': '0.2141'}
+{'loss': '4.252', 'grad_norm': '0.4964', 'learning_rate': '0.001759', 'tokens_per_second': '1.914e+05', 'total_tokens_seen': 65510063, 'peak_memory_bytes': 43922771968, 'epoch': '0.2184'}
+{'loss': '4.202', 'grad_norm': '0.553', 'learning_rate': '0.001749', 'tokens_per_second': '1.843e+05', 'total_tokens_seen': 66820534, 'peak_memory_bytes': 43922771968, 'epoch': '0.2228'}
+{'loss': '4.23', 'grad_norm': '0.5437', 'learning_rate': '0.001739', 'tokens_per_second': '1.897e+05', 'total_tokens_seen': 68131146, 'peak_memory_bytes': 43922771968, 'epoch': '0.2272'}
+{'loss': '4.234', 'grad_norm': '0.5197', 'learning_rate': '0.001729', 'tokens_per_second': '1.888e+05', 'total_tokens_seen': 69441709, 'peak_memory_bytes': 43922771968, 'epoch': '0.2315'}
+{'loss': '4.173', 'grad_norm': '0.5491', 'learning_rate': '0.001719', 'tokens_per_second': '1.882e+05', 'total_tokens_seen': 70752335, 'peak_memory_bytes': 43922771968, 'epoch': '0.2359'}
+{'loss': '4.247', 'grad_norm': '0.4848', 'learning_rate': '0.00171', 'tokens_per_second': '1.847e+05', 'total_tokens_seen': 72062913, 'peak_memory_bytes': 43922771968, 'epoch': '0.2403'}
+{'loss': '4.213', 'grad_norm': '0.5238', 'learning_rate': '0.0017', 'tokens_per_second': '1.912e+05', 'total_tokens_seen': 73373493, 'peak_memory_bytes': 43922771968, 'epoch': '0.2446'}
+{'loss': '4.148', 'grad_norm': '0.4783', 'learning_rate': '0.00169', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 74684053, 'peak_memory_bytes': 43922771968, 'epoch': '0.249'}
+{'loss': '4.205', 'grad_norm': '0.4819', 'learning_rate': '0.00168', 'tokens_per_second': '1.922e+05', 'total_tokens_seen': 75994632, 'peak_memory_bytes': 43922771968, 'epoch': '0.2534'}
+{'loss': '4.134', 'grad_norm': '0.4517', 'learning_rate': '0.00167', 'tokens_per_second': '1.893e+05', 'total_tokens_seen': 77305202, 'peak_memory_bytes': 43922771968, 'epoch': '0.2578'}
+{'loss': '4.09', 'grad_norm': '0.4827', 'learning_rate': '0.00166', 'tokens_per_second': '1.897e+05', 'total_tokens_seen': 78615831, 'peak_memory_bytes': 43922771968, 'epoch': '0.2621'}
+{'loss': '4.192', 'grad_norm': '0.5067', 'learning_rate': '0.001651', 'tokens_per_second': '1.904e+05', 'total_tokens_seen': 79926355, 'peak_memory_bytes': 43922771968, 'epoch': '0.2665'}
+{'loss': '4.12', 'grad_norm': '0.4822', 'learning_rate': '0.001641', 'tokens_per_second': '1.895e+05', 'total_tokens_seen': 81232151, 'peak_memory_bytes': 43922771968, 'epoch': '0.2709'}
+{'loss': '4.005', 'grad_norm': '0.4706', 'learning_rate': '0.001631', 'tokens_per_second': '1.896e+05', 'total_tokens_seen': 82542756, 'peak_memory_bytes': 43922771968, 'epoch': '0.2752'}
+{'loss': '4.094', 'grad_norm': '0.4041', 'learning_rate': '0.001621', 'tokens_per_second': '1.869e+05', 'total_tokens_seen': 83853315, 'peak_memory_bytes': 43922771968, 'epoch': '0.2796'}
+{'loss': '4.068', 'grad_norm': '0.372', 'learning_rate': '0.001611', 'tokens_per_second': '1.909e+05', 'total_tokens_seen': 85163884, 'peak_memory_bytes': 43922771968, 'epoch': '0.284'}
+{'loss': '4.098', 'grad_norm': '0.4432', 'learning_rate': '0.001602', 'tokens_per_second': '1.835e+05', 'total_tokens_seen': 86474446, 'peak_memory_bytes': 43922771968, 'epoch': '0.2883'}
+{'loss': '4.025', 'grad_norm': '0.4027', 'learning_rate': '0.001592', 'tokens_per_second': '1.912e+05', 'total_tokens_seen': 87785082, 'peak_memory_bytes': 43922771968, 'epoch': '0.2927'}
+{'loss': '4.096', 'grad_norm': '0.4634', 'learning_rate': '0.001582', 'tokens_per_second': '1.928e+05', 'total_tokens_seen': 89095632, 'peak_memory_bytes': 43922771968, 'epoch': '0.2971'}
+{'eval_loss': '4.015', 'eval_perplexity': '55.45', 'eval_target_tokens': 2542539, 'epoch': '0.2988'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+{'loss': '3.967', 'grad_norm': '0.4227', 'learning_rate': '0.001572', 'tokens_per_second': '1.899e+05', 'total_tokens_seen': 90406214, 'peak_memory_bytes': 43922771968, 'epoch': '0.3014'}
+{'loss': '3.97', 'grad_norm': '0.5084', 'learning_rate': '0.001562', 'tokens_per_second': '1.935e+05', 'total_tokens_seen': 91716774, 'peak_memory_bytes': 43922771968, 'epoch': '0.3058'}
+{'loss': '4.021', 'grad_norm': '0.4896', 'learning_rate': '0.001552', 'tokens_per_second': '1.901e+05', 'total_tokens_seen': 93027370, 'peak_memory_bytes': 43922771968, 'epoch': '0.3102'}
+{'loss': '3.99', 'grad_norm': '0.4225', 'learning_rate': '0.001543', 'tokens_per_second': '1.931e+05', 'total_tokens_seen': 94337932, 'peak_memory_bytes': 43922771968, 'epoch': '0.3145'}
+{'loss': '3.983', 'grad_norm': '0.4219', 'learning_rate': '0.001533', 'tokens_per_second': '1.95e+05', 'total_tokens_seen': 95648508, 'peak_memory_bytes': 43922771968, 'epoch': '0.3189'}
+{'loss': '4.084', 'grad_norm': '0.4771', 'learning_rate': '0.001523', 'tokens_per_second': '1.861e+05', 'total_tokens_seen': 96959145, 'peak_memory_bytes': 43922771968, 'epoch': '0.3233'}
+{'loss': '4.038', 'grad_norm': '0.5655', 'learning_rate': '0.001513', 'tokens_per_second': '1.918e+05', 'total_tokens_seen': 98269745, 'peak_memory_bytes': 43922771968, 'epoch': '0.3277'}
+{'loss': '4.042', 'grad_norm': '0.4349', 'learning_rate': '0.001503', 'tokens_per_second': '1.921e+05', 'total_tokens_seen': 99580357, 'peak_memory_bytes': 43922771968, 'epoch': '0.332'}
+{'loss': '3.963', 'grad_norm': '0.4822', 'learning_rate': '0.001493', 'tokens_per_second': '1.87e+05', 'total_tokens_seen': 100890857, 'peak_memory_bytes': 43922771968, 'epoch': '0.3364'}
+{'loss': '3.958', 'grad_norm': '0.4162', 'learning_rate': '0.001484', 'tokens_per_second': '1.884e+05', 'total_tokens_seen': 102201457, 'peak_memory_bytes': 43922771968, 'epoch': '0.3408'}
+{'loss': '3.967', 'grad_norm': '0.4694', 'learning_rate': '0.001474', 'tokens_per_second': '1.894e+05', 'total_tokens_seen': 103512088, 'peak_memory_bytes': 43922771968, 'epoch': '0.3451'}
+{'loss': '3.976', 'grad_norm': '0.7964', 'learning_rate': '0.001464', 'tokens_per_second': '1.876e+05', 'total_tokens_seen': 104820424, 'peak_memory_bytes': 43922771968, 'epoch': '0.3495'}
+{'loss': '3.925', 'grad_norm': '0.4194', 'learning_rate': '0.001454', 'tokens_per_second': '1.923e+05', 'total_tokens_seen': 106130960, 'peak_memory_bytes': 43922771968, 'epoch': '0.3539'}
+{'loss': '3.965', 'grad_norm': '0.4004', 'learning_rate': '0.001444', 'tokens_per_second': '1.89e+05', 'total_tokens_seen': 107441590, 'peak_memory_bytes': 43922771968, 'epoch': '0.3582'}
+{'loss': '3.954', 'grad_norm': '0.4132', 'learning_rate': '0.001434', 'tokens_per_second': '1.928e+05', 'total_tokens_seen': 108752172, 'peak_memory_bytes': 43922771968, 'epoch': '0.3626'}
+{'loss': '4.007', 'grad_norm': '0.3677', 'learning_rate': '0.001425', 'tokens_per_second': '1.906e+05', 'total_tokens_seen': 110061695, 'peak_memory_bytes': 43922771968, 'epoch': '0.367'}
+{'loss': '3.95', 'grad_norm': '0.4592', 'learning_rate': '0.001415', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 111372184, 'peak_memory_bytes': 43922771968, 'epoch': '0.3713'}
+{'loss': '3.895', 'grad_norm': '0.4389', 'learning_rate': '0.001405', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 112682717, 'peak_memory_bytes': 43922771968, 'epoch': '0.3757'}
+{'loss': '3.897', 'grad_norm': '0.4432', 'learning_rate': '0.001395', 'tokens_per_second': '1.818e+05', 'total_tokens_seen': 113993301, 'peak_memory_bytes': 43922771968, 'epoch': '0.3801'}
+{'loss': '3.862', 'grad_norm': '0.4302', 'learning_rate': '0.001385', 'tokens_per_second': '1.879e+05', 'total_tokens_seen': 115303917, 'peak_memory_bytes': 43922771968, 'epoch': '0.3844'}
+{'loss': '3.868', 'grad_norm': '0.4077', 'learning_rate': '0.001376', 'tokens_per_second': '1.923e+05', 'total_tokens_seen': 116614505, 'peak_memory_bytes': 43922771968, 'epoch': '0.3888'}
+{'loss': '3.888', 'grad_norm': '0.4484', 'learning_rate': '0.001366', 'tokens_per_second': '1.852e+05', 'total_tokens_seen': 117925037, 'peak_memory_bytes': 43922771968, 'epoch': '0.3932'}
+{'loss': '3.891', 'grad_norm': '0.4739', 'learning_rate': '0.001356', 'tokens_per_second': '1.833e+05', 'total_tokens_seen': 119235594, 'peak_memory_bytes': 43922771968, 'epoch': '0.3976'}
+{'eval_loss': '3.861', 'eval_perplexity': '47.52', 'eval_target_tokens': 2542539, 'epoch': '0.3984'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]
+{'loss': '3.916', 'grad_norm': '0.388', 'learning_rate': '0.001346', 'tokens_per_second': '1.883e+05', 'total_tokens_seen': 120546128, 'peak_memory_bytes': 43922771968, 'epoch': '0.4019'}
+{'loss': '3.768', 'grad_norm': '0.5039', 'learning_rate': '0.001336', 'tokens_per_second': '1.841e+05', 'total_tokens_seen': 121856662, 'peak_memory_bytes': 43922771968, 'epoch': '0.4063'}
+{'loss': '3.781', 'grad_norm': '0.4223', 'learning_rate': '0.001326', 'tokens_per_second': '1.881e+05', 'total_tokens_seen': 123167161, 'peak_memory_bytes': 43922771968, 'epoch': '0.4107'}
+{'loss': '3.88', 'grad_norm': '0.4786', 'learning_rate': '0.001317', 'tokens_per_second': '1.876e+05', 'total_tokens_seen': 124477683, 'peak_memory_bytes': 43922771968, 'epoch': '0.415'}
+{'loss': '3.841', 'grad_norm': '0.4323', 'learning_rate': '0.001307', 'tokens_per_second': '1.88e+05', 'total_tokens_seen': 125786703, 'peak_memory_bytes': 43922771968, 'epoch': '0.4194'}
+{'loss': '3.852', 'grad_norm': '0.4018', 'learning_rate': '0.001297', 'tokens_per_second': '1.9e+05', 'total_tokens_seen': 127097292, 'peak_memory_bytes': 43922771968, 'epoch': '0.4238'}
+{'loss': '3.83', 'grad_norm': '0.42', 'learning_rate': '0.001287', 'tokens_per_second': '1.893e+05', 'total_tokens_seen': 128407849, 'peak_memory_bytes': 43922771968, 'epoch': '0.4281'}
+{'loss': '3.868', 'grad_norm': '0.3623', 'learning_rate': '0.001277', 'tokens_per_second': '1.916e+05', 'total_tokens_seen': 129718350, 'peak_memory_bytes': 43922771968, 'epoch': '0.4325'}
+{'loss': '3.847', 'grad_norm': '0.4224', 'learning_rate': '0.001267', 'tokens_per_second': '1.905e+05', 'total_tokens_seen': 131028950, 'peak_memory_bytes': 43922771968, 'epoch': '0.4369'}
+{'loss': '3.786', 'grad_norm': '0.3536', 'learning_rate': '0.001258', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 132339533, 'peak_memory_bytes': 43922771968, 'epoch': '0.4412'}
+{'loss': '3.87', 'grad_norm': '0.4026', 'learning_rate': '0.001248', 'tokens_per_second': '1.888e+05', 'total_tokens_seen': 133650112, 'peak_memory_bytes': 43922771968, 'epoch': '0.4456'}
+{'loss': '3.807', 'grad_norm': '0.4251', 'learning_rate': '0.001238', 'tokens_per_second': '1.877e+05', 'total_tokens_seen': 134960672, 'peak_memory_bytes': 43922771968, 'epoch': '0.45'}
+{'loss': '3.836', 'grad_norm': '0.4207', 'learning_rate': '0.001228', 'tokens_per_second': '1.891e+05', 'total_tokens_seen': 136271216, 'peak_memory_bytes': 43922771968, 'epoch': '0.4543'}
+{'loss': '3.762', 'grad_norm': '0.3887', 'learning_rate': '0.001218', 'tokens_per_second': '1.897e+05', 'total_tokens_seen': 137581823, 'peak_memory_bytes': 43922771968, 'epoch': '0.4587'}
+{'loss': '3.808', 'grad_norm': '0.4205', 'learning_rate': '0.001209', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 138892373, 'peak_memory_bytes': 43922771968, 'epoch': '0.4631'}
+{'loss': '3.774', 'grad_norm': '0.4189', 'learning_rate': '0.001199', 'tokens_per_second': '1.903e+05', 'total_tokens_seen': 140202952, 'peak_memory_bytes': 43922771968, 'epoch': '0.4675'}
+{'loss': '3.855', 'grad_norm': '0.3542', 'learning_rate': '0.001189', 'tokens_per_second': '1.88e+05', 'total_tokens_seen': 141513456, 'peak_memory_bytes': 43922771968, 'epoch': '0.4718'}
+{'loss': '3.777', 'grad_norm': '0.4097', 'learning_rate': '0.001179', 'tokens_per_second': '1.831e+05', 'total_tokens_seen': 142824040, 'peak_memory_bytes': 43922771968, 'epoch': '0.4762'}
+{'loss': '3.864', 'grad_norm': '0.4035', 'learning_rate': '0.001169', 'tokens_per_second': '1.867e+05', 'total_tokens_seen': 144134626, 'peak_memory_bytes': 43922771968, 'epoch': '0.4806'}
+{'loss': '3.829', 'grad_norm': '0.3287', 'learning_rate': '0.001159', 'tokens_per_second': '1.914e+05', 'total_tokens_seen': 145445229, 'peak_memory_bytes': 43922771968, 'epoch': '0.4849'}
+{'loss': '3.822', 'grad_norm': '0.4711', 'learning_rate': '0.00115', 'tokens_per_second': '1.863e+05', 'total_tokens_seen': 146755114, 'peak_memory_bytes': 43922771968, 'epoch': '0.4893'}
+{'loss': '3.72', 'grad_norm': '0.3673', 'learning_rate': '0.00114', 'tokens_per_second': '1.858e+05', 'total_tokens_seen': 148065345, 'peak_memory_bytes': 43922771968, 'epoch': '0.4937'}
+{'loss': '3.779', 'grad_norm': '0.4499', 'learning_rate': '0.00113', 'tokens_per_second': '1.867e+05', 'total_tokens_seen': 149375886, 'peak_memory_bytes': 43922771968, 'epoch': '0.498'}
+{'eval_loss': '3.744', 'eval_perplexity': '42.27', 'eval_target_tokens': 2542539, 'epoch': '0.498'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+{'loss': '3.782', 'grad_norm': '0.4335', 'learning_rate': '0.00112', 'tokens_per_second': '1.879e+05', 'total_tokens_seen': 150686426, 'peak_memory_bytes': 43922771968, 'epoch': '0.5024'}
+{'loss': '3.769', 'grad_norm': '0.4196', 'learning_rate': '0.00111', 'tokens_per_second': '1.918e+05', 'total_tokens_seen': 151996990, 'peak_memory_bytes': 43922771968, 'epoch': '0.5068'}
+{'loss': '3.797', 'grad_norm': '0.3304', 'learning_rate': '0.0011', 'tokens_per_second': '1.882e+05', 'total_tokens_seen': 153307545, 'peak_memory_bytes': 43922771968, 'epoch': '0.5111'}
+{'loss': '3.736', 'grad_norm': '0.3947', 'learning_rate': '0.001091', 'tokens_per_second': '1.852e+05', 'total_tokens_seen': 154618002, 'peak_memory_bytes': 43922771968, 'epoch': '0.5155'}
+{'loss': '3.766', 'grad_norm': '0.4038', 'learning_rate': '0.001081', 'tokens_per_second': '1.88e+05', 'total_tokens_seen': 155928616, 'peak_memory_bytes': 43922771968, 'epoch': '0.5199'}
+{'loss': '3.721', 'grad_norm': '0.3963', 'learning_rate': '0.001071', 'tokens_per_second': '1.912e+05', 'total_tokens_seen': 157239208, 'peak_memory_bytes': 43922771968, 'epoch': '0.5242'}
+{'loss': '3.729', 'grad_norm': '0.3987', 'learning_rate': '0.001061', 'tokens_per_second': '1.885e+05', 'total_tokens_seen': 158549642, 'peak_memory_bytes': 43922771968, 'epoch': '0.5286'}
+{'loss': '3.657', 'grad_norm': '0.4278', 'learning_rate': '0.001051', 'tokens_per_second': '1.877e+05', 'total_tokens_seen': 159860256, 'peak_memory_bytes': 43922771968, 'epoch': '0.533'}
+{'loss': '3.758', 'grad_norm': '0.3797', 'learning_rate': '0.001041', 'tokens_per_second': '1.849e+05', 'total_tokens_seen': 161170776, 'peak_memory_bytes': 43922771968, 'epoch': '0.5374'}
+{'loss': '3.78', 'grad_norm': '0.3193', 'learning_rate': '0.001032', 'tokens_per_second': '1.885e+05', 'total_tokens_seen': 162481435, 'peak_memory_bytes': 43922771968, 'epoch': '0.5417'}
+{'loss': '3.719', 'grad_norm': '0.3604', 'learning_rate': '0.001022', 'tokens_per_second': '1.899e+05', 'total_tokens_seen': 163786509, 'peak_memory_bytes': 43922771968, 'epoch': '0.5461'}
+{'loss': '3.76', 'grad_norm': '0.3675', 'learning_rate': '0.001012', 'tokens_per_second': '1.934e+05', 'total_tokens_seen': 165097153, 'peak_memory_bytes': 43922771968, 'epoch': '0.5505'}
+{'loss': '3.772', 'grad_norm': '0.3775', 'learning_rate': '0.001002', 'tokens_per_second': '1.855e+05', 'total_tokens_seen': 166407720, 'peak_memory_bytes': 43922771968, 'epoch': '0.5548'}
+{'loss': '3.74', 'grad_norm': '0.3536', 'learning_rate': '0.0009924', 'tokens_per_second': '1.879e+05', 'total_tokens_seen': 167718224, 'peak_memory_bytes': 43922771968, 'epoch': '0.5592'}
+{'loss': '3.753', 'grad_norm': '0.401', 'learning_rate': '0.0009825', 'tokens_per_second': '1.855e+05', 'total_tokens_seen': 169028809, 'peak_memory_bytes': 43922771968, 'epoch': '0.5636'}
+{'loss': '3.733', 'grad_norm': '0.3556', 'learning_rate': '0.0009727', 'tokens_per_second': '1.935e+05', 'total_tokens_seen': 170339320, 'peak_memory_bytes': 43922771968, 'epoch': '0.5679'}
+{'loss': '3.693', 'grad_norm': '0.4043', 'learning_rate': '0.0009629', 'tokens_per_second': '1.921e+05', 'total_tokens_seen': 171649936, 'peak_memory_bytes': 43922771968, 'epoch': '0.5723'}
+{'loss': '3.673', 'grad_norm': '0.414', 'learning_rate': '0.0009531', 'tokens_per_second': '1.869e+05', 'total_tokens_seen': 172960438, 'peak_memory_bytes': 43922771968, 'epoch': '0.5767'}
+{'loss': '3.726', 'grad_norm': '0.419', 'learning_rate': '0.0009432', 'tokens_per_second': '1.849e+05', 'total_tokens_seen': 174271029, 'peak_memory_bytes': 43922771968, 'epoch': '0.581'}
+{'loss': '3.702', 'grad_norm': '0.4452', 'learning_rate': '0.0009334', 'tokens_per_second': '1.878e+05', 'total_tokens_seen': 175581593, 'peak_memory_bytes': 43922771968, 'epoch': '0.5854'}
+{'loss': '3.7', 'grad_norm': '0.4022', 'learning_rate': '0.0009236', 'tokens_per_second': '1.869e+05', 'total_tokens_seen': 176892125, 'peak_memory_bytes': 43922771968, 'epoch': '0.5898'}
+{'loss': '3.608', 'grad_norm': '0.3757', 'learning_rate': '0.0009138', 'tokens_per_second': '1.921e+05', 'total_tokens_seen': 178202600, 'peak_memory_bytes': 43922771968, 'epoch': '0.5941'}
+{'eval_loss': '3.656', 'eval_perplexity': '38.71', 'eval_target_tokens': 2542539, 'epoch': '0.5976'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.24it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.24it/s]
+{'loss': '3.764', 'grad_norm': '0.3886', 'learning_rate': '0.0009039', 'tokens_per_second': '1.884e+05', 'total_tokens_seen': 179513031, 'peak_memory_bytes': 43922771968, 'epoch': '0.5985'}
+{'loss': '3.651', 'grad_norm': '0.3478', 'learning_rate': '0.0008941', 'tokens_per_second': '1.837e+05', 'total_tokens_seen': 180823543, 'peak_memory_bytes': 43922771968, 'epoch': '0.6029'}
+{'loss': '3.682', 'grad_norm': '0.3542', 'learning_rate': '0.0008843', 'tokens_per_second': '1.861e+05', 'total_tokens_seen': 182134108, 'peak_memory_bytes': 43922771968, 'epoch': '0.6073'}
+{'loss': '3.64', 'grad_norm': '0.3666', 'learning_rate': '0.0008745', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 183444666, 'peak_memory_bytes': 43922771968, 'epoch': '0.6116'}
+{'loss': '3.673', 'grad_norm': '0.3438', 'learning_rate': '0.0008646', 'tokens_per_second': '1.869e+05', 'total_tokens_seen': 184755239, 'peak_memory_bytes': 43922771968, 'epoch': '0.616'}
+{'loss': '3.639', 'grad_norm': '0.3612', 'learning_rate': '0.0008548', 'tokens_per_second': '1.762e+05', 'total_tokens_seen': 186057700, 'peak_memory_bytes': 43922771968, 'epoch': '0.6204'}
+{'loss': '3.641', 'grad_norm': '0.3611', 'learning_rate': '0.000845', 'tokens_per_second': '1.829e+05', 'total_tokens_seen': 187368230, 'peak_memory_bytes': 43922771968, 'epoch': '0.6247'}
+{'loss': '3.609', 'grad_norm': '0.3956', 'learning_rate': '0.0008352', 'tokens_per_second': '1.882e+05', 'total_tokens_seen': 188678845, 'peak_memory_bytes': 43922771968, 'epoch': '0.6291'}
+{'loss': '3.629', 'grad_norm': '0.3637', 'learning_rate': '0.0008253', 'tokens_per_second': '1.893e+05', 'total_tokens_seen': 189989461, 'peak_memory_bytes': 43922771968, 'epoch': '0.6335'}
+{'loss': '3.681', 'grad_norm': '0.3597', 'learning_rate': '0.0008155', 'tokens_per_second': '1.893e+05', 'total_tokens_seen': 191300094, 'peak_memory_bytes': 43922771968, 'epoch': '0.6378'}
+{'loss': '3.654', 'grad_norm': '0.3944', 'learning_rate': '0.0008057', 'tokens_per_second': '1.934e+05', 'total_tokens_seen': 192602736, 'peak_memory_bytes': 43922771968, 'epoch': '0.6422'}
+{'loss': '3.56', 'grad_norm': '0.3562', 'learning_rate': '0.0007959', 'tokens_per_second': '1.891e+05', 'total_tokens_seen': 193913298, 'peak_memory_bytes': 43922771968, 'epoch': '0.6466'}
+{'loss': '3.635', 'grad_norm': '0.3664', 'learning_rate': '0.000786', 'tokens_per_second': '1.856e+05', 'total_tokens_seen': 195223913, 'peak_memory_bytes': 43922771968, 'epoch': '0.6509'}
+{'loss': '3.615', 'grad_norm': '0.3819', 'learning_rate': '0.0007762', 'tokens_per_second': '1.921e+05', 'total_tokens_seen': 196534434, 'peak_memory_bytes': 43922771968, 'epoch': '0.6553'}
+{'loss': '3.601', 'grad_norm': '0.3905', 'learning_rate': '0.0007664', 'tokens_per_second': '1.913e+05', 'total_tokens_seen': 197845011, 'peak_memory_bytes': 43922771968, 'epoch': '0.6597'}
+{'loss': '3.593', 'grad_norm': '0.3861', 'learning_rate': '0.0007566', 'tokens_per_second': '1.903e+05', 'total_tokens_seen': 199155555, 'peak_memory_bytes': 43922771968, 'epoch': '0.664'}
+{'loss': '3.658', 'grad_norm': '0.3724', 'learning_rate': '0.0007467', 'tokens_per_second': '1.888e+05', 'total_tokens_seen': 200466097, 'peak_memory_bytes': 43922771968, 'epoch': '0.6684'}
+{'loss': '3.654', 'grad_norm': '0.3872', 'learning_rate': '0.0007369', 'tokens_per_second': '1.853e+05', 'total_tokens_seen': 201776641, 'peak_memory_bytes': 43922771968, 'epoch': '0.6728'}
+{'loss': '3.723', 'grad_norm': '0.4221', 'learning_rate': '0.0007271', 'tokens_per_second': '1.919e+05', 'total_tokens_seen': 203087240, 'peak_memory_bytes': 43922771968, 'epoch': '0.6772'}
+{'loss': '3.579', 'grad_norm': '0.3443', 'learning_rate': '0.0007172', 'tokens_per_second': '1.909e+05', 'total_tokens_seen': 204397826, 'peak_memory_bytes': 43922771968, 'epoch': '0.6815'}
+{'loss': '3.566', 'grad_norm': '0.378', 'learning_rate': '0.0007074', 'tokens_per_second': '1.841e+05', 'total_tokens_seen': 205708379, 'peak_memory_bytes': 43922771968, 'epoch': '0.6859'}
+{'loss': '3.571', 'grad_norm': '0.3462', 'learning_rate': '0.0006976', 'tokens_per_second': '1.92e+05', 'total_tokens_seen': 207018961, 'peak_memory_bytes': 43922771968, 'epoch': '0.6903'}
+{'loss': '3.699', 'grad_norm': '0.3162', 'learning_rate': '0.0006878', 'tokens_per_second': '1.927e+05', 'total_tokens_seen': 208329508, 'peak_memory_bytes': 43922771968, 'epoch': '0.6946'}
+{'eval_loss': '3.571', 'eval_perplexity': '35.54', 'eval_target_tokens': 2542539, 'epoch': '0.6972'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.46it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.46it/s]
+{'loss': '3.613', 'grad_norm': '0.3935', 'learning_rate': '0.0006779', 'tokens_per_second': '1.871e+05', 'total_tokens_seen': 209640058, 'peak_memory_bytes': 43922771968, 'epoch': '0.699'}
+{'loss': '3.575', 'grad_norm': '0.4037', 'learning_rate': '0.0006681', 'tokens_per_second': '1.9e+05', 'total_tokens_seen': 210950665, 'peak_memory_bytes': 43922771968, 'epoch': '0.7034'}
+{'loss': '3.607', 'grad_norm': '0.3202', 'learning_rate': '0.0006583', 'tokens_per_second': '1.895e+05', 'total_tokens_seen': 212261316, 'peak_memory_bytes': 43922771968, 'epoch': '0.7077'}
+{'loss': '3.638', 'grad_norm': '0.3355', 'learning_rate': '0.0006485', 'tokens_per_second': '1.933e+05', 'total_tokens_seen': 213571855, 'peak_memory_bytes': 43922771968, 'epoch': '0.7121'}
+{'loss': '3.557', 'grad_norm': '0.4007', 'learning_rate': '0.0006386', 'tokens_per_second': '1.926e+05', 'total_tokens_seen': 214882402, 'peak_memory_bytes': 43922771968, 'epoch': '0.7165'}
+{'loss': '3.654', 'grad_norm': '0.378', 'learning_rate': '0.0006288', 'tokens_per_second': '1.881e+05', 'total_tokens_seen': 216188584, 'peak_memory_bytes': 43922771968, 'epoch': '0.7208'}
+{'loss': '3.596', 'grad_norm': '0.3464', 'learning_rate': '0.000619', 'tokens_per_second': '1.834e+05', 'total_tokens_seen': 217499139, 'peak_memory_bytes': 43922771968, 'epoch': '0.7252'}
+{'loss': '3.534', 'grad_norm': '0.381', 'learning_rate': '0.0006092', 'tokens_per_second': '1.952e+05', 'total_tokens_seen': 218809623, 'peak_memory_bytes': 43922771968, 'epoch': '0.7296'}
+{'loss': '3.509', 'grad_norm': '0.3815', 'learning_rate': '0.0005993', 'tokens_per_second': '1.935e+05', 'total_tokens_seen': 220120156, 'peak_memory_bytes': 43922771968, 'epoch': '0.7339'}
+{'loss': '3.581', 'grad_norm': '0.3626', 'learning_rate': '0.0005895', 'tokens_per_second': '1.834e+05', 'total_tokens_seen': 221430690, 'peak_memory_bytes': 43922771968, 'epoch': '0.7383'}
+{'loss': '3.545', 'grad_norm': '0.3587', 'learning_rate': '0.0005797', 'tokens_per_second': '1.883e+05', 'total_tokens_seen': 222741281, 'peak_memory_bytes': 43922771968, 'epoch': '0.7427'}
+{'loss': '3.465', 'grad_norm': '0.3727', 'learning_rate': '0.0005699', 'tokens_per_second': '1.887e+05', 'total_tokens_seen': 224051797, 'peak_memory_bytes': 43922771968, 'epoch': '0.7471'}
+{'loss': '3.521', 'grad_norm': '0.3798', 'learning_rate': '0.00056', 'tokens_per_second': '1.437e+05', 'total_tokens_seen': 225362320, 'peak_memory_bytes': 43922771968, 'epoch': '0.7514'}
+{'loss': '3.663', 'grad_norm': '0.3642', 'learning_rate': '0.0005502', 'tokens_per_second': '1.952e+05', 'total_tokens_seen': 226672963, 'peak_memory_bytes': 43922771968, 'epoch': '0.7558'}
+{'loss': '3.493', 'grad_norm': '0.3621', 'learning_rate': '0.0005404', 'tokens_per_second': '1.938e+05', 'total_tokens_seen': 227983432, 'peak_memory_bytes': 43922771968, 'epoch': '0.7602'}
+{'loss': '3.482', 'grad_norm': '0.3665', 'learning_rate': '0.0005306', 'tokens_per_second': '1.898e+05', 'total_tokens_seen': 229293972, 'peak_memory_bytes': 43922771968, 'epoch': '0.7645'}
+{'loss': '3.589', 'grad_norm': '0.3283', 'learning_rate': '0.0005207', 'tokens_per_second': '1.935e+05', 'total_tokens_seen': 230604603, 'peak_memory_bytes': 43922771968, 'epoch': '0.7689'}
+{'loss': '3.582', 'grad_norm': '0.3181', 'learning_rate': '0.0005109', 'tokens_per_second': '1.905e+05', 'total_tokens_seen': 231915165, 'peak_memory_bytes': 43922771968, 'epoch': '0.7733'}
+{'loss': '3.534', 'grad_norm': '0.3585', 'learning_rate': '0.0005011', 'tokens_per_second': '1.907e+05', 'total_tokens_seen': 233225641, 'peak_memory_bytes': 43922771968, 'epoch': '0.7776'}
+{'loss': '3.559', 'grad_norm': '0.3167', 'learning_rate': '0.0004913', 'tokens_per_second': '1.907e+05', 'total_tokens_seen': 234536190, 'peak_memory_bytes': 43922771968, 'epoch': '0.782'}
+{'loss': '3.495', 'grad_norm': '0.377', 'learning_rate': '0.0004814', 'tokens_per_second': '1.89e+05', 'total_tokens_seen': 235846808, 'peak_memory_bytes': 43922771968, 'epoch': '0.7864'}
+{'loss': '3.521', 'grad_norm': '0.3537', 'learning_rate': '0.0004716', 'tokens_per_second': '1.892e+05', 'total_tokens_seen': 237157285, 'peak_memory_bytes': 43922771968, 'epoch': '0.7907'}
+{'loss': '3.58', 'grad_norm': '0.351', 'learning_rate': '0.0004618', 'tokens_per_second': '1.885e+05', 'total_tokens_seen': 238467878, 'peak_memory_bytes': 43922771968, 'epoch': '0.7951'}
+{'eval_loss': '3.493', 'eval_perplexity': '32.9', 'eval_target_tokens': 2542539, 'epoch': '0.7969'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.47it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.47it/s]
+{'loss': '3.533', 'grad_norm': '0.3555', 'learning_rate': '0.000452', 'tokens_per_second': '1.874e+05', 'total_tokens_seen': 239778453, 'peak_memory_bytes': 43922771968, 'epoch': '0.7995'}
+{'loss': '3.572', 'grad_norm': '0.371', 'learning_rate': '0.0004421', 'tokens_per_second': '1.846e+05', 'total_tokens_seen': 241089047, 'peak_memory_bytes': 43922771968, 'epoch': '0.8038'}
+{'loss': '3.43', 'grad_norm': '0.3497', 'learning_rate': '0.0004323', 'tokens_per_second': '1.926e+05', 'total_tokens_seen': 242399602, 'peak_memory_bytes': 43922771968, 'epoch': '0.8082'}
+{'loss': '3.506', 'grad_norm': '0.3665', 'learning_rate': '0.0004225', 'tokens_per_second': '1.867e+05', 'total_tokens_seen': 243710139, 'peak_memory_bytes': 43922771968, 'epoch': '0.8126'}
+{'loss': '3.494', 'grad_norm': '0.3498', 'learning_rate': '0.0004127', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 245020738, 'peak_memory_bytes': 43922771968, 'epoch': '0.817'}
+{'loss': '3.526', 'grad_norm': '0.3515', 'learning_rate': '0.0004028', 'tokens_per_second': '1.905e+05', 'total_tokens_seen': 246331219, 'peak_memory_bytes': 43922771968, 'epoch': '0.8213'}
+{'loss': '3.472', 'grad_norm': '0.3212', 'learning_rate': '0.000393', 'tokens_per_second': '1.896e+05', 'total_tokens_seen': 247641808, 'peak_memory_bytes': 43922771968, 'epoch': '0.8257'}
+{'loss': '3.56', 'grad_norm': '0.3446', 'learning_rate': '0.0003832', 'tokens_per_second': '1.912e+05', 'total_tokens_seen': 248952243, 'peak_memory_bytes': 43922771968, 'epoch': '0.8301'}
+{'loss': '3.49', 'grad_norm': '0.3125', 'learning_rate': '0.0003734', 'tokens_per_second': '1.911e+05', 'total_tokens_seen': 250262838, 'peak_memory_bytes': 43922771968, 'epoch': '0.8344'}
+{'loss': '3.454', 'grad_norm': '0.3189', 'learning_rate': '0.0003635', 'tokens_per_second': '1.852e+05', 'total_tokens_seen': 251573236, 'peak_memory_bytes': 43922771968, 'epoch': '0.8388'}
+{'loss': '3.507', 'grad_norm': '0.3133', 'learning_rate': '0.0003537', 'tokens_per_second': '1.872e+05', 'total_tokens_seen': 252883875, 'peak_memory_bytes': 43922771968, 'epoch': '0.8432'}
+{'loss': '3.482', 'grad_norm': '0.3365', 'learning_rate': '0.0003439', 'tokens_per_second': '1.884e+05', 'total_tokens_seen': 254194447, 'peak_memory_bytes': 43922771968, 'epoch': '0.8475'}
+{'loss': '3.362', 'grad_norm': '0.3442', 'learning_rate': '0.0003341', 'tokens_per_second': '1.849e+05', 'total_tokens_seen': 255504885, 'peak_memory_bytes': 43922771968, 'epoch': '0.8519'}
+{'loss': '3.454', 'grad_norm': '0.3629', 'learning_rate': '0.0003242', 'tokens_per_second': '1.926e+05', 'total_tokens_seen': 256815448, 'peak_memory_bytes': 43922771968, 'epoch': '0.8563'}
+{'loss': '3.505', 'grad_norm': '0.3508', 'learning_rate': '0.0003144', 'tokens_per_second': '1.869e+05', 'total_tokens_seen': 258126054, 'peak_memory_bytes': 43922771968, 'epoch': '0.8606'}
+{'loss': '3.47', 'grad_norm': '0.3693', 'learning_rate': '0.0003046', 'tokens_per_second': '1.924e+05', 'total_tokens_seen': 259436660, 'peak_memory_bytes': 43922771968, 'epoch': '0.865'}
+{'loss': '3.543', 'grad_norm': '0.3415', 'learning_rate': '0.0002948', 'tokens_per_second': '1.858e+05', 'total_tokens_seen': 260747230, 'peak_memory_bytes': 43922771968, 'epoch': '0.8694'}
+{'loss': '3.459', 'grad_norm': '0.3575', 'learning_rate': '0.0002849', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 262057835, 'peak_memory_bytes': 43922771968, 'epoch': '0.8737'}
+{'loss': '3.415', 'grad_norm': '0.3308', 'learning_rate': '0.0002751', 'tokens_per_second': '1.867e+05', 'total_tokens_seen': 263368474, 'peak_memory_bytes': 43922771968, 'epoch': '0.8781'}
+{'loss': '3.496', 'grad_norm': '0.3847', 'learning_rate': '0.0002653', 'tokens_per_second': '1.898e+05', 'total_tokens_seen': 264674548, 'peak_memory_bytes': 43922771968, 'epoch': '0.8825'}
+{'loss': '3.457', 'grad_norm': '0.3324', 'learning_rate': '0.0002555', 'tokens_per_second': '1.895e+05', 'total_tokens_seen': 265985163, 'peak_memory_bytes': 43922771968, 'epoch': '0.8869'}
+{'loss': '3.393', 'grad_norm': '0.334', 'learning_rate': '0.0002456', 'tokens_per_second': '1.849e+05', 'total_tokens_seen': 267295766, 'peak_memory_bytes': 43922771968, 'epoch': '0.8912'}
+{'loss': '3.404', 'grad_norm': '0.3456', 'learning_rate': '0.0002358', 'tokens_per_second': '1.908e+05', 'total_tokens_seen': 268606349, 'peak_memory_bytes': 43922771968, 'epoch': '0.8956'}
+{'eval_loss': '3.425', 'eval_perplexity': '30.73', 'eval_target_tokens': 2542539, 'epoch': '0.8965'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.64it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.64it/s]
+{'loss': '3.458', 'grad_norm': '0.3281', 'learning_rate': '0.000226', 'tokens_per_second': '1.917e+05', 'total_tokens_seen': 269916952, 'peak_memory_bytes': 43922771968, 'epoch': '0.9'}
+{'loss': '3.497', 'grad_norm': '0.3166', 'learning_rate': '0.0002162', 'tokens_per_second': '1.855e+05', 'total_tokens_seen': 271227517, 'peak_memory_bytes': 43922771968, 'epoch': '0.9043'}
+{'loss': '3.423', 'grad_norm': '0.3372', 'learning_rate': '0.0002063', 'tokens_per_second': '1.902e+05', 'total_tokens_seen': 272538034, 'peak_memory_bytes': 43922771968, 'epoch': '0.9087'}
+{'loss': '3.451', 'grad_norm': '0.3454', 'learning_rate': '0.0001965', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 273848515, 'peak_memory_bytes': 43922771968, 'epoch': '0.9131'}
+{'loss': '3.432', 'grad_norm': '0.3573', 'learning_rate': '0.0001867', 'tokens_per_second': '1.857e+05', 'total_tokens_seen': 275159088, 'peak_memory_bytes': 43922771968, 'epoch': '0.9174'}
+{'loss': '3.448', 'grad_norm': '0.8754', 'learning_rate': '0.0001769', 'tokens_per_second': '1.9e+05', 'total_tokens_seen': 276469604, 'peak_memory_bytes': 43922771968, 'epoch': '0.9218'}
+{'loss': '3.459', 'grad_norm': '0.3534', 'learning_rate': '0.000167', 'tokens_per_second': '1.866e+05', 'total_tokens_seen': 277780132, 'peak_memory_bytes': 43922771968, 'epoch': '0.9262'}
+{'loss': '3.441', 'grad_norm': '0.3005', 'learning_rate': '0.0001572', 'tokens_per_second': '1.887e+05', 'total_tokens_seen': 279090698, 'peak_memory_bytes': 43922771968, 'epoch': '0.9305'}
+{'loss': '3.494', 'grad_norm': '0.3638', 'learning_rate': '0.0001474', 'tokens_per_second': '1.898e+05', 'total_tokens_seen': 280401333, 'peak_memory_bytes': 43922771968, 'epoch': '0.9349'}
+{'loss': '3.432', 'grad_norm': '0.366', 'learning_rate': '0.0001376', 'tokens_per_second': '1.893e+05', 'total_tokens_seen': 281706250, 'peak_memory_bytes': 43922771968, 'epoch': '0.9393'}
+{'loss': '3.398', 'grad_norm': '0.3282', 'learning_rate': '0.0001277', 'tokens_per_second': '1.913e+05', 'total_tokens_seen': 283013911, 'peak_memory_bytes': 43922771968, 'epoch': '0.9436'}
+{'loss': '3.446', 'grad_norm': '0.3215', 'learning_rate': '0.0001179', 'tokens_per_second': '1.921e+05', 'total_tokens_seen': 284324504, 'peak_memory_bytes': 43922771968, 'epoch': '0.948'}
+{'loss': '3.329', 'grad_norm': '0.2902', 'learning_rate': '0.0001081', 'tokens_per_second': '1.932e+05', 'total_tokens_seen': 285635054, 'peak_memory_bytes': 43922771968, 'epoch': '0.9524'}
+{'loss': '3.422', 'grad_norm': '0.3353', 'learning_rate': '9.825e-05', 'tokens_per_second': '1.855e+05', 'total_tokens_seen': 286945609, 'peak_memory_bytes': 43922771968, 'epoch': '0.9567'}
+{'loss': '3.337', 'grad_norm': '0.3012', 'learning_rate': '8.843e-05', 'tokens_per_second': '1.856e+05', 'total_tokens_seen': 288256214, 'peak_memory_bytes': 43922771968, 'epoch': '0.9611'}
+{'loss': '3.456', 'grad_norm': '0.2973', 'learning_rate': '7.86e-05', 'tokens_per_second': '1.943e+05', 'total_tokens_seen': 289566798, 'peak_memory_bytes': 43922771968, 'epoch': '0.9655'}
+{'loss': '3.357', 'grad_norm': '0.3429', 'learning_rate': '6.878e-05', 'tokens_per_second': '1.904e+05', 'total_tokens_seen': 290877354, 'peak_memory_bytes': 43922771968, 'epoch': '0.9699'}
+{'loss': '3.462', 'grad_norm': '0.3202', 'learning_rate': '5.895e-05', 'tokens_per_second': '1.889e+05', 'total_tokens_seen': 292187927, 'peak_memory_bytes': 43922771968, 'epoch': '0.9742'}
+{'loss': '3.448', 'grad_norm': '0.3101', 'learning_rate': '4.913e-05', 'tokens_per_second': '1.89e+05', 'total_tokens_seen': 293498402, 'peak_memory_bytes': 43922771968, 'epoch': '0.9786'}
+{'loss': '3.451', 'grad_norm': '0.3004', 'learning_rate': '3.93e-05', 'tokens_per_second': '1.925e+05', 'total_tokens_seen': 294808962, 'peak_memory_bytes': 43922771968, 'epoch': '0.983'}
+{'loss': '3.425', 'grad_norm': '0.3208', 'learning_rate': '2.948e-05', 'tokens_per_second': '1.871e+05', 'total_tokens_seen': 296119612, 'peak_memory_bytes': 43922771968, 'epoch': '0.9873'}
+{'loss': '3.291', 'grad_norm': '0.3575', 'learning_rate': '1.965e-05', 'tokens_per_second': '1.833e+05', 'total_tokens_seen': 297426144, 'peak_memory_bytes': 43922771968, 'epoch': '0.9917'}
+{'loss': '3.445', 'grad_norm': '0.3312', 'learning_rate': '9.825e-06', 'tokens_per_second': '1.861e+05', 'total_tokens_seen': 298736703, 'peak_memory_bytes': 43922771968, 'epoch': '0.9961'}
+{'eval_loss': '3.381', 'eval_perplexity': '29.41', 'eval_target_tokens': 2542539, 'epoch': '0.9961'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.62it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.62it/s]
+{'eval_loss': '3.381', 'eval_perplexity': '29.4', 'eval_target_tokens': 2542539, 'epoch': '1'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.97it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.96it/s]
+{'train_runtime': '1675', 'train_samples_per_second': '21.87', 'train_steps_per_second': '1.367', 'train_loss': '4.125', 'epoch': '1'}
+{'eval_loss': '3.381', 'eval_perplexity': '29.4', 'eval_target_tokens': 2542539, 'epoch': '1'}
+[transformers] `rope_parameters`'s original_max_position_embeddings field must be less than max_position_embeddings, got 8192 and max_position_embeddings=8192
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+wandb: updating run metadata
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 240-240, summary, console lines 265-267
+wandb: 
+wandb: Run history:
+wandb:               eval/loss █▄▃▃▂▂▂▁▁▁▁▁
+wandb:         eval/perplexity █▂▂▂▁▁▁▁▁▁▁▁
+wandb:      eval/target_tokens ▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:             train/epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇▇▇█
+wandb:       train/global_step ▁▁▁▁▁▂▂▂▂▃▃▃▃▃▃▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇▇▇██
+wandb:         train/grad_norm █▃▃▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:     train/learning_rate ▄███████████▇▇▇▇▇▇▇▆▆▆▆▆▅▅▅▅▄▄▄▃▃▂▂▁▁▁▁▁
+wandb:              train/loss ██▇▆▆▄▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁
+wandb: train/peak_memory_bytes ▁▁▁▁▁███████████████████████████████████
+wandb: train/tokens_per_second ▇▅▆▅▄▅▃▆▇▅▃▄▃▂▄▅▅█▇▄▁▅▄▄▃▆▃▇▄▄▃▁▃█▅▆▅▆▄▃
+wandb:                      +1 ...
+wandb: 
+wandb: Run summary:
+wandb:      actual_tokens 299916189
+wandb:          eval/loss 3.38098
+wandb:    eval/perplexity 29.39961
+wandb: eval/target_tokens 2542539
+wandb:          gpu_hours 0.46722
+wandb:  peak_memory_bytes 43922771968
+wandb:             status completed
+wandb:         total_flos 1.5057650560322765e+17
+wandb:        train/epoch 1
+wandb:  train/global_step 2289
+wandb:                +10 ...
+wandb: 
+wandb: 🚀 View run mlp0.7-lr1.8e-3 at: https://wandb.ai/cerulean-labs/lab-training-llama/runs/474d3fbad7f7920b
+wandb: ⭐️ View project at: https://wandb.ai/cerulean-labs/lab-training-llama
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20261016_163309-474d3fbad7f7920b/logs

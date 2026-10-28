@@ -1,0 +1,18 @@
+lab5-yoru-BG-552719: AZ with the block matrices on Sophia instead of Muon (OPTIMIZER=sophia+adamw, Sophia lr 5e-4, wd 0.67; the lower of the two lrs, half the AdamW-equivalent lr as Wen et al. and Semenov et al. found best at larger scale); the embedding and norms keep AZ's AdamW (lr 6.8e-3, embedding wd 0.05, beta2 0.9873); Sophia as the official SophiaG (betas 0.965/0.99, rho 0.04, curvature from the Gauss-Newton-Bartlett estimate every 10 steps: labels sampled from the model itself, loss backpropagated over the whole step's batch and clipped to 1.0, EMA of tokens * grad^2), except the curvature EMA is bias-corrected (only 763 estimates in this run; without it the first ~1,000 steps clip nearly every entry); the matrices' wd keeps tau = 1/(lr * wd * steps) at 0.39; everything else as AZ (131k tokens a step = 16 sequences, 7,632 steps, MICRO_BATCH 2, linear decay over the last 50%, best-fit data from job 538113, 1B non-padding tokens); code: optimizers split into src/adamw.py, src/muon.py, src/sophia.py, combined in src/optimizer.py (OPTIMIZER=muon reproduces the old code exactly on CPU); why: the user wants Sophia tested, both Sophia + AdamW and all-Sophia; this round finds a workable Sophia lr first (1e-3 and 5e-4 span what the official repo and Semenov et al. 2025 used at similar batches, 0.5-1x the AdamW lr), then the next round runs all-Sophia at the better one; expected: 3-8% worse than AZ's 17.26 (about 17.8-18.7): Sophia, like AdamW, treats every entry on its own, and careful comparisons near 1B (Wen et al. 2025; Semenov et al. 2025) find it about even with a tuned AdamW, while Muon-type matrix optimizers win; AdamW alone was 8.3% worse than Muon at the same untuned lr (AF vs AC); watch sophia_win_rate (unclipped share, should sit in 0.1-0.5; near 0 means rho too small) and loss spikes (then lower lr); speed: no Newton-Schulz (about -0.1 s a step) but the curvature pass adds about 13%, so about AZ's 68 min; how it transfers to 6B: only if it beats AZ, which is unlikely; the same lr rule (x0.8) and tau rule would apply; results: diverged, cancelled at step ~1,100 of 7,632 (scancel after 10:04 on 25a-hgpn121); the loss fell to 6.12 by step 450 (AZ: ~5.0 there), then rose after the lr reached its 5e-4 peak: 6.87 at step 1,050, eval ppl 473 at step 382 and 796 at step 764 (AZ: 140, 53); grad norm 0.2 at step 400, then 2.6-17; sophia_win_rate 0.31 early, 0.69-0.74 from step 300; 2.4 it/s; half BF's lr only delayed and softened the divergence
+---
+MODEL_ID = "meta-llama/Llama-3.2-1B"
+OPTIMIZER = "sophia+adamw"  # Sophia for the block matrices, AdamW for the embedding and norms
+LEARNING_RATE = 5e-4  # Sophia
+ADAM_LEARNING_RATE = 6.8e-3  # the AdamW params (embedding, norms)
+ADAM_BETA2 = 0.9873
+WEIGHT_DECAY = 0.67  # Sophia matrices
+EMBED_WEIGHT_DECAY = 0.05  # the tied embedding
+SEQ_LEN = 8192
+GLOBAL_BATCH = 16  # sequences per optimizer step
+MICRO_BATCH = 2  # sequences per GPU per forward pass
+MAX_TOKENS = 1_000_000_000  # non-padding tokens
+DECAY_FRACTION = 0.5  # last 50% of the steps: decay to 0
+DECAY_TYPE = "linear"
+DATA_DIR = "data/bestfit"  # sbatch --export=ALL,MAX_TOKENS=1000000000,OPTIMIZER=sophia+adamw,GLOBAL_BATCH=16,MICRO_BATCH=2,ADAM_BETA2=0.9873,LEARNING_RATE=5e-4,ADAM_LEARNING_RATE=6.8e-3,WEIGHT_DECAY=0.67,EMBED_WEIGHT_DECAY=0.05 script/train.sbatch BG
+
+warmup_steps 0.05, adam beta1 0.9, Sophia betas 0.965/0.99, rho 0.04, curvature every 10 steps, max_grad_norm 1.0, bf16, liger kernel, FA3, NCCL_SOCKET_IFNAME=lo; expected wall time ~68 min

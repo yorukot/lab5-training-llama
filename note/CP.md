@@ -1,0 +1,24 @@
+lab5-yoru-CP-566429: the 6B run (one of the README's 3 runs of up to 64 H200-h; CM did not count, the user said; the last slot waits for the partner's OK, so this is the only 6B now): CQ's recipe (the 1B SOTA: distillation from Llama 3.1 8B's cached top-128, job 564939, all 5,725 shards; EMA-Nesterov 0.6, gamma 0.99, over 15-74% of the steps) with CM's 6B-side settings: KD_ALPHA 0.8 (as CL/CM; 0.9 is better only at 1B), 5.995B non-padding tokens (5M of the data left unseen for an optional temperature fit, K2), ~45,758 steps at 131k tokens (16 sequences, MICRO_BATCH 2); lrs by the same rule as BP/CL/CM (x 6^-0.125 = x0.80 from 1B): Muon 1.5e-3 -> 1.2e-3, AdamW (embedding, norms) 8.5e-3 -> 6.8e-3; wd from tau = 1 / (lr x wd x steps) = 0.25 (Muon 0.0729, embedding 0.0129; CQ/CM used 0.39), chosen by CR's rule set beforehand (CR = CQ with tau 0.25 at 1B, job 566262): CR <= -0.3% vs CQ -> tau 0.2, -0.3% to +0.25% -> tau 0.25, > +0.25% -> tau 0.32; CR gave +0.02% (15.125 vs 15.122), so tau 0.25; KD_UNBIASED_TAIL off (K1 lost in CO, +0.60%); everything else as CQ/CM (1% warmup, linear decay over the last 80%, normuon, NorMuon beta2 0.95, AdamW beta2 0.9873, Muon momentum 0.95, new data from job 552807, seed 42); code: exactly CQ's (sha256 checked at submit); why: the final result is a 6B run; every hypothesis the user wanted tested first is done (CN top-64 -0.78%, CQ top-128 -0.54% more, CO K1 +0.60%, CR tau); expected: 11.35-11.55, most likely ~11.45 in-training, OJ ~11.57 (x1.011): CM's line (11.966 at 4.5B, exponent 0.134 and falling) gives ~11.55 at 6B with top-32 and tau 0.39; top-32 -> 128 gave -1.31% at 1B with alpha 0.9, ~-1.17% at alpha 0.8, kept x0.6-0.8 at 6B: -0.7 to -0.9%; tau: 0 to -1% (the literature review's range; CR tied at 1B and was still gaining at the end); unlike CM's runs, the curve will be well behind CM at the same fraction through the middle (CR vs CQ: up to +5.9% at 40-50%) and catch up only in the decay, so mid-run evals and the 10% checkpoints say little about the final; ~6.75 h (CM's 5:03 x 6/4.5), ~54 H200-h; checkpoints every 10%; results: eval ppl 11.40 (11.396; -4.77% vs CM's 11.966), 6:43:32 on 8 GPUs (25a-hgpn007, 1.90-1.95 it/s), ~53.8 H200-h; the best run so far; inside the expected 11.35-11.55, past the most likely ~11.45; OJ ~11.52 if it keeps CM's x1.011 (not submitted yet); ahead of CM at every eval at the same fraction: -10.5% at 5%, -7.2% at 15%, -5.7% at 20% (EMA-Nesterov's switch-on), then -2.6 to -2.9% from 40% to 70%, and the lead grew through the decay: -3.5% at 80%, -4.2% at 90%, -4.8% at the end; the mid-run gap did not open as CR's did at 1B (+5.9% behind CQ at 40-50%), so at 6B tau 0.25's cost at a high lr is small, and the decay pays it back as at 1B (CP gained 2% on CM from 70% to the end); split, roughly: CM's line alone gives ~11.55 at 6B (-3.5%), so the top-128 cache and tau 0.25 together gave ~-1.3% (top-32 -> 128 was -1.3% at 1B with alpha 0.9); the 4.5B -> 6B step went as tokens^-0.17, against -0.134 for 3B -> 4.5B on the old recipe; the final model is outputs/lab5-yoru-CP-566429/final (model.safetensors sha256 b97b464a...); uploaded to yorukot/lab5-llama at the user's OK, HF commit b99545a (CM stays at 052df51), OJ job c879a030c8b448e29852a7af23b81a75 (slurm 572039): OJ 11.5252 (+1.13% over in-training, CM +1.09%; -4.73% vs CM's OJ 12.0968), p90 document ppl 27.99 (CM 29.66), p99 95.61 (CM 101.29), 49,999 documents
+---
+MODEL_ID = "meta-llama/Llama-3.2-1B"
+OPTIMIZER = "muon"  # "adamw" or "muon"
+MUON_VARIANT = "normuon"
+LEARNING_RATE = 1.2e-3  # Muon
+ADAM_LEARNING_RATE = 6.8e-3  # the AdamW params (embedding, norms)
+ADAM_BETA2 = 0.9873
+WEIGHT_DECAY = 0.0729  # Muon matrices (tau 0.25)
+EMBED_WEIGHT_DECAY = 0.0129  # the tied embedding (tau 0.25)
+SEQ_LEN = 8192
+GLOBAL_BATCH = 16  # sequences per optimizer step
+MICRO_BATCH = 2  # sequences per GPU per forward pass
+MAX_TOKENS = 5_995_000_000  # non-padding tokens
+DECAY_FRACTION = 0.8  # last 80% of the steps: decay to 0
+DECAY_TYPE = "linear"
+WARMUP_FRACTION = 0.01
+KD_ALPHA = 0.8  # the teacher's share of the target
+TOP_K = 128  # src/distill.py; CACHE_DIR .../distillation/llama31-8b-top128 (job 564939)
+EMA_NESTEROV = 0.6  # largest lookahead beta; window 15-74% of the steps
+EMA_NESTEROV_GAMMA = 0.99  # default
+DATA_DIR = "/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit"  # sbatch --export=ALL,DATA_DIR=/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit,MAX_TOKENS=5995000000,MUON_VARIANT=normuon,GLOBAL_BATCH=16,MICRO_BATCH=2,ADAM_BETA2=0.9873,LEARNING_RATE=1.2e-3,ADAM_LEARNING_RATE=6.8e-3,WEIGHT_DECAY=0.0729,EMBED_WEIGHT_DECAY=0.0129,DECAY_FRACTION=0.8,WARMUP_FRACTION=0.01,KD_ALPHA=0.8,EMA_NESTEROV=0.6 script/train.sbatch CP
+
+warmup_steps 0.01, adam beta1 0.9, KD_ALPHA 0.8, Muon momentum 0.95, max_grad_norm 1.0, bf16, liger kernel, FA3, NCCL_SOCKET_IFNAME=lo; expected wall time ~6.75 h, ~54 H200-h

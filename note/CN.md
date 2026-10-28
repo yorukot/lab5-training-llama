@@ -1,0 +1,24 @@
+lab5-yoru-CN-564433: CJ with the teacher's top-64 instead of its top-32 (a new cache from job 564202: Llama 3.1 8B in bf16, the same rows, order and format, only TOP_K = 64 in src/distillation/generate_logits.py and src/distill.py); everything else as CJ (KD_ALPHA 0.9, EMA-Nesterov 0.6 with gamma 0.99 over 15-74% of the steps, Muon lr 1.5e-3 wd 0.224, AdamW lr 8.5e-3 for the embedding and norms, embedding wd 0.04, every group's tau 0.39, 1% warmup, new data from job 552807, normuon, 131k tokens a step = 16 sequences, ~7,632 steps, MICRO_BATCH 2, AdamW beta2 0.9873, Muon momentum 0.95, linear decay over the last 80%, 1B non-padding tokens, seed 42), so the comparison with CJ (15.324) is clean; it starts once the cache holds the first ~1.05B tokens (the first 1,000 shards) while job 564202 keeps writing the rest; Teacher lists the shards at start, and a missing row would raise a KeyError; why: the user chose to regenerate the teacher's predictions at top-64; with top-32, the teacher's mass beyond its top 32 goes to the actual next token, so the student learns the teacher's distribution only where it is peaked; measured on the first 8 shards of the new cache (8.4M positions): the top 64 hold 94.7% of the teacher's mass on average (top-32 92.2%), so 2.5% of the mass moves from the label to the teacher's ranks 33-64, and the label is in the top 64 94.5% of the time (top-32 91.9%); the moved mass sits where the teacher is unsure (12% of the positions have under 80% in the top 32), where soft targets carry the most; the cache costs nothing in the budget (teacher inference does not count) but ~8 h of 8 GPUs and 2.33 TB; the top-32 cache is kept; expected: 15.22-15.33 (0 to -0.7% vs CJ), most likely ~15.27 (-0.35%); a lead largest early that shrinks, like distillation's own (CE vs BU: -13.3% at 5%, -8.7% at the end), with EMA-Nesterov's switch-on jump at 20% about as in CJ; ~75 min; how it transfers to 6B: if CN beats CJ, the 6B run uses top-64 (the full cache is due ~11:00 on 10-18), otherwise it stays on top-32; distillation's gain shrank from 10.0% at 1B (CJ vs BU) to 8.0% at 3B (CL vs BY), x0.8 per 3x tokens; if this part shrinks alike, -0.35% at 1B is ~-0.25% at 6B (11.55 -> ~11.52 in-training); it may shrink faster: CI showed that the teacher's distribution matters most early, and at 6B the student is closer to the teacher; results: eval ppl 15.20 (15.204; -0.78% vs CJ's 15.324), 1:12:40 on 8 GPUs (25a-hgpn084), the same wall time as CJ (1:13:07) with a cache twice the size; best 1B run; past the expected 0 to -0.7% (most likely -0.35%); ahead at every eval: -1.6% at 5%, -1.2% at 10-15%, -0.5% at 20% (EMA-Nesterov's switch-on jump hit CN a little harder), -1.0% at 40%, then steady at -0.76 to -0.85% from 50% to the end (-0.78%); unlike distillation's own gain (CE vs BU: -13.3% at 5% down to -8.7% at the end), this lead did not shrink in the decay, so the teacher's ranks 33-64 keep helping late, when the student is closer to the teacher; 2.5% more of the teacher's mass gave -0.78%; for 6B: the 6B run uses top-64; if the lead shrinks with tokens like distillation's (x0.8 per 3x tokens) it is ~-0.55% at 6B, and since it held through the decay it may keep more: 6B ~11.5 in-training (11.55 x 0.9945 = 11.49), OJ ~11.6; top-128 would add ~1.7% more of the mass (the tail shrinks x0.69 per doubling of k), so about -0.5% at 1B if the gain follows the mass
+---
+MODEL_ID = "meta-llama/Llama-3.2-1B"
+OPTIMIZER = "muon"  # "adamw" or "muon"
+MUON_VARIANT = "normuon"
+LEARNING_RATE = 1.5e-3  # Muon
+ADAM_LEARNING_RATE = 8.5e-3  # the AdamW params (embedding, norms)
+ADAM_BETA2 = 0.9873
+WEIGHT_DECAY = 0.224  # Muon matrices
+EMBED_WEIGHT_DECAY = 0.04  # the tied embedding
+SEQ_LEN = 8192
+GLOBAL_BATCH = 16  # sequences per optimizer step
+MICRO_BATCH = 2  # sequences per GPU per forward pass
+MAX_TOKENS = 1_000_000_000  # non-padding tokens
+DECAY_FRACTION = 0.8  # last 80% of the steps: decay to 0
+DECAY_TYPE = "linear"
+WARMUP_FRACTION = 0.01
+KD_ALPHA = 0.9  # the teacher's share of the target
+TOP_K = 64  # src/distill.py; CACHE_DIR .../distillation/llama31-8b-top64 (job 564202)
+EMA_NESTEROV = 0.6  # largest lookahead beta; window 15-74% of the steps
+EMA_NESTEROV_GAMMA = 0.99  # default
+DATA_DIR = "/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit"  # sbatch --export=ALL,DATA_DIR=/work/u9603854/lab5-training-llama/prepare-66ea6ae/data/bestfit,MAX_TOKENS=1000000000,MUON_VARIANT=normuon,GLOBAL_BATCH=16,MICRO_BATCH=2,ADAM_BETA2=0.9873,LEARNING_RATE=1.5e-3,ADAM_LEARNING_RATE=8.5e-3,WEIGHT_DECAY=0.224,EMBED_WEIGHT_DECAY=0.04,DECAY_FRACTION=0.8,WARMUP_FRACTION=0.01,KD_ALPHA=0.9,EMA_NESTEROV=0.6 script/train.sbatch CN
+
+warmup_steps 0.01, adam beta1 0.9, KD_ALPHA 0.9, Muon momentum 0.95, max_grad_norm 1.0, bf16, liger kernel, FA3, NCCL_SOCKET_IFNAME=lo; expected wall time ~75 min

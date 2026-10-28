@@ -1,0 +1,35 @@
+== with lo
+rank 0 on 25a-hgpn163: all_reduce = 3.0 (NCCL_SOCKET_IFNAME=lo)
+rank 1 on 25a-hgpn163: all_reduce = 3.0 (NCCL_SOCKET_IFNAME=lo)
+exit 0
+== default
+== interfaces
+lo               UNKNOWN        127.0.0.1/8 
+eno1             UP             172.16.100.163/22 
+eno2             DOWN           
+enp39s0f0np0     UP             
+enp39s0f1np1     UP             
+usb0             UNKNOWN        fe80::3e92:ae49:f2e9:2a72/64 
+ibp25s0          UP             10.210.105.27/16 
+ibp59s0          UP             10.210.105.28/16 
+ibp76s0          UP             10.210.105.29/16 
+ibp93s0          UP             10.210.105.30/16 
+ibp155s0         UP             10.210.105.31/16 
+ibp187s0         UP             10.210.105.32/16 
+ibp203s0         UP             10.210.105.33/16 
+ibp219s0         UP             10.210.105.34/16 
+bond0            UP             
+vlan1721@bond0   UP             172.21.100.163/22 
+bond0.1031@bond0 UP             10.31.100.163/16 
+cilium_net@cilium_host UP             
+cilium_host@cilium_net UP             10.244.43.84/32 
+lxc5a5bb0cb4550@if20 UP             
+cilium_vxlan     UNKNOWN        
+lxc63122c6a5cb0@if25 UP             
+lxcf33867e523e4@if27 UP             
+lxc8605f8fff59d@if29 UP             
+lxc0be54a085ab1@if31 UP             
+lxc1f630c7ee2de@if33 UP             
+lxc_health@if35  UP             
+lxc4c161191d17e@if37 UP             
+lxc420cfcea0eda@if203 UP             

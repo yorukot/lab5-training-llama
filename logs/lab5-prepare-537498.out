@@ -1,0 +1,4 @@
+Checked 97 packages in 80ms
+total docs: 104,020,922
+train docs: 6,206,750 of 7,000,000 (782,831 duplicates, 10,419 held-out copies)
+tokenize and pack train (num_proc=64):   0%|          | 0/6206750 [00:00<?, ? examples/s][2026-10-14T01:21:48.620] error: *** JOB 537498 ON 25a-hgpn026 CANCELLED AT 2026-10-14T01:21:48 DUE to SIGNAL Terminated ***

@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "study": "gpt2-research-20261016-v1",
+  "status": "development_before_locked_confirmation",
+  "benchmark": "modded-nanogpt-track-3-fixed-architecture",
+  "upstream_commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+  "reference_result": 36,
+  "reference_reported_mean_nll": 3.2787,
+  "reference_target_nll": 3.28,
+  "model": {
+    "description": "GPT-2-derived fixed optimizer benchmark, not original GPT-2",
+    "parameters": 162354816,
+    "layers": 12,
+    "width": 768,
+    "vocab_size": 50304,
+    "sequence_length": 1024,
+    "tied_embedding": false
+  },
+  "training": {
+    "steps": 3250,
+    "tokens_per_step": 524288,
+    "total_training_tokens": 1703936000,
+    "validation_tokens": 10485760,
+    "microbatch_sequences_per_gpu": 64,
+    "cooldown_fraction": 0.7,
+    "warmup_steps": 0,
+    "gradient_reduction": "sum, as in upstream; any internal mean conversion must be explicit",
+    "matrix_optimizer": {"name": "Muon", "lr": 0.025, "weight_decay": 0.05, "momentum": 0.95, "newton_schulz_steps": 12},
+    "aux_optimizer": {"name": "AdamW", "embedding_lr": 0.7, "head_lr": 0.004, "scalar_lr": 0.015, "weight_decay": 0.001, "betas": [0.8, 0.95], "eps": 1e-10}
+  },
+  "data": {
+    "repository": "kjj0/fineweb10B-gpt2",
+    "tokenizer": "gpt2",
+    "training_shards": 20,
+    "revision_policy": "reuse the verified pinned reference data manifest and shard hashes",
+    "validation_policy": "development slice only until candidate and comparator are locked"
+  },
+  "evaluation": {
+    "quality_target_absolute_ppl_reduction": 0.5,
+    "quality_target_direction": "baseline PPL minus candidate PPL",
+    "quality_comparison": "fixed training tokens; end-to-end GPU-hours and memory are secondary diagnostics",
+    "offset_convention": "zero-based offset into shifted next-token target stream: inputs shard[offset:offset+count], targets shard[offset+1:offset+count+1]",
+    "development": {"token_offset": 0, "token_count": 10485760},
+    "confirmation": {
+      "token_offset": 80000000,
+      "token_count": 10485760,
+      "seeds": [101, 202, 303, 404, 505],
+      "minimum_mean_ppl_gain": 0.5,
+      "interval": "two-sided 95% paired Student t interval over five training seeds",
+      "student_t_critical_df4": 2.7764451051977987,
+      "pass": "mean gain >=0.5 and lower confidence bound >0, with all five pairs complete",
+      "claim_true_gain_at_least_half_point": "requires lower confidence bound >0.5",
+      "usage": "final checkpoint evaluation only after a frozen comparison manifest; never select candidates on this slice"
+    },
+    "also_report": ["individual seed NLL and PPL", "training-only time", "runner GPU-hours", "Slurm allocation GPU-hours including failures", "peak allocated GPU memory", "compiler cache condition", "tuning GPU-hours"],
+    "claim_limits": ["five-seed t interval has distributional assumptions and limited power", "same-corpus reserved slice is not an independent corpus", "a known method or reimplementation is not a new mathematical invention", "no speed criterion was approved"]
+  },
+  "budget": {
+    "unit": "allocated H200 GPU-hours",
+    "total_gpu_hours": 64,
+    "stages": {"infrastructure": 4, "screening": 28, "development": 8, "confirmation": 20, "recovery": 4},
+    "reservation": "reserve requested GPU count times Slurm wall limit before submission; reconcile terminal Slurm allocation seconds including failed jobs",
+    "confirmation_policy": "protect confirmation budget; measured five-pair costs must fit confirmation plus unused recovery before promotion",
+    "prior_runs": "historical runs are separately disclosed and not charged again to this new 64-hour authorization",
+    "llama_transfer": "deferred; produce a costed protocol after GPT-2 confirmation, without launching Llama jobs"
+  },
+  "development": {
+    "seeds": [42, 43],
+    "screen_steps": 1000,
+    "full_steps": 3250,
+    "max_new_hypotheses": 3,
+    "comparison_controls": "fixed auxiliary AdamW, architecture, global batch, tokenization, data order, precision, and 70% cooldown",
+    "search_policy": "declare configs and balanced method-family caps before new results; expand boundary LR optima before claims; short schedules are screening only",
+    "tcd_policy": "retain prior failures and controls; do not repeat completed screen or restart retired 150M campaigns"
+  },
+  "wandb_project": "lab-training-llama"
+}

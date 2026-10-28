@@ -1,0 +1,21 @@
+[90mHint: A new version of huggingface_hub (2.2.0) is available! You are using version 1.33.0.[0m
+[90mHint: The `hf-cli` skill is not installed. Run `hf skills add -g` to teach your AI agents how to use the `hf` CLI.[0m
+Found 6 files to upload
+Uploading... 6/6 files checked, 0/0 uploaded (0.00B transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (85.5MB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (208MB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (392MB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (1.50GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (3.40GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 1/3 uploaded (4.20GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.61GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.71GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.81GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.89GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.89GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.89GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.90GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.90GB transferred), 0 committed in 0 commit(s)
+Uploading... 6/6 files checked, 2/3 uploaded (4.92GB transferred), 0 committed in 0 commit(s)
+[32m✓ Uploaded[0m
+  url: https://huggingface.co/yorukot/lab5-llama/commit/f7d8302ab04fd36e41ef43c29be64db11e86bec0

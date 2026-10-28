@@ -1,0 +1,1 @@
+{"method": "normuon", "matrix_lr": 0.0036, "embed_lr": 0.0068, "probe": true, "run_id": "base-lr3.6e-3", "phase": "screen"}

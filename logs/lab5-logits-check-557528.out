@@ -1,0 +1,42 @@
+Caching 122 rows / 999,423 tokens with 1 GPU(s)
+Output: /work/u9603854/lab5-training-llama/data/distillation/llama31-8b-top32 (~0.2 GB)
+Cache shards (GPU 0):   0%|          | 0/1 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 1/291 [00:00<01:15,  3.85it/s][A
+Loading weights:   1%|          | 2/291 [00:00<01:18,  3.69it/s][A
+Loading weights:   3%|▎         | 10/291 [00:00<00:13, 21.15it/s][A
+Loading weights:   6%|▌         | 18/291 [00:00<00:07, 34.76it/s][A
+Loading weights:  10%|▉         | 28/291 [00:00<00:05, 50.53it/s][A
+Loading weights:  13%|█▎        | 37/291 [00:00<00:04, 60.45it/s][A
+Loading weights:  16%|█▌        | 46/291 [00:01<00:03, 65.67it/s][A
+Loading weights:  19%|█▉        | 55/291 [00:01<00:03, 70.69it/s][A
+Loading weights:  22%|██▏       | 63/291 [00:01<00:03, 69.55it/s][A
+Loading weights:  24%|██▍       | 71/291 [00:01<00:03, 67.77it/s][A
+Loading weights:  27%|██▋       | 79/291 [00:01<00:03, 68.59it/s][A
+Loading weights:  30%|██▉       | 87/291 [00:01<00:03, 66.51it/s][A
+Loading weights:  33%|███▎      | 96/291 [00:01<00:02, 68.48it/s][A
+Loading weights:  36%|███▌      | 105/291 [00:01<00:02, 70.84it/s][A
+Loading weights:  39%|███▉      | 114/291 [00:02<00:02, 73.48it/s][A
+Loading weights:  42%|████▏     | 123/291 [00:02<00:02, 75.86it/s][A
+Loading weights:  47%|████▋     | 136/291 [00:02<00:01, 88.38it/s][A
+Loading weights:  50%|████▉     | 145/291 [00:02<00:01, 87.10it/s][A
+Loading weights:  53%|█████▎    | 154/291 [00:02<00:01, 81.93it/s][A
+Loading weights:  56%|█████▌    | 163/291 [00:02<00:01, 80.63it/s][A
+Loading weights:  59%|█████▉    | 172/291 [00:02<00:01, 79.36it/s][A
+Loading weights:  62%|██████▏   | 180/291 [00:02<00:01, 79.32it/s][A
+Loading weights:  65%|██████▍   | 189/291 [00:02<00:01, 81.41it/s][A
+Loading weights:  68%|██████▊   | 198/291 [00:03<00:01, 79.67it/s][A
+Loading weights:  71%|███████   | 206/291 [00:03<00:01, 77.35it/s][A
+Loading weights:  74%|███████▎  | 214/291 [00:03<00:00, 77.94it/s][A
+Loading weights:  76%|███████▋  | 222/291 [00:03<00:00, 76.64it/s][A
+Loading weights:  79%|███████▉  | 231/291 [00:03<00:00, 79.59it/s][A
+Loading weights:  82%|████████▏ | 240/291 [00:03<00:00, 79.98it/s][A
+Loading weights:  86%|████████▌ | 249/291 [00:03<00:00, 77.32it/s][A
+Loading weights:  88%|████████▊ | 257/291 [00:03<00:00, 77.95it/s][A
+Loading weights:  92%|█████████▏| 267/291 [00:03<00:00, 81.05it/s][A
+Loading weights:  95%|█████████▍| 276/291 [00:04<00:00, 79.04it/s][A
+Loading weights:  99%|█████████▉| 288/291 [00:04<00:00, 88.69it/s][ALoading weights: 100%|██████████| 291/291 [00:04<00:00, 70.14it/s]
+Cache shards (GPU 0): 100%|██████████| 1/1 [00:41<00:00, 41.89s/it]Cache shards (GPU 0): 100%|██████████| 1/1 [00:41<00:00, 41.89s/it]
+GPU 0: finished
+shard verified: shard-0000000.pt 999423 tokens; mean Top-32 mass: 0.9075106382369995
+SMOKE_OK rows= 122 tokens= 999423 seconds= 56.5 peak_GPU_GB= 20.0

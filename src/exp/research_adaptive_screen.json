@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "kind": "development_amendment_before_adaptive_lm_results",
+  "parent_registration": "research_screen.json",
+  "objective": "Lower held-out PPL at identical training tokens; no confirmation claim from this screen.",
+  "steps": 1000,
+  "seed": 42,
+  "matrix_decay": 0.05,
+  "initial_cases": [
+    {"method": "muon", "matrix_lr": 0.025, "optimizer_kwargs": {}},
+    {"method": "shampoo", "matrix_lr": 0.003, "optimizer_kwargs": {}},
+    {"method": "shampoo_shrink", "matrix_lr": 0.003, "optimizer_kwargs": {"shrinkage": 0.1}},
+    {"method": "shampoo_adaptive", "matrix_lr": 0.003, "optimizer_kwargs": {"alpha_max": 0.1}}
+  ],
+  "followup_learning_rates": {
+    "muon": [0.0125, 0.05],
+    "shampoo": [0.001, 0.009],
+    "shampoo_shrink": [0.001, 0.009],
+    "shampoo_adaptive": [0.001, 0.009]
+  },
+  "adaptive_rule": "Trace-free Gram observations; bias-corrected EMA weighted Welford scatter V, squared normalized weights q; alpha=clip(q*V/((1-q)*norm(tracefree(mean))^2),0,0.1). First observation and beta2=0 use alpha=0. Stored Gram factors are not shrunk. Same root refresh, ridge, momentum, Adam graft and decay as parent.",
+  "gate": "Run CPU numerical/probe checks, then GPU distributed correctness/profile and two-step model smoke before adaptive LM training. Compare initial cases before expanding the LR grid. Failures, unfavorable results and boundary optima remain in the record.",
+  "budgets": {
+    "unchanged_total_gpu_hours": 64,
+    "unchanged_screening_gpu_hours": 28,
+    "muon_family_cap": 5.6,
+    "shampoo_family_cap": 5.6,
+    "fixed_and_adaptive_shrinkage_shared_family_cap": 5.6,
+    "matrix_adamw_family_cap": 5.6,
+    "soft_polar_family_cap": 5.6
+  },
+  "promotion": "A favorable initial run permits LR expansion; it does not establish improvement. Before promotion require a bracketed LR neighborhood, a second development seed and full 3250-step comparison against a tuned baseline. Keep confirmation seeds and reserved validation slice unopened.",
+  "interpretation": "The estimator is justified only for stationary independent factor observations. Training drift and temporal correlation violate those assumptions. Lower factor Frobenius error is not a guarantee of better inverse-root directions or PPL. Cap=1 is a synthetic diagnostic only, not an implicitly selected LM variant."
+}

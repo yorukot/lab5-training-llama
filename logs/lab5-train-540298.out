@@ -1,0 +1,1270 @@
+Run name: lab5-yoru-AP-540298
+Checked 97 packages in 97ms
+W1014 12:33:21.822000 3101213 torch/distributed/run.py:982] 
+W1014 12:33:21.822000 3101213 torch/distributed/run.py:982] *****************************************
+W1014 12:33:21.822000 3101213 torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1014 12:33:21.822000 3101213 torch/distributed/run.py:982] *****************************************
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/u9603854/.netrc.
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+wandb: Currently logged in as: yorukot (cerulean-labs) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run ab8l4a21
+wandb: Tracking run with wandb version 0.30.0
+wandb: Run data is saved locally in /home/u9603854/lab5-training-llama/wandb/run-20261014_123413-ab8l4a21
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lab5-yoru-AP-540298
+wandb: ⭐️ View project at https://wandb.ai/cerulean-labs/lab5-training-llama
+wandb: 🚀 View run at https://wandb.ai/cerulean-labs/lab5-training-llama/runs/ab8l4a21
+  0%|          | 0/954 [00:00<?, ?it/s]/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._cutedsl.rope' for op 'rope' could not be imported: ImportError: cutedsl backend requires the NVIDIA CUTLASS Python DSL (CuTe DSL). Install it with `pip install nvidia-cutlass-dsl`, or when installing Liger-Kernel use `pip install 'liger-kernel[cutedsl]'`.
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+Backend impl 'liger_kernel.ops.backends._ascend.rope' for op 'rope' could not be imported: ImportError: cannot import name 'tanh' from 'triton.language.math' (/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/triton/language/math.py)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+  0%|          | 1/954 [00:02<41:43,  2.63s/it]  0%|          | 2/954 [00:03<29:26,  1.86s/it]  0%|          | 3/954 [00:05<25:16,  1.59s/it]  0%|          | 4/954 [00:06<23:17,  1.47s/it]  1%|          | 5/954 [00:07<22:17,  1.41s/it]  1%|          | 6/954 [00:09<21:45,  1.38s/it]  1%|          | 7/954 [00:10<21:15,  1.35s/it]  1%|          | 8/954 [00:11<20:58,  1.33s/it]  1%|          | 9/954 [00:12<20:47,  1.32s/it]  1%|          | 10/954 [00:14<20:42,  1.32s/it]                                                {'loss': '11.77', 'grad_norm': '4.652', 'learning_rate': '0.000225', 'tokens_per_second': '4.021e+05', 'total_tokens_seen': 5242227, 'epoch': '0.0006704', 'num_input_tokens_seen': 5242227, 'train_runtime': '15.81', 'train_tokens_per_second': '3.316e+05'}
+  1%|          | 10/954 [00:14<20:42,  1.32s/it]  1%|          | 11/954 [00:15<20:40,  1.32s/it]  1%|▏         | 12/954 [00:16<20:26,  1.30s/it]  1%|▏         | 13/954 [00:18<20:18,  1.29s/it]  1%|▏         | 14/954 [00:19<20:17,  1.30s/it]  2%|▏         | 15/954 [00:20<20:14,  1.29s/it]  2%|▏         | 16/954 [00:22<20:11,  1.29s/it]  2%|▏         | 17/954 [00:23<20:07,  1.29s/it]  2%|▏         | 18/954 [00:24<20:12,  1.30s/it]  2%|▏         | 19/954 [00:25<20:21,  1.31s/it]  2%|▏         | 20/954 [00:27<20:16,  1.30s/it]                                                {'loss': '8.95', 'grad_norm': '1.414', 'learning_rate': '0.000475', 'tokens_per_second': '4.079e+05', 'total_tokens_seen': 10484347, 'epoch': '0.001341', 'num_input_tokens_seen': 10484347, 'train_runtime': '28.76', 'train_tokens_per_second': '3.646e+05'}
+  2%|▏         | 20/954 [00:27<20:16,  1.30s/it]  2%|▏         | 21/954 [00:28<20:15,  1.30s/it]  2%|▏         | 22/954 [00:29<20:16,  1.30s/it]  2%|▏         | 23/954 [00:31<20:10,  1.30s/it]  3%|▎         | 24/954 [00:32<20:07,  1.30s/it]  3%|▎         | 25/954 [00:33<20:11,  1.30s/it]  3%|▎         | 26/954 [00:35<20:05,  1.30s/it]  3%|▎         | 27/954 [00:36<20:08,  1.30s/it]  3%|▎         | 28/954 [00:37<20:04,  1.30s/it]  3%|▎         | 29/954 [00:38<20:02,  1.30s/it]  3%|▎         | 30/954 [00:40<19:57,  1.30s/it]                                                {'loss': '7.907', 'grad_norm': '4.492', 'learning_rate': '0.000725', 'tokens_per_second': '4.081e+05', 'total_tokens_seen': 15725178, 'epoch': '0.002011', 'num_input_tokens_seen': 15725178, 'train_runtime': '41.75', 'train_tokens_per_second': '3.766e+05'}
+  3%|▎         | 30/954 [00:40<19:57,  1.30s/it]  3%|▎         | 31/954 [00:41<19:56,  1.30s/it]  3%|▎         | 32/954 [00:42<19:54,  1.30s/it]  3%|▎         | 33/954 [00:44<19:55,  1.30s/it]  4%|▎         | 34/954 [00:45<19:50,  1.29s/it]  4%|▎         | 35/954 [00:46<19:55,  1.30s/it]  4%|▍         | 36/954 [00:48<19:46,  1.29s/it]  4%|▍         | 37/954 [00:49<19:45,  1.29s/it]  4%|▍         | 38/954 [00:50<19:52,  1.30s/it]  4%|▍         | 39/954 [00:51<19:50,  1.30s/it]  4%|▍         | 40/954 [00:53<19:46,  1.30s/it]                                                {'loss': '7.414', 'grad_norm': '1.919', 'learning_rate': '0.000975', 'tokens_per_second': '4.069e+05', 'total_tokens_seen': 20967599, 'epoch': '0.002682', 'num_input_tokens_seen': 20967599, 'train_runtime': '54.72', 'train_tokens_per_second': '3.831e+05'}
+  4%|▍         | 40/954 [00:53<19:46,  1.30s/it]  4%|▍         | 41/954 [00:54<19:50,  1.30s/it]  4%|▍         | 42/954 [00:55<19:49,  1.30s/it]  5%|▍         | 43/954 [00:57<19:53,  1.31s/it]  5%|▍         | 44/954 [00:58<19:47,  1.30s/it]  5%|▍         | 45/954 [00:59<19:45,  1.30s/it]  5%|▍         | 46/954 [01:01<19:51,  1.31s/it]  5%|▍         | 47/954 [01:02<19:49,  1.31s/it]  5%|▌         | 48/954 [01:03<19:42,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.50it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.41it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.73it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.44it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.31it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.23it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.17it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.08it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.09it/s][A
+ 25%|██▌       | 12/48 [00:02<00:06,  5.15it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.22it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.26it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.22it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.20it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.24it/s][A
+ 38%|███▊      | 18/48 [00:03<00:07,  4.13it/s][A
+ 40%|███▉      | 19/48 [00:03<00:06,  4.44it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  4.71it/s][A
+ 44%|████▍     | 21/48 [00:04<00:05,  4.94it/s][A
+ 46%|████▌     | 22/48 [00:04<00:05,  5.11it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.05it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.18it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.27it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.41it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.50it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.44it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.47it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.53it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.61it/s][A
+ 67%|██████▋   | 32/48 [00:06<00:02,  5.66it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.61it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.58it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.60it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.66it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.70it/s][A
+ 79%|███████▉  | 38/48 [00:07<00:01,  5.70it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.68it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.64it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.71it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.77it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.77it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.70it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.28it/s][A                                                
+                                               [A{'eval_loss': '6.765', 'eval_runtime': '9.246', 'eval_samples_per_second': '167', 'eval_steps_per_second': '5.3', 'eval_perplexity': '867.1', 'epoch': '0.003218', 'num_input_tokens_seen': 25161453}
+  5%|▌         | 48/954 [01:12<19:42,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.28it/s][A
+                                               [A  5%|▌         | 49/954 [01:14<1:01:28,  4.08s/it]  5%|▌         | 50/954 [01:15<48:45,  3.24s/it]                                                  {'loss': '6.902', 'grad_norm': '2.057', 'learning_rate': '0.0012', 'tokens_per_second': '4.117e+05', 'total_tokens_seen': 26209906, 'epoch': '0.003352', 'num_input_tokens_seen': 26209906, 'train_runtime': '77.02', 'train_tokens_per_second': '3.403e+05'}
+  5%|▌         | 50/954 [01:15<48:45,  3.24s/it]  5%|▌         | 51/954 [01:16<39:59,  2.66s/it]  5%|▌         | 52/954 [01:18<33:46,  2.25s/it]  6%|▌         | 53/954 [01:19<29:25,  1.96s/it]  6%|▌         | 54/954 [01:20<26:19,  1.76s/it]  6%|▌         | 55/954 [01:21<24:12,  1.62s/it]  6%|▌         | 56/954 [01:23<22:49,  1.53s/it]  6%|▌         | 57/954 [01:24<21:51,  1.46s/it]  6%|▌         | 58/954 [01:25<21:07,  1.41s/it]  6%|▌         | 59/954 [01:27<20:32,  1.38s/it]  6%|▋         | 60/954 [01:28<20:14,  1.36s/it]                                                {'loss': '6.54', 'grad_norm': '1.368', 'learning_rate': '0.0012', 'tokens_per_second': '3.989e+05', 'total_tokens_seen': 31452427, 'epoch': '0.004023', 'num_input_tokens_seen': 31452427, 'train_runtime': '90.01', 'train_tokens_per_second': '3.494e+05'}
+  6%|▋         | 60/954 [01:28<20:14,  1.36s/it]  6%|▋         | 61/954 [01:29<20:09,  1.35s/it]  6%|▋         | 62/954 [01:31<19:51,  1.34s/it]  7%|▋         | 63/954 [01:32<19:47,  1.33s/it]  7%|▋         | 64/954 [01:33<19:37,  1.32s/it]  7%|▋         | 65/954 [01:35<19:36,  1.32s/it]  7%|▋         | 66/954 [01:36<19:40,  1.33s/it]  7%|▋         | 67/954 [01:37<19:28,  1.32s/it]  7%|▋         | 68/954 [01:39<19:23,  1.31s/it]  7%|▋         | 69/954 [01:40<19:14,  1.30s/it]  7%|▋         | 70/954 [01:41<19:14,  1.31s/it]                                                {'loss': '6.35', 'grad_norm': '1.124', 'learning_rate': '0.0012', 'tokens_per_second': '4.014e+05', 'total_tokens_seen': 36694990, 'epoch': '0.004693', 'num_input_tokens_seen': 36694990, 'train_runtime': '103.1', 'train_tokens_per_second': '3.558e+05'}
+  7%|▋         | 70/954 [01:41<19:14,  1.31s/it]  7%|▋         | 71/954 [01:42<19:09,  1.30s/it]  8%|▊         | 72/954 [01:44<19:08,  1.30s/it]  8%|▊         | 73/954 [01:45<19:04,  1.30s/it]  8%|▊         | 74/954 [01:46<19:09,  1.31s/it]  8%|▊         | 75/954 [01:48<19:09,  1.31s/it]  8%|▊         | 76/954 [01:49<19:04,  1.30s/it]  8%|▊         | 77/954 [01:50<19:04,  1.30s/it]  8%|▊         | 78/954 [01:52<19:10,  1.31s/it]  8%|▊         | 79/954 [01:53<19:06,  1.31s/it]  8%|▊         | 80/954 [01:54<19:09,  1.31s/it]                                                {'loss': '6.179', 'grad_norm': '0.9491', 'learning_rate': '0.0012', 'tokens_per_second': '3.97e+05', 'total_tokens_seen': 41937222, 'epoch': '0.005363', 'num_input_tokens_seen': 41937222, 'train_runtime': '116.2', 'train_tokens_per_second': '3.609e+05'}
+  8%|▊         | 80/954 [01:54<19:09,  1.31s/it]  8%|▊         | 81/954 [01:56<19:06,  1.31s/it]  9%|▊         | 82/954 [01:57<19:03,  1.31s/it]  9%|▊         | 83/954 [01:58<18:53,  1.30s/it]  9%|▉         | 84/954 [01:59<18:47,  1.30s/it]  9%|▉         | 85/954 [02:01<18:51,  1.30s/it]  9%|▉         | 86/954 [02:02<18:55,  1.31s/it]  9%|▉         | 87/954 [02:03<18:50,  1.30s/it]  9%|▉         | 88/954 [02:05<18:45,  1.30s/it]  9%|▉         | 89/954 [02:06<18:42,  1.30s/it]  9%|▉         | 90/954 [02:07<18:39,  1.30s/it]                                                {'loss': '6.022', 'grad_norm': '0.7492', 'learning_rate': '0.0012', 'tokens_per_second': '4.071e+05', 'total_tokens_seen': 47179649, 'epoch': '0.006034', 'num_input_tokens_seen': 47179649, 'train_runtime': '129.2', 'train_tokens_per_second': '3.652e+05'}
+  9%|▉         | 90/954 [02:07<18:39,  1.30s/it] 10%|▉         | 91/954 [02:09<18:43,  1.30s/it] 10%|▉         | 92/954 [02:10<18:43,  1.30s/it] 10%|▉         | 93/954 [02:11<18:48,  1.31s/it] 10%|▉         | 94/954 [02:12<18:39,  1.30s/it] 10%|▉         | 95/954 [02:14<18:30,  1.29s/it] 10%|█         | 96/954 [02:15<18:34,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.11it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.31it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.66it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.25it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.17it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.14it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.05it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.06it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.14it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.24it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.15it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.16it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.21it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.25it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.29it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.31it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.39it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.46it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.51it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.54it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.55it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.55it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.63it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.66it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.65it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.66it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.68it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.68it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.75it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.73it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.28it/s][A                                                
+                                               [A{'eval_loss': '5.852', 'eval_runtime': '9.098', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.386', 'eval_perplexity': '348', 'epoch': '0.006436', 'num_input_tokens_seen': 50325095}
+ 10%|█         | 96/954 [02:24<18:34,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.28it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:03<00:00,  3.94s/it][AWriting model shards: 100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 10%|█         | 97/954 [02:34<1:35:33,  6.69s/it] 10%|█         | 98/954 [02:36<1:12:34,  5.09s/it] 10%|█         | 99/954 [02:37<56:18,  3.95s/it]   10%|█         | 100/954 [02:38<44:52,  3.15s/it]                                                 {'loss': '5.87', 'grad_norm': '0.6024', 'learning_rate': '0.0012', 'tokens_per_second': '4.083e+05', 'total_tokens_seen': 52422026, 'epoch': '0.006704', 'num_input_tokens_seen': 52422026, 'train_runtime': '160.2', 'train_tokens_per_second': '3.272e+05'}
+ 10%|█         | 100/954 [02:38<44:52,  3.15s/it] 11%|█         | 101/954 [02:40<36:53,  2.60s/it] 11%|█         | 102/954 [02:41<31:21,  2.21s/it] 11%|█         | 103/954 [02:42<27:39,  1.95s/it] 11%|█         | 104/954 [02:43<24:58,  1.76s/it] 11%|█         | 105/954 [02:45<23:05,  1.63s/it] 11%|█         | 106/954 [02:46<21:39,  1.53s/it] 11%|█         | 107/954 [02:47<20:47,  1.47s/it] 11%|█▏        | 108/954 [02:49<19:57,  1.42s/it] 11%|█▏        | 109/954 [02:50<19:28,  1.38s/it] 12%|█▏        | 110/954 [02:51<19:00,  1.35s/it]                                                 {'loss': '5.763', 'grad_norm': '0.6703', 'learning_rate': '0.0012', 'tokens_per_second': '4.111e+05', 'total_tokens_seen': 57662931, 'epoch': '0.007375', 'num_input_tokens_seen': 57662931, 'train_runtime': '173.3', 'train_tokens_per_second': '3.327e+05'}
+ 12%|█▏        | 110/954 [02:51<19:00,  1.35s/it] 12%|█▏        | 111/954 [02:53<18:42,  1.33s/it] 12%|█▏        | 112/954 [02:54<18:36,  1.33s/it] 12%|█▏        | 113/954 [02:55<18:35,  1.33s/it] 12%|█▏        | 114/954 [02:57<18:33,  1.33s/it] 12%|█▏        | 115/954 [02:58<18:29,  1.32s/it] 12%|█▏        | 116/954 [02:59<18:27,  1.32s/it] 12%|█▏        | 117/954 [03:00<18:18,  1.31s/it] 12%|█▏        | 118/954 [03:02<18:14,  1.31s/it] 12%|█▏        | 119/954 [03:03<18:14,  1.31s/it] 13%|█▎        | 120/954 [03:04<18:15,  1.31s/it]                                                 {'loss': '5.635', 'grad_norm': '0.6245', 'learning_rate': '0.0012', 'tokens_per_second': '3.984e+05', 'total_tokens_seen': 62905318, 'epoch': '0.008045', 'num_input_tokens_seen': 62905318, 'train_runtime': '186.4', 'train_tokens_per_second': '3.374e+05'}
+ 13%|█▎        | 120/954 [03:04<18:15,  1.31s/it] 13%|█▎        | 121/954 [03:06<18:13,  1.31s/it] 13%|█▎        | 122/954 [03:07<18:10,  1.31s/it] 13%|█▎        | 123/954 [03:08<18:02,  1.30s/it] 13%|█▎        | 124/954 [03:10<18:02,  1.30s/it] 13%|█▎        | 125/954 [03:11<17:59,  1.30s/it] 13%|█▎        | 126/954 [03:12<17:58,  1.30s/it] 13%|█▎        | 127/954 [03:14<18:01,  1.31s/it] 13%|█▎        | 128/954 [03:15<17:51,  1.30s/it] 14%|█▎        | 129/954 [03:16<17:57,  1.31s/it] 14%|█▎        | 130/954 [03:17<17:52,  1.30s/it]                                                 {'loss': '5.504', 'grad_norm': '0.712', 'learning_rate': '0.0012', 'tokens_per_second': '4.064e+05', 'total_tokens_seen': 68147493, 'epoch': '0.008715', 'num_input_tokens_seen': 68147493, 'train_runtime': '199.4', 'train_tokens_per_second': '3.417e+05'}
+ 14%|█▎        | 130/954 [03:17<17:52,  1.30s/it] 14%|█▎        | 131/954 [03:19<17:47,  1.30s/it] 14%|█▍        | 132/954 [03:20<17:44,  1.29s/it] 14%|█▍        | 133/954 [03:21<17:46,  1.30s/it] 14%|█▍        | 134/954 [03:23<17:48,  1.30s/it] 14%|█▍        | 135/954 [03:24<17:53,  1.31s/it] 14%|█▍        | 136/954 [03:25<17:50,  1.31s/it] 14%|█▍        | 137/954 [03:27<17:47,  1.31s/it] 14%|█▍        | 138/954 [03:28<17:45,  1.31s/it] 15%|█▍        | 139/954 [03:29<17:50,  1.31s/it] 15%|█▍        | 140/954 [03:31<17:48,  1.31s/it]                                                 {'loss': '5.404', 'grad_norm': '0.6932', 'learning_rate': '0.0012', 'tokens_per_second': '4e+05', 'total_tokens_seen': 73389862, 'epoch': '0.009386', 'num_input_tokens_seen': 73389862, 'train_runtime': '212.5', 'train_tokens_per_second': '3.453e+05'}
+ 15%|█▍        | 140/954 [03:31<17:48,  1.31s/it] 15%|█▍        | 141/954 [03:32<17:47,  1.31s/it] 15%|█▍        | 142/954 [03:33<17:45,  1.31s/it] 15%|█▍        | 143/954 [03:34<17:36,  1.30s/it] 15%|█▌        | 144/954 [03:36<17:33,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.09it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.38it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.71it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.38it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.25it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.18it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.13it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.06it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.04it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.23it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.20it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.32it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.39it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.45it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.46it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.46it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.45it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.49it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.57it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.57it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.57it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.62it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.66it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.64it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.63it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.66it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.69it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.71it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.68it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.71it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '5.262', 'eval_runtime': '9.088', 'eval_samples_per_second': '169.9', 'eval_steps_per_second': '5.392', 'eval_perplexity': '192.8', 'epoch': '0.009654', 'num_input_tokens_seen': 75486830}
+ 15%|█▌        | 144/954 [03:45<17:33,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A 15%|█▌        | 145/954 [03:46<54:20,  4.03s/it] 15%|█▌        | 146/954 [03:47<43:15,  3.21s/it] 15%|█▌        | 147/954 [03:49<35:25,  2.63s/it] 16%|█▌        | 148/954 [03:50<29:57,  2.23s/it] 16%|█▌        | 149/954 [03:51<26:09,  1.95s/it] 16%|█▌        | 150/954 [03:53<23:35,  1.76s/it]                                                 {'loss': '5.259', 'grad_norm': '0.7138', 'learning_rate': '0.0012', 'tokens_per_second': '3.979e+05', 'total_tokens_seen': 78632335, 'epoch': '0.01006', 'num_input_tokens_seen': 78632335, 'train_runtime': '234.6', 'train_tokens_per_second': '3.351e+05'}
+ 16%|█▌        | 150/954 [03:53<23:35,  1.76s/it] 16%|█▌        | 151/954 [03:54<21:38,  1.62s/it] 16%|█▌        | 152/954 [03:55<20:23,  1.53s/it] 16%|█▌        | 153/954 [03:57<19:31,  1.46s/it] 16%|█▌        | 154/954 [03:58<18:52,  1.42s/it] 16%|█▌        | 155/954 [03:59<18:26,  1.38s/it] 16%|█▋        | 156/954 [04:00<18:01,  1.36s/it] 16%|█▋        | 157/954 [04:02<17:50,  1.34s/it] 17%|█▋        | 158/954 [04:03<17:40,  1.33s/it] 17%|█▋        | 159/954 [04:04<17:30,  1.32s/it] 17%|█▋        | 160/954 [04:06<17:23,  1.31s/it]                                                 {'loss': '5.142', 'grad_norm': '0.6219', 'learning_rate': '0.0012', 'tokens_per_second': '4.044e+05', 'total_tokens_seen': 83867432, 'epoch': '0.01073', 'num_input_tokens_seen': 83867432, 'train_runtime': '247.6', 'train_tokens_per_second': '3.387e+05'}
+ 17%|█▋        | 160/954 [04:06<17:23,  1.31s/it] 17%|█▋        | 161/954 [04:07<17:24,  1.32s/it] 17%|█▋        | 162/954 [04:08<17:26,  1.32s/it] 17%|█▋        | 163/954 [04:10<17:24,  1.32s/it] 17%|█▋        | 164/954 [04:11<17:23,  1.32s/it] 17%|█▋        | 165/954 [04:12<17:21,  1.32s/it] 17%|█▋        | 166/954 [04:14<17:13,  1.31s/it] 18%|█▊        | 167/954 [04:15<17:08,  1.31s/it] 18%|█▊        | 168/954 [04:16<17:03,  1.30s/it] 18%|█▊        | 169/954 [04:17<17:05,  1.31s/it] 18%|█▊        | 170/954 [04:19<17:10,  1.31s/it]                                                 {'loss': '5.047', 'grad_norm': '0.4664', 'learning_rate': '0.0012', 'tokens_per_second': '3.884e+05', 'total_tokens_seen': 89098034, 'epoch': '0.0114', 'num_input_tokens_seen': 89098034, 'train_runtime': '260.8', 'train_tokens_per_second': '3.417e+05'}
+ 18%|█▊        | 170/954 [04:19<17:10,  1.31s/it] 18%|█▊        | 171/954 [04:20<17:00,  1.30s/it] 18%|█▊        | 172/954 [04:21<16:58,  1.30s/it] 18%|█▊        | 173/954 [04:23<17:00,  1.31s/it] 18%|█▊        | 174/954 [04:24<17:00,  1.31s/it] 18%|█▊        | 175/954 [04:25<16:58,  1.31s/it] 18%|█▊        | 176/954 [04:27<16:55,  1.30s/it] 19%|█▊        | 177/954 [04:28<16:56,  1.31s/it] 19%|█▊        | 178/954 [04:29<16:55,  1.31s/it] 19%|█▉        | 179/954 [04:31<16:51,  1.31s/it] 19%|█▉        | 180/954 [04:32<16:52,  1.31s/it]                                                 {'loss': '4.966', 'grad_norm': '0.5806', 'learning_rate': '0.0012', 'tokens_per_second': '3.997e+05', 'total_tokens_seen': 94340410, 'epoch': '0.01207', 'num_input_tokens_seen': 94340410, 'train_runtime': '273.8', 'train_tokens_per_second': '3.445e+05'}
+ 19%|█▉        | 180/954 [04:32<16:52,  1.31s/it] 19%|█▉        | 181/954 [04:33<16:49,  1.31s/it] 19%|█▉        | 182/954 [04:34<16:52,  1.31s/it] 19%|█▉        | 183/954 [04:36<16:52,  1.31s/it] 19%|█▉        | 184/954 [04:37<16:53,  1.32s/it] 19%|█▉        | 185/954 [04:38<16:46,  1.31s/it] 19%|█▉        | 186/954 [04:40<16:46,  1.31s/it] 20%|█▉        | 187/954 [04:41<16:48,  1.31s/it] 20%|█▉        | 188/954 [04:42<16:45,  1.31s/it] 20%|█▉        | 189/954 [04:44<16:46,  1.32s/it] 20%|█▉        | 190/954 [04:45<16:43,  1.31s/it]                                                 {'loss': '4.897', 'grad_norm': '0.5031', 'learning_rate': '0.0012', 'tokens_per_second': '4.018e+05', 'total_tokens_seen': 99582878, 'epoch': '0.01274', 'num_input_tokens_seen': 99582878, 'train_runtime': '287', 'train_tokens_per_second': '3.47e+05'}
+ 20%|█▉        | 190/954 [04:45<16:43,  1.31s/it] 20%|██        | 191/954 [04:46<16:42,  1.31s/it] 20%|██        | 192/954 [04:48<16:40,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.11it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.31it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.65it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.38it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.25it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.17it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.12it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.02it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.04it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.12it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.20it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.26it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.19it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.24it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.28it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.23it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.39it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.45it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.43it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.48it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.53it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.54it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.59it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.62it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.62it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.63it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.64it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.67it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.70it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.73it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.73it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.23it/s][A                                                 
+                                               [A{'eval_loss': '4.807', 'eval_runtime': '9.114', 'eval_samples_per_second': '169.4', 'eval_steps_per_second': '5.376', 'eval_perplexity': '122.3', 'epoch': '0.01287', 'num_input_tokens_seen': 100631296}
+ 20%|██        | 192/954 [04:57<16:40,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.23it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:03<00:00,  3.85s/it][AWriting model shards: 100%|██████████| 1/1 [00:03<00:00,  3.85s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 20%|██        | 193/954 [05:07<1:25:44,  6.76s/it] 20%|██        | 194/954 [05:08<1:04:57,  5.13s/it] 20%|██        | 195/954 [05:10<50:25,  3.99s/it]   21%|██        | 196/954 [05:11<40:13,  3.18s/it] 21%|██        | 197/954 [05:12<33:01,  2.62s/it] 21%|██        | 198/954 [05:14<27:58,  2.22s/it] 21%|██        | 199/954 [05:15<24:26,  1.94s/it] 21%|██        | 200/954 [05:16<22:04,  1.76s/it]                                                 {'loss': '4.806', 'grad_norm': '0.5247', 'learning_rate': '0.0012', 'tokens_per_second': '3.971e+05', 'total_tokens_seen': 104825196, 'epoch': '0.01341', 'num_input_tokens_seen': 104825196, 'train_runtime': '318.2', 'train_tokens_per_second': '3.294e+05'}
+ 21%|██        | 200/954 [05:16<22:04,  1.76s/it] 21%|██        | 201/954 [05:18<20:18,  1.62s/it] 21%|██        | 202/954 [05:19<18:59,  1.52s/it] 21%|██▏       | 203/954 [05:20<18:10,  1.45s/it] 21%|██▏       | 204/954 [05:21<17:37,  1.41s/it] 21%|██▏       | 205/954 [05:23<17:16,  1.38s/it] 22%|██▏       | 206/954 [05:24<16:56,  1.36s/it] 22%|██▏       | 207/954 [05:25<16:39,  1.34s/it] 22%|██▏       | 208/954 [05:27<16:28,  1.32s/it] 22%|██▏       | 209/954 [05:28<16:17,  1.31s/it] 22%|██▏       | 210/954 [05:29<16:11,  1.31s/it]                                                 {'loss': '4.72', 'grad_norm': '0.4312', 'learning_rate': '0.0012', 'tokens_per_second': '4.084e+05', 'total_tokens_seen': 110067502, 'epoch': '0.01408', 'num_input_tokens_seen': 110067502, 'train_runtime': '331.2', 'train_tokens_per_second': '3.323e+05'}
+ 22%|██▏       | 210/954 [05:29<16:11,  1.31s/it] 22%|██▏       | 211/954 [05:30<16:05,  1.30s/it] 22%|██▏       | 212/954 [05:32<16:05,  1.30s/it] 22%|██▏       | 213/954 [05:33<16:05,  1.30s/it] 22%|██▏       | 214/954 [05:34<16:01,  1.30s/it] 23%|██▎       | 215/954 [05:36<15:57,  1.30s/it] 23%|██▎       | 216/954 [05:37<16:00,  1.30s/it] 23%|██▎       | 217/954 [05:38<15:58,  1.30s/it] 23%|██▎       | 218/954 [05:40<15:54,  1.30s/it] 23%|██▎       | 219/954 [05:41<15:51,  1.29s/it] 23%|██▎       | 220/954 [05:42<15:52,  1.30s/it]                                                 {'loss': '4.615', 'grad_norm': '0.477', 'learning_rate': '0.0012', 'tokens_per_second': '4.026e+05', 'total_tokens_seen': 115307573, 'epoch': '0.01475', 'num_input_tokens_seen': 115307573, 'train_runtime': '344.2', 'train_tokens_per_second': '3.35e+05'}
+ 23%|██▎       | 220/954 [05:42<15:52,  1.30s/it] 23%|██▎       | 221/954 [05:43<15:57,  1.31s/it] 23%|██▎       | 222/954 [05:45<16:00,  1.31s/it] 23%|██▎       | 223/954 [05:46<15:59,  1.31s/it] 23%|██▎       | 224/954 [05:47<16:03,  1.32s/it] 24%|██▎       | 225/954 [05:49<16:02,  1.32s/it] 24%|██▎       | 226/954 [05:50<16:04,  1.32s/it] 24%|██▍       | 227/954 [05:51<15:56,  1.32s/it] 24%|██▍       | 228/954 [05:53<15:49,  1.31s/it] 24%|██▍       | 229/954 [05:54<15:49,  1.31s/it] 24%|██▍       | 230/954 [05:55<15:53,  1.32s/it]                                                 {'loss': '4.543', 'grad_norm': '0.4766', 'learning_rate': '0.0012', 'tokens_per_second': '3.951e+05', 'total_tokens_seen': 120549824, 'epoch': '0.01542', 'num_input_tokens_seen': 120549824, 'train_runtime': '357.4', 'train_tokens_per_second': '3.373e+05'}
+ 24%|██▍       | 230/954 [05:55<15:53,  1.32s/it] 24%|██▍       | 231/954 [05:57<15:45,  1.31s/it] 24%|██▍       | 232/954 [05:58<15:43,  1.31s/it] 24%|██▍       | 233/954 [05:59<15:41,  1.31s/it] 25%|██▍       | 234/954 [06:01<15:39,  1.31s/it] 25%|██▍       | 235/954 [06:02<15:36,  1.30s/it] 25%|██▍       | 236/954 [06:03<15:36,  1.30s/it] 25%|██▍       | 237/954 [06:04<15:36,  1.31s/it] 25%|██▍       | 238/954 [06:06<15:36,  1.31s/it] 25%|██▌       | 239/954 [06:07<15:38,  1.31s/it] 25%|██▌       | 240/954 [06:08<15:34,  1.31s/it]                                                 {'loss': '4.415', 'grad_norm': '0.4963', 'learning_rate': '0.0012', 'tokens_per_second': '4.029e+05', 'total_tokens_seen': 125792323, 'epoch': '0.01609', 'num_input_tokens_seen': 125792323, 'train_runtime': '370.4', 'train_tokens_per_second': '3.396e+05'}
+ 25%|██▌       | 240/954 [06:08<15:34,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.05it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.32it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.69it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.34it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.24it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.16it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.13it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  4.98it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.02it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.11it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.25it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.21it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.20it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.28it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.24it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.44it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.46it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.48it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.53it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.58it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.57it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.56it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.59it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.62it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.64it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.66it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.68it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.67it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.67it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.74it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A                                                 
+                                               [A{'eval_loss': '4.365', 'eval_runtime': '9.104', 'eval_samples_per_second': '169.6', 'eval_steps_per_second': '5.382', 'eval_perplexity': '78.64', 'epoch': '0.01609', 'num_input_tokens_seen': 125792323}
+ 25%|██▌       | 240/954 [06:18<15:34,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A
+                                               [A 25%|██▌       | 241/954 [06:19<48:10,  4.05s/it] 25%|██▌       | 242/954 [06:20<38:23,  3.24s/it] 25%|██▌       | 243/954 [06:22<31:30,  2.66s/it] 26%|██▌       | 244/954 [06:23<26:41,  2.26s/it] 26%|██▌       | 245/954 [06:24<23:18,  1.97s/it] 26%|██▌       | 246/954 [06:25<20:55,  1.77s/it] 26%|██▌       | 247/954 [06:27<19:11,  1.63s/it] 26%|██▌       | 248/954 [06:28<18:00,  1.53s/it] 26%|██▌       | 249/954 [06:29<17:10,  1.46s/it] 26%|██▌       | 250/954 [06:31<16:35,  1.41s/it]                                                 {'loss': '4.34', 'grad_norm': '0.5564', 'learning_rate': '0.0012', 'tokens_per_second': '4.042e+05', 'total_tokens_seen': 131026695, 'epoch': '0.01676', 'num_input_tokens_seen': 131026695, 'train_runtime': '392.6', 'train_tokens_per_second': '3.337e+05'}
+ 26%|██▌       | 250/954 [06:31<16:35,  1.41s/it] 26%|██▋       | 251/954 [06:32<16:09,  1.38s/it] 26%|██▋       | 252/954 [06:33<15:54,  1.36s/it] 27%|██▋       | 253/954 [06:35<15:49,  1.35s/it] 27%|██▋       | 254/954 [06:36<15:35,  1.34s/it] 27%|██▋       | 255/954 [06:37<15:25,  1.32s/it] 27%|██▋       | 256/954 [06:38<15:17,  1.32s/it] 27%|██▋       | 257/954 [06:40<15:19,  1.32s/it] 27%|██▋       | 258/954 [06:41<15:15,  1.32s/it] 27%|██▋       | 259/954 [06:42<15:09,  1.31s/it] 27%|██▋       | 260/954 [06:44<15:09,  1.31s/it]                                                 {'loss': '4.273', 'grad_norm': '0.4316', 'learning_rate': '0.0012', 'tokens_per_second': '3.963e+05', 'total_tokens_seen': 136256141, 'epoch': '0.01743', 'num_input_tokens_seen': 136256141, 'train_runtime': '405.7', 'train_tokens_per_second': '3.358e+05'}
+ 27%|██▋       | 260/954 [06:44<15:09,  1.31s/it] 27%|██▋       | 261/954 [06:45<15:08,  1.31s/it] 27%|██▋       | 262/954 [06:46<15:02,  1.30s/it] 28%|██▊       | 263/954 [06:48<15:06,  1.31s/it] 28%|██▊       | 264/954 [06:49<15:01,  1.31s/it] 28%|██▊       | 265/954 [06:50<15:03,  1.31s/it] 28%|██▊       | 266/954 [06:52<14:59,  1.31s/it] 28%|██▊       | 267/954 [06:53<14:57,  1.31s/it] 28%|██▊       | 268/954 [06:54<15:01,  1.31s/it] 28%|██▊       | 269/954 [06:56<14:58,  1.31s/it] 28%|██▊       | 270/954 [06:57<14:56,  1.31s/it]                                                 {'loss': '4.147', 'grad_norm': '0.4724', 'learning_rate': '0.0012', 'tokens_per_second': '4.02e+05', 'total_tokens_seen': 141497074, 'epoch': '0.0181', 'num_input_tokens_seen': 141497074, 'train_runtime': '418.8', 'train_tokens_per_second': '3.379e+05'}
+ 28%|██▊       | 270/954 [06:57<14:56,  1.31s/it] 28%|██▊       | 271/954 [06:58<14:59,  1.32s/it] 29%|██▊       | 272/954 [06:59<14:55,  1.31s/it] 29%|██▊       | 273/954 [07:01<14:54,  1.31s/it] 29%|██▊       | 274/954 [07:02<14:51,  1.31s/it] 29%|██▉       | 275/954 [07:03<14:50,  1.31s/it] 29%|██▉       | 276/954 [07:05<14:48,  1.31s/it] 29%|██▉       | 277/954 [07:06<14:47,  1.31s/it] 29%|██▉       | 278/954 [07:07<14:47,  1.31s/it] 29%|██▉       | 279/954 [07:09<14:43,  1.31s/it] 29%|██▉       | 280/954 [07:10<14:34,  1.30s/it]                                                 {'loss': '4.072', 'grad_norm': '0.5089', 'learning_rate': '0.0012', 'tokens_per_second': '4.13e+05', 'total_tokens_seen': 146739374, 'epoch': '0.01877', 'num_input_tokens_seen': 146739374, 'train_runtime': '431.9', 'train_tokens_per_second': '3.398e+05'}
+ 29%|██▉       | 280/954 [07:10<14:34,  1.30s/it] 29%|██▉       | 281/954 [07:11<14:37,  1.30s/it] 30%|██▉       | 282/954 [07:13<14:40,  1.31s/it] 30%|██▉       | 283/954 [07:14<14:36,  1.31s/it] 30%|██▉       | 284/954 [07:15<14:37,  1.31s/it] 30%|██▉       | 285/954 [07:16<14:38,  1.31s/it] 30%|██▉       | 286/954 [07:18<14:38,  1.32s/it] 30%|███       | 287/954 [07:19<14:38,  1.32s/it] 30%|███       | 288/954 [07:20<14:33,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04,  9.90it/s][A
+  6%|▋         | 3/48 [00:00<00:06,  7.10it/s][A
+  8%|▊         | 4/48 [00:00<00:07,  6.16it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.52it/s][A
+ 12%|█▎        | 6/48 [00:01<00:08,  5.21it/s][A
+ 15%|█▍        | 7/48 [00:01<00:08,  5.12it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.10it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.08it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  4.99it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.03it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.11it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.17it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.32it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.28it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.37it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.41it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.42it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.50it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.55it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.58it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.59it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.59it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.61it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.60it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.61it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.62it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.68it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.73it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '4.015', 'eval_runtime': '9.095', 'eval_samples_per_second': '169.8', 'eval_steps_per_second': '5.387', 'eval_perplexity': '55.45', 'epoch': '0.01931', 'num_input_tokens_seen': 150933107}
+ 30%|███       | 288/954 [07:30<14:33,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 30%|███       | 289/954 [07:40<1:14:44,  6.74s/it] 30%|███       | 290/954 [07:41<56:32,  5.11s/it]                                                   {'loss': '4.074', 'grad_norm': '0.3545', 'learning_rate': '0.0012', 'tokens_per_second': '4.047e+05', 'total_tokens_seen': 151981550, 'epoch': '0.01944', 'num_input_tokens_seen': 151981550, 'train_runtime': '463.1', 'train_tokens_per_second': '3.282e+05'}
+ 30%|███       | 290/954 [07:41<56:32,  5.11s/it] 31%|███       | 291/954 [07:42<43:51,  3.97s/it] 31%|███       | 292/954 [07:44<35:01,  3.17s/it] 31%|███       | 293/954 [07:45<28:48,  2.61s/it] 31%|███       | 294/954 [07:46<24:30,  2.23s/it] 31%|███       | 295/954 [07:48<21:25,  1.95s/it] 31%|███       | 296/954 [07:49<19:14,  1.75s/it] 31%|███       | 297/954 [07:50<17:49,  1.63s/it] 31%|███       | 298/954 [07:52<16:45,  1.53s/it] 31%|███▏      | 299/954 [07:53<15:55,  1.46s/it] 31%|███▏      | 300/954 [07:54<15:23,  1.41s/it]                                                 {'loss': '4.051', 'grad_norm': '0.4658', 'learning_rate': '0.0012', 'tokens_per_second': '4.031e+05', 'total_tokens_seen': 157223829, 'epoch': '0.02011', 'num_input_tokens_seen': 157223829, 'train_runtime': '476.2', 'train_tokens_per_second': '3.302e+05'}
+ 31%|███▏      | 300/954 [07:54<15:23,  1.41s/it] 32%|███▏      | 301/954 [07:56<15:03,  1.38s/it] 32%|███▏      | 302/954 [07:57<14:49,  1.36s/it] 32%|███▏      | 303/954 [07:58<14:34,  1.34s/it] 32%|███▏      | 304/954 [07:59<14:31,  1.34s/it] 32%|███▏      | 305/954 [08:01<14:21,  1.33s/it] 32%|███▏      | 306/954 [08:02<14:16,  1.32s/it] 32%|███▏      | 307/954 [08:03<14:14,  1.32s/it] 32%|███▏      | 308/954 [08:05<14:15,  1.32s/it] 32%|███▏      | 309/954 [08:06<14:06,  1.31s/it] 32%|███▏      | 310/954 [08:07<14:05,  1.31s/it]                                                 {'loss': '3.949', 'grad_norm': '0.383', 'learning_rate': '0.0012', 'tokens_per_second': '3.983e+05', 'total_tokens_seen': 162466326, 'epoch': '0.02078', 'num_input_tokens_seen': 162466326, 'train_runtime': '489.3', 'train_tokens_per_second': '3.32e+05'}
+ 32%|███▏      | 310/954 [08:07<14:05,  1.31s/it] 33%|███▎      | 311/954 [08:09<14:03,  1.31s/it] 33%|███▎      | 312/954 [08:10<14:00,  1.31s/it] 33%|███▎      | 313/954 [08:11<13:56,  1.30s/it] 33%|███▎      | 314/954 [08:13<13:56,  1.31s/it] 33%|███▎      | 315/954 [08:14<13:57,  1.31s/it] 33%|███▎      | 316/954 [08:15<13:58,  1.31s/it] 33%|███▎      | 317/954 [08:17<13:59,  1.32s/it] 33%|███▎      | 318/954 [08:18<13:55,  1.31s/it] 33%|███▎      | 319/954 [08:19<13:53,  1.31s/it] 34%|███▎      | 320/954 [08:20<13:55,  1.32s/it]                                                 {'loss': '3.917', 'grad_norm': '0.3389', 'learning_rate': '0.0012', 'tokens_per_second': '3.96e+05', 'total_tokens_seen': 167708713, 'epoch': '0.02145', 'num_input_tokens_seen': 167708713, 'train_runtime': '502.5', 'train_tokens_per_second': '3.338e+05'}
+ 34%|███▎      | 320/954 [08:20<13:55,  1.32s/it] 34%|███▎      | 321/954 [08:22<13:49,  1.31s/it] 34%|███▍      | 322/954 [08:23<13:46,  1.31s/it] 34%|███▍      | 323/954 [08:24<13:46,  1.31s/it] 34%|███▍      | 324/954 [08:26<13:44,  1.31s/it] 34%|███▍      | 325/954 [08:27<13:49,  1.32s/it] 34%|███▍      | 326/954 [08:28<13:44,  1.31s/it] 34%|███▍      | 327/954 [08:30<13:38,  1.30s/it] 34%|███▍      | 328/954 [08:31<13:33,  1.30s/it] 34%|███▍      | 329/954 [08:32<13:34,  1.30s/it] 35%|███▍      | 330/954 [08:34<13:34,  1.31s/it]                                                 {'loss': '3.946', 'grad_norm': '0.3837', 'learning_rate': '0.0012', 'tokens_per_second': '4.005e+05', 'total_tokens_seen': 172945597, 'epoch': '0.02212', 'num_input_tokens_seen': 172945597, 'train_runtime': '515.5', 'train_tokens_per_second': '3.355e+05'}
+ 35%|███▍      | 330/954 [08:34<13:34,  1.31s/it] 35%|███▍      | 331/954 [08:35<13:30,  1.30s/it] 35%|███▍      | 332/954 [08:36<13:29,  1.30s/it] 35%|███▍      | 333/954 [08:37<13:26,  1.30s/it] 35%|███▌      | 334/954 [08:39<13:29,  1.31s/it] 35%|███▌      | 335/954 [08:40<13:30,  1.31s/it] 35%|███▌      | 336/954 [08:41<13:28,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.14it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.35it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.67it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.38it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.26it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.18it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.14it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.05it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.03it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.08it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.21it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.15it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.29it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.31it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.37it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.41it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.46it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.49it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.53it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.54it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.65it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.67it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.66it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.68it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.68it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.74it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A                                                 
+                                               [A{'eval_loss': '3.855', 'eval_runtime': '9.105', 'eval_samples_per_second': '169.6', 'eval_steps_per_second': '5.382', 'eval_perplexity': '47.24', 'epoch': '0.02253', 'num_input_tokens_seen': 176091002}
+ 35%|███▌      | 336/954 [08:50<13:28,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A
+                                               [A 35%|███▌      | 337/954 [08:52<41:32,  4.04s/it] 35%|███▌      | 338/954 [08:53<33:02,  3.22s/it] 36%|███▌      | 339/954 [08:54<27:05,  2.64s/it] 36%|███▌      | 340/954 [08:56<22:52,  2.23s/it]                                                 {'loss': '3.884', 'grad_norm': '0.3408', 'learning_rate': '0.0012', 'tokens_per_second': '4.102e+05', 'total_tokens_seen': 178188000, 'epoch': '0.02279', 'num_input_tokens_seen': 178188000, 'train_runtime': '537.6', 'train_tokens_per_second': '3.314e+05'}
+ 36%|███▌      | 340/954 [08:56<22:52,  2.23s/it] 36%|███▌      | 341/954 [08:57<19:57,  1.95s/it] 36%|███▌      | 342/954 [08:58<17:59,  1.76s/it] 36%|███▌      | 343/954 [09:00<16:34,  1.63s/it] 36%|███▌      | 344/954 [09:01<15:31,  1.53s/it] 36%|███▌      | 345/954 [09:02<14:48,  1.46s/it] 36%|███▋      | 346/954 [09:03<14:21,  1.42s/it] 36%|███▋      | 347/954 [09:05<14:00,  1.38s/it] 36%|███▋      | 348/954 [09:06<13:45,  1.36s/it] 37%|███▋      | 349/954 [09:07<13:41,  1.36s/it] 37%|███▋      | 350/954 [09:09<13:31,  1.34s/it]                                                 {'loss': '3.856', 'grad_norm': '0.4099', 'learning_rate': '0.0012', 'tokens_per_second': '4.012e+05', 'total_tokens_seen': 183430299, 'epoch': '0.02346', 'num_input_tokens_seen': 183430299, 'train_runtime': '550.8', 'train_tokens_per_second': '3.33e+05'}
+ 37%|███▋      | 350/954 [09:09<13:31,  1.34s/it] 37%|███▋      | 351/954 [09:10<13:25,  1.34s/it] 37%|███▋      | 352/954 [09:11<13:15,  1.32s/it] 37%|███▋      | 353/954 [09:13<13:12,  1.32s/it] 37%|███▋      | 354/954 [09:14<13:11,  1.32s/it] 37%|███▋      | 355/954 [09:15<13:08,  1.32s/it] 37%|███▋      | 356/954 [09:17<13:03,  1.31s/it] 37%|███▋      | 357/954 [09:18<13:03,  1.31s/it] 38%|███▊      | 358/954 [09:19<13:07,  1.32s/it] 38%|███▊      | 359/954 [09:21<13:03,  1.32s/it] 38%|███▊      | 360/954 [09:22<13:06,  1.32s/it]                                                 {'loss': '3.811', 'grad_norm': '0.398', 'learning_rate': '0.0012', 'tokens_per_second': '3.923e+05', 'total_tokens_seen': 188672490, 'epoch': '0.02414', 'num_input_tokens_seen': 188672490, 'train_runtime': '563.9', 'train_tokens_per_second': '3.346e+05'}
+ 38%|███▊      | 360/954 [09:22<13:06,  1.32s/it] 38%|███▊      | 361/954 [09:23<13:07,  1.33s/it] 38%|███▊      | 362/954 [09:25<13:01,  1.32s/it] 38%|███▊      | 363/954 [09:26<12:54,  1.31s/it] 38%|███▊      | 364/954 [09:27<12:53,  1.31s/it] 38%|███▊      | 365/954 [09:28<12:55,  1.32s/it] 38%|███▊      | 366/954 [09:30<12:52,  1.31s/it] 38%|███▊      | 367/954 [09:31<12:46,  1.31s/it] 39%|███▊      | 368/954 [09:32<12:45,  1.31s/it] 39%|███▊      | 369/954 [09:34<12:49,  1.31s/it] 39%|███▉      | 370/954 [09:35<12:42,  1.31s/it]                                                 {'loss': '3.802', 'grad_norm': '0.3666', 'learning_rate': '0.0012', 'tokens_per_second': '4.087e+05', 'total_tokens_seen': 193914962, 'epoch': '0.02481', 'num_input_tokens_seen': 193914962, 'train_runtime': '577', 'train_tokens_per_second': '3.361e+05'}
+ 39%|███▉      | 370/954 [09:35<12:42,  1.31s/it] 39%|███▉      | 371/954 [09:36<12:37,  1.30s/it] 39%|███▉      | 372/954 [09:38<12:39,  1.31s/it] 39%|███▉      | 373/954 [09:39<12:34,  1.30s/it] 39%|███▉      | 374/954 [09:40<12:40,  1.31s/it] 39%|███▉      | 375/954 [09:42<12:40,  1.31s/it] 39%|███▉      | 376/954 [09:43<12:36,  1.31s/it] 40%|███▉      | 377/954 [09:44<12:39,  1.32s/it] 40%|███▉      | 378/954 [09:45<12:32,  1.31s/it] 40%|███▉      | 379/954 [09:47<12:30,  1.31s/it] 40%|███▉      | 380/954 [09:48<12:29,  1.31s/it]                                                 {'loss': '3.821', 'grad_norm': '0.3845', 'learning_rate': '0.0012', 'tokens_per_second': '4.023e+05', 'total_tokens_seen': 199157433, 'epoch': '0.02548', 'num_input_tokens_seen': 199157433, 'train_runtime': '590.1', 'train_tokens_per_second': '3.375e+05'}
+ 40%|███▉      | 380/954 [09:48<12:29,  1.31s/it] 40%|███▉      | 381/954 [09:49<12:24,  1.30s/it] 40%|████      | 382/954 [09:51<12:24,  1.30s/it] 40%|████      | 383/954 [09:52<12:24,  1.30s/it] 40%|████      | 384/954 [09:53<12:23,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.06it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.33it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.65it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.26it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.19it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.15it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.04it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.03it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.08it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.29it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.39it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.42it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.41it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.45it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.50it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.53it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.56it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.60it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.65it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.65it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.66it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.68it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.68it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.70it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '3.751', 'eval_runtime': '9.089', 'eval_samples_per_second': '169.9', 'eval_steps_per_second': '5.391', 'eval_perplexity': '42.57', 'epoch': '0.02574', 'num_input_tokens_seen': 201254377}
+ 40%|████      | 384/954 [10:02<12:23,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.02s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.02s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 40%|████      | 385/954 [10:13<1:03:51,  6.73s/it] 40%|████      | 386/954 [10:14<48:21,  5.11s/it]   41%|████      | 387/954 [10:15<37:28,  3.97s/it] 41%|████      | 388/954 [10:17<29:53,  3.17s/it] 41%|████      | 389/954 [10:18<24:32,  2.61s/it] 41%|████      | 390/954 [10:19<20:49,  2.22s/it]                                                 {'loss': '3.794', 'grad_norm': '0.3573', 'learning_rate': '0.0012', 'tokens_per_second': '4.045e+05', 'total_tokens_seen': 204399847, 'epoch': '0.02615', 'num_input_tokens_seen': 204399847, 'train_runtime': '621.2', 'train_tokens_per_second': '3.29e+05'}
+ 41%|████      | 390/954 [10:19<20:49,  2.22s/it] 41%|████      | 391/954 [10:20<18:11,  1.94s/it] 41%|████      | 392/954 [10:22<16:21,  1.75s/it] 41%|████      | 393/954 [10:23<15:06,  1.62s/it] 41%|████▏     | 394/954 [10:24<14:13,  1.52s/it] 41%|████▏     | 395/954 [10:26<13:33,  1.45s/it] 42%|████▏     | 396/954 [10:27<13:08,  1.41s/it] 42%|████▏     | 397/954 [10:28<12:50,  1.38s/it] 42%|████▏     | 398/954 [10:30<12:34,  1.36s/it] 42%|████▏     | 399/954 [10:31<12:22,  1.34s/it] 42%|████▏     | 400/954 [10:32<12:16,  1.33s/it]                                                 {'loss': '3.757', 'grad_norm': '0.3587', 'learning_rate': '0.0012', 'tokens_per_second': '4.009e+05', 'total_tokens_seen': 209642273, 'epoch': '0.02682', 'num_input_tokens_seen': 209642273, 'train_runtime': '634.2', 'train_tokens_per_second': '3.305e+05'}
+ 42%|████▏     | 400/954 [10:32<12:16,  1.33s/it] 42%|████▏     | 401/954 [10:34<12:10,  1.32s/it] 42%|████▏     | 402/954 [10:35<12:03,  1.31s/it] 42%|████▏     | 403/954 [10:36<12:02,  1.31s/it] 42%|████▏     | 404/954 [10:37<11:59,  1.31s/it] 42%|████▏     | 405/954 [10:39<11:58,  1.31s/it] 43%|████▎     | 406/954 [10:40<11:56,  1.31s/it] 43%|████▎     | 407/954 [10:41<12:00,  1.32s/it] 43%|████▎     | 408/954 [10:43<11:56,  1.31s/it] 43%|████▎     | 409/954 [10:44<11:55,  1.31s/it] 43%|████▎     | 410/954 [10:45<11:54,  1.31s/it]                                                 {'loss': '3.724', 'grad_norm': '0.3545', 'learning_rate': '0.0012', 'tokens_per_second': '3.99e+05', 'total_tokens_seen': 214884743, 'epoch': '0.02749', 'num_input_tokens_seen': 214884743, 'train_runtime': '647.3', 'train_tokens_per_second': '3.32e+05'}
+ 43%|████▎     | 410/954 [10:45<11:54,  1.31s/it] 43%|████▎     | 411/954 [10:47<11:54,  1.32s/it] 43%|████▎     | 412/954 [10:48<11:47,  1.31s/it] 43%|████▎     | 413/954 [10:49<11:43,  1.30s/it] 43%|████▎     | 414/954 [10:50<11:38,  1.29s/it] 44%|████▎     | 415/954 [10:52<11:38,  1.30s/it] 44%|████▎     | 416/954 [10:53<11:41,  1.30s/it] 44%|████▎     | 417/954 [10:54<11:43,  1.31s/it] 44%|████▍     | 418/954 [10:56<11:43,  1.31s/it] 44%|████▍     | 419/954 [10:57<11:40,  1.31s/it] 44%|████▍     | 420/954 [10:58<11:39,  1.31s/it]                                                 {'loss': '3.719', 'grad_norm': '0.3576', 'learning_rate': '0.0012', 'tokens_per_second': '4.01e+05', 'total_tokens_seen': 220127047, 'epoch': '0.02816', 'num_input_tokens_seen': 220127047, 'train_runtime': '660.4', 'train_tokens_per_second': '3.333e+05'}
+ 44%|████▍     | 420/954 [10:58<11:39,  1.31s/it] 44%|████▍     | 421/954 [11:00<11:37,  1.31s/it] 44%|████▍     | 422/954 [11:01<11:30,  1.30s/it] 44%|████▍     | 423/954 [11:02<11:30,  1.30s/it] 44%|████▍     | 424/954 [11:04<11:27,  1.30s/it] 45%|████▍     | 425/954 [11:05<11:24,  1.29s/it] 45%|████▍     | 426/954 [11:06<11:29,  1.31s/it] 45%|████▍     | 427/954 [11:07<11:25,  1.30s/it] 45%|████▍     | 428/954 [11:09<11:31,  1.32s/it] 45%|████▍     | 429/954 [11:10<11:29,  1.31s/it] 45%|████▌     | 430/954 [11:11<11:29,  1.32s/it]                                                 {'loss': '3.673', 'grad_norm': '0.3381', 'learning_rate': '0.0012', 'tokens_per_second': '3.982e+05', 'total_tokens_seen': 225369214, 'epoch': '0.02883', 'num_input_tokens_seen': 225369214, 'train_runtime': '673.4', 'train_tokens_per_second': '3.347e+05'}
+ 45%|████▌     | 430/954 [11:11<11:29,  1.32s/it] 45%|████▌     | 431/954 [11:13<11:28,  1.32s/it] 45%|████▌     | 432/954 [11:14<11:24,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.01it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.30it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.69it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.34it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.23it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.15it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.10it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.00it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.05it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.18it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.20it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.29it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.33it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.28it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.37it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.45it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.46it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.49it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.57it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.56it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.64it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.61it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.62it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.71it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.70it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.77it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '3.674', 'eval_runtime': '9.088', 'eval_samples_per_second': '169.9', 'eval_steps_per_second': '5.392', 'eval_perplexity': '39.42', 'epoch': '0.02896', 'num_input_tokens_seen': 226417689}
+ 45%|████▌     | 432/954 [11:23<11:24,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A 45%|████▌     | 433/954 [11:24<35:04,  4.04s/it] 45%|████▌     | 434/954 [11:26<27:53,  3.22s/it] 46%|████▌     | 435/954 [11:27<22:49,  2.64s/it] 46%|████▌     | 436/954 [11:28<19:20,  2.24s/it] 46%|████▌     | 437/954 [11:30<16:57,  1.97s/it] 46%|████▌     | 438/954 [11:31<15:09,  1.76s/it] 46%|████▌     | 439/954 [11:32<13:56,  1.62s/it] 46%|████▌     | 440/954 [11:34<13:04,  1.53s/it]                                                 {'loss': '3.672', 'grad_norm': '0.3871', 'learning_rate': '0.0012', 'tokens_per_second': '4.05e+05', 'total_tokens_seen': 230611349, 'epoch': '0.0295', 'num_input_tokens_seen': 230611349, 'train_runtime': '695.6', 'train_tokens_per_second': '3.315e+05'}
+ 46%|████▌     | 440/954 [11:34<13:04,  1.53s/it] 46%|████▌     | 441/954 [11:35<12:27,  1.46s/it] 46%|████▋     | 442/954 [11:36<11:57,  1.40s/it] 46%|████▋     | 443/954 [11:37<11:41,  1.37s/it] 47%|████▋     | 444/954 [11:39<11:28,  1.35s/it] 47%|████▋     | 445/954 [11:40<11:22,  1.34s/it] 47%|████▋     | 446/954 [11:41<11:14,  1.33s/it] 47%|████▋     | 447/954 [11:43<11:07,  1.32s/it] 47%|████▋     | 448/954 [11:44<11:04,  1.31s/it] 47%|████▋     | 449/954 [11:45<11:01,  1.31s/it] 47%|████▋     | 450/954 [11:47<11:00,  1.31s/it]                                                 {'loss': '3.636', 'grad_norm': '0.2805', 'learning_rate': '0.0012', 'tokens_per_second': '4.015e+05', 'total_tokens_seen': 235853588, 'epoch': '0.03017', 'num_input_tokens_seen': 235853588, 'train_runtime': '708.6', 'train_tokens_per_second': '3.329e+05'}
+ 47%|████▋     | 450/954 [11:47<11:00,  1.31s/it] 47%|████▋     | 451/954 [11:48<10:56,  1.30s/it] 47%|████▋     | 452/954 [11:49<10:55,  1.31s/it] 47%|████▋     | 453/954 [11:50<10:54,  1.31s/it] 48%|████▊     | 454/954 [11:52<10:54,  1.31s/it] 48%|████▊     | 455/954 [11:53<10:55,  1.31s/it] 48%|████▊     | 456/954 [11:54<10:55,  1.32s/it] 48%|████▊     | 457/954 [11:56<10:54,  1.32s/it] 48%|████▊     | 458/954 [11:57<10:48,  1.31s/it] 48%|████▊     | 459/954 [11:58<10:48,  1.31s/it] 48%|████▊     | 460/954 [12:00<10:47,  1.31s/it]                                                 {'loss': '3.669', 'grad_norm': '0.3205', 'learning_rate': '0.0012', 'tokens_per_second': '4.01e+05', 'total_tokens_seen': 241095852, 'epoch': '0.03084', 'num_input_tokens_seen': 241095852, 'train_runtime': '721.7', 'train_tokens_per_second': '3.341e+05'}
+ 48%|████▊     | 460/954 [12:00<10:47,  1.31s/it] 48%|████▊     | 461/954 [12:01<10:45,  1.31s/it] 48%|████▊     | 462/954 [12:02<10:45,  1.31s/it] 49%|████▊     | 463/954 [12:04<10:42,  1.31s/it] 49%|████▊     | 464/954 [12:05<10:46,  1.32s/it] 49%|████▊     | 465/954 [12:06<10:39,  1.31s/it] 49%|████▉     | 466/954 [12:08<10:41,  1.31s/it] 49%|████▉     | 467/954 [12:09<10:41,  1.32s/it] 49%|████▉     | 468/954 [12:10<10:38,  1.31s/it] 49%|████▉     | 469/954 [12:11<10:34,  1.31s/it] 49%|████▉     | 470/954 [12:13<10:30,  1.30s/it]                                                 {'loss': '3.585', 'grad_norm': '0.372', 'learning_rate': '0.0012', 'tokens_per_second': '4.071e+05', 'total_tokens_seen': 246338267, 'epoch': '0.03151', 'num_input_tokens_seen': 246338267, 'train_runtime': '734.8', 'train_tokens_per_second': '3.353e+05'}
+ 49%|████▉     | 470/954 [12:13<10:30,  1.30s/it] 49%|████▉     | 471/954 [12:14<10:27,  1.30s/it] 49%|████▉     | 472/954 [12:15<10:26,  1.30s/it] 50%|████▉     | 473/954 [12:17<10:30,  1.31s/it] 50%|████▉     | 474/954 [12:18<10:28,  1.31s/it] 50%|████▉     | 475/954 [12:19<10:29,  1.31s/it] 50%|████▉     | 476/954 [12:21<10:26,  1.31s/it] 50%|█████     | 477/954 [12:22<10:26,  1.31s/it] 50%|█████     | 478/954 [12:23<10:27,  1.32s/it] 50%|█████     | 479/954 [12:25<10:24,  1.31s/it] 50%|█████     | 480/954 [12:26<10:25,  1.32s/it]                                                 {'loss': '3.624', 'grad_norm': '0.3495', 'learning_rate': '0.001195', 'tokens_per_second': '3.954e+05', 'total_tokens_seen': 251580576, 'epoch': '0.03218', 'num_input_tokens_seen': 251580576, 'train_runtime': '747.9', 'train_tokens_per_second': '3.364e+05'}
+ 50%|█████     | 480/954 [12:26<10:25,  1.32s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04,  9.95it/s][A
+  6%|▋         | 3/48 [00:00<00:06,  7.10it/s][A
+  8%|▊         | 4/48 [00:00<00:07,  6.17it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.44it/s][A
+ 12%|█▎        | 6/48 [00:01<00:08,  5.24it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.16it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.11it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.09it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  4.99it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.00it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.06it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.15it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.20it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.17it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.21it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.28it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.24it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.42it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.42it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.46it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.51it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.54it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.62it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.62it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.65it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.68it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.67it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.69it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.69it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.76it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A                                                 
+                                               [A{'eval_loss': '3.614', 'eval_runtime': '9.097', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.387', 'eval_perplexity': '37.11', 'epoch': '0.03218', 'num_input_tokens_seen': 251580576}
+ 50%|█████     | 480/954 [12:35<10:25,  1.32s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 50%|█████     | 481/954 [12:46<53:52,  6.83s/it] 51%|█████     | 482/954 [12:47<40:43,  5.18s/it] 51%|█████     | 483/954 [12:48<31:31,  4.02s/it] 51%|█████     | 484/954 [12:50<25:04,  3.20s/it] 51%|█████     | 485/954 [12:51<20:34,  2.63s/it] 51%|█████     | 486/954 [12:52<17:25,  2.23s/it] 51%|█████     | 487/954 [12:53<15:11,  1.95s/it] 51%|█████     | 488/954 [12:55<13:41,  1.76s/it] 51%|█████▏    | 489/954 [12:56<12:37,  1.63s/it] 51%|█████▏    | 490/954 [12:57<11:50,  1.53s/it]                                                 {'loss': '3.654', 'grad_norm': '0.3558', 'learning_rate': '0.00117', 'tokens_per_second': '4.032e+05', 'total_tokens_seen': 256817603, 'epoch': '0.03285', 'num_input_tokens_seen': 256817603, 'train_runtime': '779.4', 'train_tokens_per_second': '3.295e+05'}
+ 51%|█████▏    | 490/954 [12:57<11:50,  1.53s/it] 51%|█████▏    | 491/954 [12:59<11:18,  1.47s/it] 52%|█████▏    | 492/954 [13:00<10:54,  1.42s/it] 52%|█████▏    | 493/954 [13:01<10:39,  1.39s/it] 52%|█████▏    | 494/954 [13:03<10:30,  1.37s/it] 52%|█████▏    | 495/954 [13:04<10:21,  1.35s/it] 52%|█████▏    | 496/954 [13:05<10:14,  1.34s/it] 52%|█████▏    | 497/954 [13:07<10:11,  1.34s/it] 52%|█████▏    | 498/954 [13:08<10:02,  1.32s/it] 52%|█████▏    | 499/954 [13:09<09:58,  1.32s/it] 52%|█████▏    | 500/954 [13:10<09:53,  1.31s/it]                                                 {'loss': '3.634', 'grad_norm': '0.2941', 'learning_rate': '0.001145', 'tokens_per_second': '4.063e+05', 'total_tokens_seen': 262057115, 'epoch': '0.03352', 'num_input_tokens_seen': 262057115, 'train_runtime': '792.5', 'train_tokens_per_second': '3.307e+05'}
+ 52%|█████▏    | 500/954 [13:10<09:53,  1.31s/it] 53%|█████▎    | 501/954 [13:12<09:49,  1.30s/it] 53%|█████▎    | 502/954 [13:13<09:48,  1.30s/it] 53%|█████▎    | 503/954 [13:14<09:45,  1.30s/it] 53%|█████▎    | 504/954 [13:16<09:47,  1.30s/it] 53%|█████▎    | 505/954 [13:17<09:47,  1.31s/it] 53%|█████▎    | 506/954 [13:18<09:45,  1.31s/it] 53%|█████▎    | 507/954 [13:20<09:41,  1.30s/it] 53%|█████▎    | 508/954 [13:21<09:41,  1.30s/it] 53%|█████▎    | 509/954 [13:22<09:39,  1.30s/it] 53%|█████▎    | 510/954 [13:24<09:40,  1.31s/it]                                                 {'loss': '3.613', 'grad_norm': '0.3026', 'learning_rate': '0.001119', 'tokens_per_second': '3.994e+05', 'total_tokens_seen': 267291458, 'epoch': '0.03419', 'num_input_tokens_seen': 267291458, 'train_runtime': '805.5', 'train_tokens_per_second': '3.318e+05'}
+ 53%|█████▎    | 510/954 [13:24<09:40,  1.31s/it] 54%|█████▎    | 511/954 [13:25<09:42,  1.31s/it] 54%|█████▎    | 512/954 [13:26<09:45,  1.32s/it] 54%|█████▍    | 513/954 [13:28<09:46,  1.33s/it] 54%|█████▍    | 514/954 [13:29<09:40,  1.32s/it] 54%|█████▍    | 515/954 [13:30<09:37,  1.32s/it] 54%|█████▍    | 516/954 [13:31<09:38,  1.32s/it] 54%|█████▍    | 517/954 [13:33<09:33,  1.31s/it] 54%|█████▍    | 518/954 [13:34<09:29,  1.31s/it] 54%|█████▍    | 519/954 [13:35<09:28,  1.31s/it] 55%|█████▍    | 520/954 [13:37<09:29,  1.31s/it]                                                 {'loss': '3.593', 'grad_norm': '0.3449', 'learning_rate': '0.001094', 'tokens_per_second': '3.98e+05', 'total_tokens_seen': 272533896, 'epoch': '0.03486', 'num_input_tokens_seen': 272533896, 'train_runtime': '818.7', 'train_tokens_per_second': '3.329e+05'}
+ 55%|█████▍    | 520/954 [13:37<09:29,  1.31s/it] 55%|█████▍    | 521/954 [13:38<09:29,  1.31s/it] 55%|█████▍    | 522/954 [13:39<09:27,  1.31s/it] 55%|█████▍    | 523/954 [13:41<09:22,  1.31s/it] 55%|█████▍    | 524/954 [13:42<09:21,  1.31s/it] 55%|█████▌    | 525/954 [13:43<09:20,  1.31s/it] 55%|█████▌    | 526/954 [13:45<09:21,  1.31s/it] 55%|█████▌    | 527/954 [13:46<09:17,  1.31s/it] 55%|█████▌    | 528/954 [13:47<09:15,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.05it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.30it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.59it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.36it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.25it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.17it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.13it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.01it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.02it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.08it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.28it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.26it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.42it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.45it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.52it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.54it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.56it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.65it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.61it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.68it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.68it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.71it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A                                                 
+                                               [A{'eval_loss': '3.547', 'eval_runtime': '9.106', 'eval_samples_per_second': '169.6', 'eval_steps_per_second': '5.381', 'eval_perplexity': '34.71', 'epoch': '0.0354', 'num_input_tokens_seen': 276727878}
+ 55%|█████▌    | 528/954 [13:56<09:15,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A
+                                               [A 55%|█████▌    | 529/954 [13:58<28:36,  4.04s/it] 56%|█████▌    | 530/954 [13:59<22:45,  3.22s/it]                                                 {'loss': '3.563', 'grad_norm': '0.3038', 'learning_rate': '0.001069', 'tokens_per_second': '4.017e+05', 'total_tokens_seen': 277776398, 'epoch': '0.03553', 'num_input_tokens_seen': 277776398, 'train_runtime': '840.9', 'train_tokens_per_second': '3.303e+05'}
+ 56%|█████▌    | 530/954 [13:59<22:45,  3.22s/it] 56%|█████▌    | 531/954 [14:00<18:34,  2.64s/it] 56%|█████▌    | 532/954 [14:01<15:41,  2.23s/it] 56%|█████▌    | 533/954 [14:03<13:42,  1.95s/it] 56%|█████▌    | 534/954 [14:04<12:17,  1.76s/it] 56%|█████▌    | 535/954 [14:05<11:14,  1.61s/it] 56%|█████▌    | 536/954 [14:07<10:36,  1.52s/it] 56%|█████▋    | 537/954 [14:08<10:12,  1.47s/it] 56%|█████▋    | 538/954 [14:09<09:52,  1.42s/it] 56%|█████▋    | 539/954 [14:11<09:34,  1.38s/it] 57%|█████▋    | 540/954 [14:12<09:29,  1.37s/it]                                                 {'loss': '3.587', 'grad_norm': '0.3054', 'learning_rate': '0.001044', 'tokens_per_second': '3.885e+05', 'total_tokens_seen': 283018618, 'epoch': '0.0362', 'num_input_tokens_seen': 283018618, 'train_runtime': '853.9', 'train_tokens_per_second': '3.314e+05'}
+ 57%|█████▋    | 540/954 [14:12<09:29,  1.37s/it] 57%|█████▋    | 541/954 [14:13<09:22,  1.36s/it] 57%|█████▋    | 542/954 [14:15<09:13,  1.34s/it] 57%|█████▋    | 543/954 [14:16<09:07,  1.33s/it] 57%|█████▋    | 544/954 [14:17<09:03,  1.33s/it] 57%|█████▋    | 545/954 [14:18<09:01,  1.32s/it] 57%|█████▋    | 546/954 [14:20<08:57,  1.32s/it] 57%|█████▋    | 547/954 [14:21<08:51,  1.31s/it] 57%|█████▋    | 548/954 [14:22<08:50,  1.31s/it] 58%|█████▊    | 549/954 [14:24<08:49,  1.31s/it] 58%|█████▊    | 550/954 [14:25<08:46,  1.30s/it]                                                 {'loss': '3.541', 'grad_norm': '0.2384', 'learning_rate': '0.001019', 'tokens_per_second': '4.047e+05', 'total_tokens_seen': 288260818, 'epoch': '0.03687', 'num_input_tokens_seen': 288260818, 'train_runtime': '867', 'train_tokens_per_second': '3.325e+05'}
+ 58%|█████▊    | 550/954 [14:25<08:46,  1.30s/it] 58%|█████▊    | 551/954 [14:26<08:46,  1.31s/it] 58%|█████▊    | 552/954 [14:28<08:46,  1.31s/it] 58%|█████▊    | 553/954 [14:29<08:44,  1.31s/it] 58%|█████▊    | 554/954 [14:30<08:43,  1.31s/it] 58%|█████▊    | 555/954 [14:32<08:41,  1.31s/it] 58%|█████▊    | 556/954 [14:33<08:41,  1.31s/it] 58%|█████▊    | 557/954 [14:34<08:39,  1.31s/it] 58%|█████▊    | 558/954 [14:35<08:40,  1.31s/it] 59%|█████▊    | 559/954 [14:37<08:38,  1.31s/it] 59%|█████▊    | 560/954 [14:38<08:37,  1.31s/it]                                                 {'loss': '3.537', 'grad_norm': '0.2548', 'learning_rate': '0.0009937', 'tokens_per_second': '3.998e+05', 'total_tokens_seen': 293503140, 'epoch': '0.03754', 'num_input_tokens_seen': 293503140, 'train_runtime': '880.1', 'train_tokens_per_second': '3.335e+05'}
+ 59%|█████▊    | 560/954 [14:38<08:37,  1.31s/it] 59%|█████▉    | 561/954 [14:39<08:38,  1.32s/it] 59%|█████▉    | 562/954 [14:41<08:35,  1.32s/it] 59%|█████▉    | 563/954 [14:42<08:32,  1.31s/it] 59%|█████▉    | 564/954 [14:43<08:29,  1.31s/it] 59%|█████▉    | 565/954 [14:45<08:29,  1.31s/it] 59%|█████▉    | 566/954 [14:46<08:30,  1.31s/it] 59%|█████▉    | 567/954 [14:47<08:26,  1.31s/it] 60%|█████▉    | 568/954 [14:49<08:25,  1.31s/it] 60%|█████▉    | 569/954 [14:50<08:22,  1.30s/it] 60%|█████▉    | 570/954 [14:51<08:19,  1.30s/it]                                                 {'loss': '3.532', 'grad_norm': '0.2782', 'learning_rate': '0.0009686', 'tokens_per_second': '4.075e+05', 'total_tokens_seen': 298745471, 'epoch': '0.03821', 'num_input_tokens_seen': 298745471, 'train_runtime': '893.2', 'train_tokens_per_second': '3.345e+05'}
+ 60%|█████▉    | 570/954 [14:51<08:19,  1.30s/it] 60%|█████▉    | 571/954 [14:52<08:18,  1.30s/it] 60%|█████▉    | 572/954 [14:54<08:20,  1.31s/it] 60%|██████    | 573/954 [14:55<08:16,  1.30s/it] 60%|██████    | 574/954 [14:56<08:15,  1.30s/it] 60%|██████    | 575/954 [14:58<08:15,  1.31s/it] 60%|██████    | 576/954 [14:59<08:13,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.02it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.31it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.71it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.24it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.15it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.10it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.00it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.04it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.20it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.24it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.27it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.42it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.51it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.57it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.60it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.62it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.61it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.62it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.67it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.68it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.68it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.69it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.26it/s][A                                                 
+                                               [A{'eval_loss': '3.484', 'eval_runtime': '9.101', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.384', 'eval_perplexity': '32.61', 'epoch': '0.03862', 'num_input_tokens_seen': 301891020}
+ 60%|██████    | 576/954 [15:08<08:13,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.26it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.26s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.26s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 60%|██████    | 577/954 [15:19<42:44,  6.80s/it] 61%|██████    | 578/954 [15:20<32:16,  5.15s/it] 61%|██████    | 579/954 [15:21<24:55,  3.99s/it] 61%|██████    | 580/954 [15:23<19:49,  3.18s/it]                                                 {'loss': '3.493', 'grad_norm': '0.3081', 'learning_rate': '0.0009434', 'tokens_per_second': '4.05e+05', 'total_tokens_seen': 303988006, 'epoch': '0.03888', 'num_input_tokens_seen': 303988006, 'train_runtime': '924.5', 'train_tokens_per_second': '3.288e+05'}
+ 61%|██████    | 580/954 [15:23<19:49,  3.18s/it] 61%|██████    | 581/954 [15:24<16:16,  2.62s/it] 61%|██████    | 582/954 [15:25<13:49,  2.23s/it] 61%|██████    | 583/954 [15:26<12:04,  1.95s/it] 61%|██████    | 584/954 [15:28<10:51,  1.76s/it] 61%|██████▏   | 585/954 [15:29<09:56,  1.62s/it] 61%|██████▏   | 586/954 [15:30<09:19,  1.52s/it] 62%|██████▏   | 587/954 [15:32<08:52,  1.45s/it] 62%|██████▏   | 588/954 [15:33<08:33,  1.40s/it] 62%|██████▏   | 589/954 [15:34<08:19,  1.37s/it] 62%|██████▏   | 590/954 [15:35<08:10,  1.35s/it]                                                 {'loss': '3.516', 'grad_norm': '0.2629', 'learning_rate': '0.0009182', 'tokens_per_second': '4.038e+05', 'total_tokens_seen': 309227541, 'epoch': '0.03955', 'num_input_tokens_seen': 309227541, 'train_runtime': '937.5', 'train_tokens_per_second': '3.298e+05'}
+ 62%|██████▏   | 590/954 [15:36<08:10,  1.35s/it] 62%|██████▏   | 591/954 [15:37<08:08,  1.35s/it] 62%|██████▏   | 592/954 [15:38<08:03,  1.33s/it] 62%|██████▏   | 593/954 [15:39<07:57,  1.32s/it] 62%|██████▏   | 594/954 [15:41<07:52,  1.31s/it] 62%|██████▏   | 595/954 [15:42<07:48,  1.31s/it] 62%|██████▏   | 596/954 [15:43<07:49,  1.31s/it] 63%|██████▎   | 597/954 [15:45<07:46,  1.31s/it] 63%|██████▎   | 598/954 [15:46<07:45,  1.31s/it] 63%|██████▎   | 599/954 [15:47<07:41,  1.30s/it] 63%|██████▎   | 600/954 [15:49<07:42,  1.31s/it]                                                 {'loss': '3.501', 'grad_norm': '0.2394', 'learning_rate': '0.0008931', 'tokens_per_second': '3.992e+05', 'total_tokens_seen': 314467422, 'epoch': '0.04023', 'num_input_tokens_seen': 314467422, 'train_runtime': '950.5', 'train_tokens_per_second': '3.308e+05'}
+ 63%|██████▎   | 600/954 [15:49<07:42,  1.31s/it] 63%|██████▎   | 601/954 [15:50<07:40,  1.30s/it] 63%|██████▎   | 602/954 [15:51<07:37,  1.30s/it] 63%|██████▎   | 603/954 [15:52<07:35,  1.30s/it] 63%|██████▎   | 604/954 [15:54<07:34,  1.30s/it] 63%|██████▎   | 605/954 [15:55<07:34,  1.30s/it] 64%|██████▎   | 606/954 [15:56<07:33,  1.30s/it] 64%|██████▎   | 607/954 [15:58<07:30,  1.30s/it] 64%|██████▎   | 608/954 [15:59<07:30,  1.30s/it] 64%|██████▍   | 609/954 [16:00<07:31,  1.31s/it] 64%|██████▍   | 610/954 [16:02<07:28,  1.30s/it]                                                 {'loss': '3.469', 'grad_norm': '0.2639', 'learning_rate': '0.0008679', 'tokens_per_second': '4.075e+05', 'total_tokens_seen': 319709839, 'epoch': '0.0409', 'num_input_tokens_seen': 319709839, 'train_runtime': '963.6', 'train_tokens_per_second': '3.318e+05'}
+ 64%|██████▍   | 610/954 [16:02<07:28,  1.30s/it] 64%|██████▍   | 611/954 [16:03<07:30,  1.31s/it] 64%|██████▍   | 612/954 [16:04<07:28,  1.31s/it] 64%|██████▍   | 613/954 [16:05<07:24,  1.30s/it] 64%|██████▍   | 614/954 [16:07<07:25,  1.31s/it] 64%|██████▍   | 615/954 [16:08<07:23,  1.31s/it] 65%|██████▍   | 616/954 [16:09<07:20,  1.30s/it] 65%|██████▍   | 617/954 [16:11<07:21,  1.31s/it] 65%|██████▍   | 618/954 [16:12<07:20,  1.31s/it] 65%|██████▍   | 619/954 [16:13<07:16,  1.30s/it] 65%|██████▍   | 620/954 [16:15<07:14,  1.30s/it]                                                 {'loss': '3.455', 'grad_norm': '0.2292', 'learning_rate': '0.0008428', 'tokens_per_second': '4.069e+05', 'total_tokens_seen': 324952140, 'epoch': '0.04157', 'num_input_tokens_seen': 324952140, 'train_runtime': '976.6', 'train_tokens_per_second': '3.327e+05'}
+ 65%|██████▍   | 620/954 [16:15<07:14,  1.30s/it] 65%|██████▌   | 621/954 [16:16<07:12,  1.30s/it] 65%|██████▌   | 622/954 [16:17<07:10,  1.30s/it] 65%|██████▌   | 623/954 [16:19<07:08,  1.30s/it] 65%|██████▌   | 624/954 [16:20<07:05,  1.29s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.00it/s][A
+  6%|▋         | 3/48 [00:00<00:06,  7.11it/s][A
+  8%|▊         | 4/48 [00:00<00:07,  6.17it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.52it/s][A
+ 12%|█▎        | 6/48 [00:01<00:08,  5.23it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.15it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.09it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.07it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  4.98it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.01it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.09it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.17it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.21it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.27it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.45it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.48it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.57it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.58it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.58it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.61it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.66it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.66it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.69it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.69it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.74it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.30it/s][A                                                 
+                                               [A{'eval_loss': '3.426', 'eval_runtime': '9.089', 'eval_samples_per_second': '169.9', 'eval_steps_per_second': '5.391', 'eval_perplexity': '30.76', 'epoch': '0.04183', 'num_input_tokens_seen': 327044979}
+ 65%|██████▌   | 624/954 [16:29<07:05,  1.29s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.30it/s][A
+                                               [A 66%|██████▌   | 625/954 [16:30<22:01,  4.02s/it] 66%|██████▌   | 626/954 [16:31<17:31,  3.21s/it] 66%|██████▌   | 627/954 [16:33<14:20,  2.63s/it] 66%|██████▌   | 628/954 [16:34<12:06,  2.23s/it] 66%|██████▌   | 629/954 [16:35<10:35,  1.95s/it] 66%|██████▌   | 630/954 [16:37<09:29,  1.76s/it]                                                 {'loss': '3.451', 'grad_norm': '0.2282', 'learning_rate': '0.0008176', 'tokens_per_second': '4.019e+05', 'total_tokens_seen': 330185663, 'epoch': '0.04224', 'num_input_tokens_seen': 330185663, 'train_runtime': '998.7', 'train_tokens_per_second': '3.306e+05'}
+ 66%|██████▌   | 630/954 [16:37<09:29,  1.76s/it] 66%|██████▌   | 631/954 [16:38<08:45,  1.63s/it] 66%|██████▌   | 632/954 [16:39<08:09,  1.52s/it] 66%|██████▋   | 633/954 [16:41<07:45,  1.45s/it] 66%|██████▋   | 634/954 [16:42<07:30,  1.41s/it] 67%|██████▋   | 635/954 [16:43<07:17,  1.37s/it] 67%|██████▋   | 636/954 [16:44<07:09,  1.35s/it] 67%|██████▋   | 637/954 [16:46<07:03,  1.33s/it] 67%|██████▋   | 638/954 [16:47<06:58,  1.32s/it] 67%|██████▋   | 639/954 [16:48<06:56,  1.32s/it] 67%|██████▋   | 640/954 [16:50<06:52,  1.31s/it]                                                 {'loss': '3.423', 'grad_norm': '0.2496', 'learning_rate': '0.0007925', 'tokens_per_second': '4.061e+05', 'total_tokens_seen': 335427941, 'epoch': '0.04291', 'num_input_tokens_seen': 335427941, 'train_runtime': '1012', 'train_tokens_per_second': '3.316e+05'}
+ 67%|██████▋   | 640/954 [16:50<06:52,  1.31s/it] 67%|██████▋   | 641/954 [16:51<06:50,  1.31s/it] 67%|██████▋   | 642/954 [16:52<06:50,  1.31s/it] 67%|██████▋   | 643/954 [16:54<06:50,  1.32s/it] 68%|██████▊   | 644/954 [16:55<06:46,  1.31s/it] 68%|██████▊   | 645/954 [16:56<06:43,  1.31s/it] 68%|██████▊   | 646/954 [16:58<06:43,  1.31s/it] 68%|██████▊   | 647/954 [16:59<06:41,  1.31s/it] 68%|██████▊   | 648/954 [17:00<06:38,  1.30s/it] 68%|██████▊   | 649/954 [17:01<06:38,  1.31s/it] 68%|██████▊   | 650/954 [17:03<06:39,  1.31s/it]                                                 {'loss': '3.457', 'grad_norm': '0.2467', 'learning_rate': '0.0007673', 'tokens_per_second': '3.966e+05', 'total_tokens_seen': 340663035, 'epoch': '0.04358', 'num_input_tokens_seen': 340663035, 'train_runtime': '1025', 'train_tokens_per_second': '3.324e+05'}
+ 68%|██████▊   | 650/954 [17:03<06:39,  1.31s/it] 68%|██████▊   | 651/954 [17:04<06:39,  1.32s/it] 68%|██████▊   | 652/954 [17:05<06:37,  1.32s/it] 68%|██████▊   | 653/954 [17:07<06:35,  1.31s/it] 69%|██████▊   | 654/954 [17:08<06:32,  1.31s/it] 69%|██████▊   | 655/954 [17:09<06:31,  1.31s/it] 69%|██████▉   | 656/954 [17:11<06:29,  1.31s/it] 69%|██████▉   | 657/954 [17:12<06:29,  1.31s/it] 69%|██████▉   | 658/954 [17:13<06:28,  1.31s/it] 69%|██████▉   | 659/954 [17:15<06:24,  1.30s/it] 69%|██████▉   | 660/954 [17:16<06:24,  1.31s/it]                                                 {'loss': '3.403', 'grad_norm': '0.2329', 'learning_rate': '0.0007421', 'tokens_per_second': '3.995e+05', 'total_tokens_seen': 345905470, 'epoch': '0.04425', 'num_input_tokens_seen': 345905470, 'train_runtime': '1038', 'train_tokens_per_second': '3.333e+05'}
+ 69%|██████▉   | 660/954 [17:16<06:24,  1.31s/it] 69%|██████▉   | 661/954 [17:17<06:22,  1.30s/it] 69%|██████▉   | 662/954 [17:18<06:20,  1.30s/it] 69%|██████▉   | 663/954 [17:20<06:19,  1.30s/it] 70%|██████▉   | 664/954 [17:21<06:17,  1.30s/it] 70%|██████▉   | 665/954 [17:22<06:14,  1.30s/it] 70%|██████▉   | 666/954 [17:24<06:14,  1.30s/it] 70%|██████▉   | 667/954 [17:25<06:12,  1.30s/it] 70%|███████   | 668/954 [17:26<06:12,  1.30s/it] 70%|███████   | 669/954 [17:28<06:11,  1.30s/it] 70%|███████   | 670/954 [17:29<06:11,  1.31s/it]                                                 {'loss': '3.38', 'grad_norm': '0.2111', 'learning_rate': '0.000717', 'tokens_per_second': '4.006e+05', 'total_tokens_seen': 351148019, 'epoch': '0.04492', 'num_input_tokens_seen': 351148019, 'train_runtime': '1051', 'train_tokens_per_second': '3.341e+05'}
+ 70%|███████   | 670/954 [17:29<06:11,  1.31s/it] 70%|███████   | 671/954 [17:30<06:11,  1.31s/it] 70%|███████   | 672/954 [17:32<06:09,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.05it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.35it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.66it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.41it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.24it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.17it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.14it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.02it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.06it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.11it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.23it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.24it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.28it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.29it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.28it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.42it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.47it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.51it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.53it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.53it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.53it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.61it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.61it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.64it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.67it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.69it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.69it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.76it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.33it/s][A                                                 
+                                               [A{'eval_loss': '3.373', 'eval_runtime': '9.099', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.385', 'eval_perplexity': '29.18', 'epoch': '0.04505', 'num_input_tokens_seen': 352196497}
+ 70%|███████   | 672/954 [17:41<06:09,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.33it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 71%|███████   | 673/954 [17:51<32:16,  6.89s/it] 71%|███████   | 674/954 [17:53<24:17,  5.21s/it] 71%|███████   | 675/954 [17:54<18:47,  4.04s/it] 71%|███████   | 676/954 [17:55<14:53,  3.21s/it] 71%|███████   | 677/954 [17:57<12:11,  2.64s/it] 71%|███████   | 678/954 [17:58<10:18,  2.24s/it] 71%|███████   | 679/954 [17:59<08:58,  1.96s/it] 71%|███████▏  | 680/954 [18:00<08:01,  1.76s/it]                                                 {'loss': '3.367', 'grad_norm': '0.2082', 'learning_rate': '0.0006918', 'tokens_per_second': '4.067e+05', 'total_tokens_seen': 356390452, 'epoch': '0.04559', 'num_input_tokens_seen': 356390452, 'train_runtime': '1082', 'train_tokens_per_second': '3.292e+05'}
+ 71%|███████▏  | 680/954 [18:01<08:01,  1.76s/it] 71%|███████▏  | 681/954 [18:02<07:21,  1.62s/it] 71%|███████▏  | 682/954 [18:03<06:53,  1.52s/it] 72%|███████▏  | 683/954 [18:04<06:40,  1.48s/it] 72%|███████▏  | 684/954 [18:06<06:25,  1.43s/it] 72%|███████▏  | 685/954 [18:07<06:14,  1.39s/it] 72%|███████▏  | 686/954 [18:08<06:05,  1.37s/it] 72%|███████▏  | 687/954 [18:10<06:00,  1.35s/it] 72%|███████▏  | 688/954 [18:11<05:55,  1.34s/it] 72%|███████▏  | 689/954 [18:12<05:52,  1.33s/it] 72%|███████▏  | 690/954 [18:14<05:49,  1.33s/it]                                                 {'loss': '3.332', 'grad_norm': '0.2165', 'learning_rate': '0.0006667', 'tokens_per_second': '4.003e+05', 'total_tokens_seen': 361628797, 'epoch': '0.04626', 'num_input_tokens_seen': 361628797, 'train_runtime': '1096', 'train_tokens_per_second': '3.301e+05'}
+ 72%|███████▏  | 690/954 [18:14<05:49,  1.33s/it] 72%|███████▏  | 691/954 [18:15<05:47,  1.32s/it] 73%|███████▎  | 692/954 [18:16<05:47,  1.32s/it] 73%|███████▎  | 693/954 [18:18<05:43,  1.31s/it] 73%|███████▎  | 694/954 [18:19<05:42,  1.32s/it] 73%|███████▎  | 695/954 [18:20<05:40,  1.32s/it] 73%|███████▎  | 696/954 [18:22<05:39,  1.31s/it] 73%|███████▎  | 697/954 [18:23<05:37,  1.31s/it] 73%|███████▎  | 698/954 [18:24<05:38,  1.32s/it] 73%|███████▎  | 699/954 [18:25<05:35,  1.32s/it] 73%|███████▎  | 700/954 [18:27<05:32,  1.31s/it]                                                 {'loss': '3.384', 'grad_norm': '0.2122', 'learning_rate': '0.0006415', 'tokens_per_second': '4.043e+05', 'total_tokens_seen': 366871266, 'epoch': '0.04693', 'num_input_tokens_seen': 366871266, 'train_runtime': '1109', 'train_tokens_per_second': '3.309e+05'}
+ 73%|███████▎  | 700/954 [18:27<05:32,  1.31s/it] 73%|███████▎  | 701/954 [18:28<05:32,  1.31s/it] 74%|███████▎  | 702/954 [18:29<05:29,  1.31s/it] 74%|███████▎  | 703/954 [18:31<05:27,  1.30s/it] 74%|███████▍  | 704/954 [18:32<05:24,  1.30s/it] 74%|███████▍  | 705/954 [18:33<05:26,  1.31s/it] 74%|███████▍  | 706/954 [18:35<05:26,  1.32s/it] 74%|███████▍  | 707/954 [18:36<05:24,  1.32s/it] 74%|███████▍  | 708/954 [18:37<05:23,  1.31s/it] 74%|███████▍  | 709/954 [18:39<05:21,  1.31s/it] 74%|███████▍  | 710/954 [18:40<05:22,  1.32s/it]                                                 {'loss': '3.313', 'grad_norm': '0.2298', 'learning_rate': '0.0006164', 'tokens_per_second': '3.9e+05', 'total_tokens_seen': 372109568, 'epoch': '0.0476', 'num_input_tokens_seen': 372109568, 'train_runtime': '1122', 'train_tokens_per_second': '3.317e+05'}
+ 74%|███████▍  | 710/954 [18:40<05:22,  1.32s/it] 75%|███████▍  | 711/954 [18:41<05:19,  1.32s/it] 75%|███████▍  | 712/954 [18:43<05:20,  1.32s/it] 75%|███████▍  | 713/954 [18:44<05:18,  1.32s/it] 75%|███████▍  | 714/954 [18:45<05:16,  1.32s/it] 75%|███████▍  | 715/954 [18:46<05:13,  1.31s/it] 75%|███████▌  | 716/954 [18:48<05:13,  1.32s/it] 75%|███████▌  | 717/954 [18:49<05:12,  1.32s/it] 75%|███████▌  | 718/954 [18:50<05:09,  1.31s/it] 75%|███████▌  | 719/954 [18:52<05:08,  1.31s/it] 75%|███████▌  | 720/954 [18:53<05:09,  1.32s/it]                                                 {'loss': '3.361', 'grad_norm': '0.2024', 'learning_rate': '0.0005912', 'tokens_per_second': '3.914e+05', 'total_tokens_seen': 377351934, 'epoch': '0.04827', 'num_input_tokens_seen': 377351934, 'train_runtime': '1135', 'train_tokens_per_second': '3.324e+05'}
+ 75%|███████▌  | 720/954 [18:53<05:09,  1.32s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.10it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.32it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.67it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.38it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.24it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.16it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.11it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.00it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.05it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.21it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.19it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.24it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.28it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.27it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.31it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.36it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.45it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.50it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.56it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.57it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.57it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.61it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.61it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.62it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.62it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.64it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.68it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.70it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.70it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.71it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.16it/s][A                                                 
+                                               [A{'eval_loss': '3.325', 'eval_runtime': '9.118', 'eval_samples_per_second': '169.3', 'eval_steps_per_second': '5.374', 'eval_perplexity': '27.81', 'epoch': '0.04827', 'num_input_tokens_seen': 377351934}
+ 75%|███████▌  | 720/954 [19:02<05:09,  1.32s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.16it/s][A
+                                               [A 76%|███████▌  | 721/954 [19:04<15:44,  4.05s/it] 76%|███████▌  | 722/954 [19:05<12:29,  3.23s/it] 76%|███████▌  | 723/954 [19:06<10:13,  2.66s/it] 76%|███████▌  | 724/954 [19:07<08:37,  2.25s/it] 76%|███████▌  | 725/954 [19:09<07:29,  1.96s/it] 76%|███████▌  | 726/954 [19:10<06:42,  1.77s/it] 76%|███████▌  | 727/954 [19:11<06:10,  1.63s/it] 76%|███████▋  | 728/954 [19:13<05:48,  1.54s/it] 76%|███████▋  | 729/954 [19:14<05:29,  1.47s/it] 77%|███████▋  | 730/954 [19:15<05:20,  1.43s/it]                                                 {'loss': '3.318', 'grad_norm': '0.2029', 'learning_rate': '0.000566', 'tokens_per_second': '3.917e+05', 'total_tokens_seen': 382594026, 'epoch': '0.04894', 'num_input_tokens_seen': 382594026, 'train_runtime': '1157', 'train_tokens_per_second': '3.306e+05'}
+ 77%|███████▋  | 730/954 [19:15<05:20,  1.43s/it] 77%|███████▋  | 731/954 [19:17<05:09,  1.39s/it] 77%|███████▋  | 732/954 [19:18<05:01,  1.36s/it] 77%|███████▋  | 733/954 [19:19<04:56,  1.34s/it] 77%|███████▋  | 734/954 [19:21<04:53,  1.34s/it] 77%|███████▋  | 735/954 [19:22<04:50,  1.33s/it] 77%|███████▋  | 736/954 [19:23<04:48,  1.32s/it] 77%|███████▋  | 737/954 [19:24<04:46,  1.32s/it] 77%|███████▋  | 738/954 [19:26<04:46,  1.33s/it] 77%|███████▋  | 739/954 [19:27<04:43,  1.32s/it] 78%|███████▊  | 740/954 [19:28<04:40,  1.31s/it]                                                 {'loss': '3.292', 'grad_norm': '0.1999', 'learning_rate': '0.0005409', 'tokens_per_second': '4.034e+05', 'total_tokens_seen': 387836506, 'epoch': '0.04961', 'num_input_tokens_seen': 387836506, 'train_runtime': '1170', 'train_tokens_per_second': '3.314e+05'}
+ 78%|███████▊  | 740/954 [19:28<04:40,  1.31s/it] 78%|███████▊  | 741/954 [19:30<04:39,  1.31s/it] 78%|███████▊  | 742/954 [19:31<04:38,  1.31s/it] 78%|███████▊  | 743/954 [19:32<04:36,  1.31s/it] 78%|███████▊  | 744/954 [19:34<04:35,  1.31s/it] 78%|███████▊  | 745/954 [19:35<04:32,  1.30s/it] 78%|███████▊  | 746/954 [19:36<04:31,  1.31s/it] 78%|███████▊  | 747/954 [19:38<04:31,  1.31s/it] 78%|███████▊  | 748/954 [19:39<04:30,  1.31s/it] 79%|███████▊  | 749/954 [19:40<04:29,  1.31s/it] 79%|███████▊  | 750/954 [19:41<04:26,  1.31s/it]                                                 {'loss': '3.295', 'grad_norm': '0.3804', 'learning_rate': '0.0005157', 'tokens_per_second': '4.061e+05', 'total_tokens_seen': 393078969, 'epoch': '0.05028', 'num_input_tokens_seen': 393078969, 'train_runtime': '1183', 'train_tokens_per_second': '3.321e+05'}
+ 79%|███████▊  | 750/954 [19:41<04:26,  1.31s/it] 79%|███████▊  | 751/954 [19:43<04:25,  1.31s/it] 79%|███████▉  | 752/954 [19:44<04:25,  1.31s/it] 79%|███████▉  | 753/954 [19:45<04:23,  1.31s/it] 79%|███████▉  | 754/954 [19:47<04:21,  1.31s/it] 79%|███████▉  | 755/954 [19:48<04:18,  1.30s/it] 79%|███████▉  | 756/954 [19:49<04:18,  1.31s/it] 79%|███████▉  | 757/954 [19:51<04:17,  1.31s/it] 79%|███████▉  | 758/954 [19:52<04:16,  1.31s/it] 80%|███████▉  | 759/954 [19:53<04:14,  1.31s/it] 80%|███████▉  | 760/954 [19:55<04:13,  1.30s/it]                                                 {'loss': '3.313', 'grad_norm': '0.2004', 'learning_rate': '0.0004906', 'tokens_per_second': '4.037e+05', 'total_tokens_seen': 398321280, 'epoch': '0.05095', 'num_input_tokens_seen': 398321280, 'train_runtime': '1197', 'train_tokens_per_second': '3.329e+05'}
+ 80%|███████▉  | 760/954 [19:55<04:13,  1.30s/it] 80%|███████▉  | 761/954 [19:56<04:13,  1.31s/it] 80%|███████▉  | 762/954 [19:57<04:10,  1.31s/it] 80%|███████▉  | 763/954 [19:58<04:07,  1.30s/it] 80%|████████  | 764/954 [20:00<04:06,  1.30s/it] 80%|████████  | 765/954 [20:01<04:05,  1.30s/it] 80%|████████  | 766/954 [20:02<04:04,  1.30s/it] 80%|████████  | 767/954 [20:04<04:02,  1.30s/it] 81%|████████  | 768/954 [20:05<04:02,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.07it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.33it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.65it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.25it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.19it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.16it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.04it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.06it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.17it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.23it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.26it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.29it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.26it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.41it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.45it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.51it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.56it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.58it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.60it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.62it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.65it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.66it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.69it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.69it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.69it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.75it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A                                                 
+                                               [A{'eval_loss': '3.281', 'eval_runtime': '9.097', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.386', 'eval_perplexity': '26.6', 'epoch': '0.05149', 'num_input_tokens_seen': 402509333}
+ 81%|████████  | 768/954 [20:14<04:02,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.32it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.20s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.20s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 81%|████████  | 769/954 [20:25<21:27,  6.96s/it] 81%|████████  | 770/954 [20:26<16:08,  5.27s/it]                                                 {'loss': '3.305', 'grad_norm': '0.183', 'learning_rate': '0.0004654', 'tokens_per_second': '4.014e+05', 'total_tokens_seen': 403557770, 'epoch': '0.05162', 'num_input_tokens_seen': 403557770, 'train_runtime': '1228', 'train_tokens_per_second': '3.285e+05'}
+ 81%|████████  | 770/954 [20:26<16:08,  5.27s/it] 81%|████████  | 771/954 [20:28<12:26,  4.08s/it] 81%|████████  | 772/954 [20:29<09:51,  3.25s/it] 81%|████████  | 773/954 [20:30<08:02,  2.66s/it] 81%|████████  | 774/954 [20:32<06:45,  2.25s/it] 81%|████████  | 775/954 [20:33<05:53,  1.98s/it] 81%|████████▏ | 776/954 [20:34<05:15,  1.77s/it] 81%|████████▏ | 777/954 [20:36<04:49,  1.64s/it] 82%|████████▏ | 778/954 [20:37<04:31,  1.54s/it] 82%|████████▏ | 779/954 [20:38<04:16,  1.46s/it] 82%|████████▏ | 780/954 [20:40<04:08,  1.43s/it]                                                 {'loss': '3.273', 'grad_norm': '0.1996', 'learning_rate': '0.0004403', 'tokens_per_second': '3.93e+05', 'total_tokens_seen': 408800235, 'epoch': '0.05229', 'num_input_tokens_seen': 408800235, 'train_runtime': '1242', 'train_tokens_per_second': '3.293e+05'}
+ 82%|████████▏ | 780/954 [20:40<04:08,  1.43s/it] 82%|████████▏ | 781/954 [20:41<04:02,  1.40s/it] 82%|████████▏ | 782/954 [20:42<03:57,  1.38s/it] 82%|████████▏ | 783/954 [20:43<03:51,  1.36s/it] 82%|████████▏ | 784/954 [20:45<03:48,  1.34s/it] 82%|████████▏ | 785/954 [20:46<03:43,  1.32s/it] 82%|████████▏ | 786/954 [20:47<03:40,  1.31s/it] 82%|████████▏ | 787/954 [20:49<03:37,  1.30s/it] 83%|████████▎ | 788/954 [20:50<03:37,  1.31s/it] 83%|████████▎ | 789/954 [20:51<03:35,  1.31s/it] 83%|████████▎ | 790/954 [20:53<03:34,  1.31s/it]                                                 {'loss': '3.288', 'grad_norm': '0.1746', 'learning_rate': '0.0004151', 'tokens_per_second': '3.997e+05', 'total_tokens_seen': 414042662, 'epoch': '0.05296', 'num_input_tokens_seen': 414042662, 'train_runtime': '1255', 'train_tokens_per_second': '3.3e+05'}
+ 83%|████████▎ | 790/954 [20:53<03:34,  1.31s/it] 83%|████████▎ | 791/954 [20:54<03:33,  1.31s/it] 83%|████████▎ | 792/954 [20:55<03:32,  1.31s/it] 83%|████████▎ | 793/954 [20:57<03:31,  1.32s/it] 83%|████████▎ | 794/954 [20:58<03:30,  1.31s/it] 83%|████████▎ | 795/954 [20:59<03:28,  1.31s/it] 83%|████████▎ | 796/954 [21:00<03:27,  1.31s/it] 84%|████████▎ | 797/954 [21:02<03:25,  1.31s/it] 84%|████████▎ | 798/954 [21:03<03:23,  1.31s/it] 84%|████████▍ | 799/954 [21:04<03:22,  1.30s/it] 84%|████████▍ | 800/954 [21:06<03:20,  1.30s/it]                                                 {'loss': '3.298', 'grad_norm': '0.1738', 'learning_rate': '0.0003899', 'tokens_per_second': '4.056e+05', 'total_tokens_seen': 419284997, 'epoch': '0.05363', 'num_input_tokens_seen': 419284997, 'train_runtime': '1268', 'train_tokens_per_second': '3.308e+05'}
+ 84%|████████▍ | 800/954 [21:06<03:20,  1.30s/it] 84%|████████▍ | 801/954 [21:07<03:19,  1.30s/it] 84%|████████▍ | 802/954 [21:08<03:18,  1.31s/it] 84%|████████▍ | 803/954 [21:10<03:17,  1.31s/it] 84%|████████▍ | 804/954 [21:11<03:16,  1.31s/it] 84%|████████▍ | 805/954 [21:12<03:14,  1.31s/it] 84%|████████▍ | 806/954 [21:14<03:13,  1.31s/it] 85%|████████▍ | 807/954 [21:15<03:12,  1.31s/it] 85%|████████▍ | 808/954 [21:16<03:12,  1.32s/it] 85%|████████▍ | 809/954 [21:17<03:10,  1.31s/it] 85%|████████▍ | 810/954 [21:19<03:08,  1.31s/it]                                                 {'loss': '3.221', 'grad_norm': '0.1986', 'learning_rate': '0.0003648', 'tokens_per_second': '4.027e+05', 'total_tokens_seen': 424527372, 'epoch': '0.0543', 'num_input_tokens_seen': 424527372, 'train_runtime': '1281', 'train_tokens_per_second': '3.315e+05'}
+ 85%|████████▍ | 810/954 [21:19<03:08,  1.31s/it] 85%|████████▌ | 811/954 [21:20<03:06,  1.30s/it] 85%|████████▌ | 812/954 [21:21<03:06,  1.31s/it] 85%|████████▌ | 813/954 [21:23<03:04,  1.31s/it] 85%|████████▌ | 814/954 [21:24<03:04,  1.32s/it] 85%|████████▌ | 815/954 [21:25<03:02,  1.31s/it] 86%|████████▌ | 816/954 [21:27<03:00,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.03it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.30it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.67it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.38it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.24it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.17it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.13it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.04it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.05it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.11it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.17it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.21it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.17it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.30it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.28it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.26it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.44it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.43it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.47it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.54it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.57it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.60it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.66it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.66it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.65it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.63it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.70it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.69it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.72it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '3.238', 'eval_runtime': '9.101', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.384', 'eval_perplexity': '25.49', 'epoch': '0.05471', 'num_input_tokens_seen': 427672763}
+ 86%|████████▌ | 816/954 [21:36<03:00,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A 86%|████████▌ | 817/954 [21:37<09:12,  4.04s/it] 86%|████████▌ | 818/954 [21:38<07:17,  3.21s/it] 86%|████████▌ | 819/954 [21:40<05:56,  2.64s/it] 86%|████████▌ | 820/954 [21:41<05:00,  2.24s/it]                                                 {'loss': '3.266', 'grad_norm': '0.1848', 'learning_rate': '0.0003396', 'tokens_per_second': '4.036e+05', 'total_tokens_seen': 429765979, 'epoch': '0.05497', 'num_input_tokens_seen': 429765979, 'train_runtime': '1303', 'train_tokens_per_second': '3.298e+05'}
+ 86%|████████▌ | 820/954 [21:41<05:00,  2.24s/it] 86%|████████▌ | 821/954 [21:42<04:20,  1.96s/it] 86%|████████▌ | 822/954 [21:44<03:53,  1.77s/it] 86%|████████▋ | 823/954 [21:45<03:34,  1.64s/it] 86%|████████▋ | 824/954 [21:46<03:20,  1.54s/it] 86%|████████▋ | 825/954 [21:48<03:10,  1.48s/it] 87%|████████▋ | 826/954 [21:49<03:01,  1.42s/it] 87%|████████▋ | 827/954 [21:50<02:55,  1.38s/it] 87%|████████▋ | 828/954 [21:51<02:51,  1.36s/it] 87%|████████▋ | 829/954 [21:53<02:49,  1.35s/it] 87%|████████▋ | 830/954 [21:54<02:47,  1.35s/it]                                                 {'loss': '3.273', 'grad_norm': '0.3054', 'learning_rate': '0.0003145', 'tokens_per_second': '3.903e+05', 'total_tokens_seen': 435007253, 'epoch': '0.05564', 'num_input_tokens_seen': 435007253, 'train_runtime': '1316', 'train_tokens_per_second': '3.305e+05'}
+ 87%|████████▋ | 830/954 [21:54<02:47,  1.35s/it] 87%|████████▋ | 831/954 [21:55<02:45,  1.35s/it] 87%|████████▋ | 832/954 [21:57<02:42,  1.33s/it] 87%|████████▋ | 833/954 [21:58<02:39,  1.32s/it] 87%|████████▋ | 834/954 [21:59<02:38,  1.32s/it] 88%|████████▊ | 835/954 [22:01<02:35,  1.31s/it] 88%|████████▊ | 836/954 [22:02<02:34,  1.31s/it] 88%|████████▊ | 837/954 [22:03<02:33,  1.31s/it] 88%|████████▊ | 838/954 [22:05<02:32,  1.31s/it] 88%|████████▊ | 839/954 [22:06<02:30,  1.31s/it] 88%|████████▊ | 840/954 [22:07<02:28,  1.30s/it]                                                 {'loss': '3.219', 'grad_norm': '0.1784', 'learning_rate': '0.0002893', 'tokens_per_second': '4.073e+05', 'total_tokens_seen': 440247247, 'epoch': '0.05632', 'num_input_tokens_seen': 440247247, 'train_runtime': '1329', 'train_tokens_per_second': '3.312e+05'}
+ 88%|████████▊ | 840/954 [22:07<02:28,  1.30s/it] 88%|████████▊ | 841/954 [22:09<02:27,  1.31s/it] 88%|████████▊ | 842/954 [22:10<02:26,  1.31s/it] 88%|████████▊ | 843/954 [22:11<02:24,  1.30s/it] 88%|████████▊ | 844/954 [22:12<02:23,  1.31s/it] 89%|████████▊ | 845/954 [22:14<02:21,  1.30s/it] 89%|████████▊ | 846/954 [22:15<02:20,  1.30s/it] 89%|████████▉ | 847/954 [22:16<02:19,  1.30s/it] 89%|████████▉ | 848/954 [22:18<02:17,  1.30s/it] 89%|████████▉ | 849/954 [22:19<02:17,  1.31s/it] 89%|████████▉ | 850/954 [22:20<02:15,  1.31s/it]                                                 {'loss': '3.222', 'grad_norm': '0.1787', 'learning_rate': '0.0002642', 'tokens_per_second': '4.022e+05', 'total_tokens_seen': 445489629, 'epoch': '0.05699', 'num_input_tokens_seen': 445489629, 'train_runtime': '1342', 'train_tokens_per_second': '3.319e+05'}
+ 89%|████████▉ | 850/954 [22:20<02:15,  1.31s/it] 89%|████████▉ | 851/954 [22:22<02:14,  1.31s/it] 89%|████████▉ | 852/954 [22:23<02:13,  1.31s/it] 89%|████████▉ | 853/954 [22:24<02:12,  1.31s/it] 90%|████████▉ | 854/954 [22:25<02:11,  1.31s/it] 90%|████████▉ | 855/954 [22:27<02:09,  1.31s/it] 90%|████████▉ | 856/954 [22:28<02:07,  1.30s/it] 90%|████████▉ | 857/954 [22:29<02:06,  1.31s/it] 90%|████████▉ | 858/954 [22:31<02:04,  1.30s/it] 90%|█████████ | 859/954 [22:32<02:03,  1.30s/it] 90%|█████████ | 860/954 [22:33<02:03,  1.31s/it]                                                 {'loss': '3.201', 'grad_norm': '0.1768', 'learning_rate': '0.000239', 'tokens_per_second': '3.972e+05', 'total_tokens_seen': 450732047, 'epoch': '0.05766', 'num_input_tokens_seen': 450732047, 'train_runtime': '1355', 'train_tokens_per_second': '3.326e+05'}
+ 90%|█████████ | 860/954 [22:33<02:03,  1.31s/it] 90%|█████████ | 861/954 [22:35<02:02,  1.32s/it] 90%|█████████ | 862/954 [22:36<02:01,  1.32s/it] 90%|█████████ | 863/954 [22:37<01:59,  1.31s/it] 91%|█████████ | 864/954 [22:39<01:58,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.39it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.39it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.71it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.26it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.16it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.11it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.02it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.05it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.11it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.17it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.19it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.21it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.27it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.32it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.43it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.46it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.48it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.52it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.55it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.55it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.55it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.59it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.61it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.62it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.66it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.67it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.67it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.69it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.71it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.73it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.72it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.73it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A                                                 
+                                               [A{'eval_loss': '3.201', 'eval_runtime': '9.096', 'eval_samples_per_second': '169.7', 'eval_steps_per_second': '5.387', 'eval_perplexity': '24.57', 'epoch': '0.05792', 'num_input_tokens_seen': 452828872}
+ 91%|█████████ | 864/954 [22:48<01:58,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.26s/it][AWriting model shards: 100%|██████████| 1/1 [00:04<00:00,  4.26s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+ 91%|█████████ | 865/954 [22:59<10:19,  6.96s/it] 91%|█████████ | 866/954 [23:00<07:42,  5.26s/it] 91%|█████████ | 867/954 [23:01<05:54,  4.07s/it] 91%|█████████ | 868/954 [23:03<04:38,  3.24s/it] 91%|█████████ | 869/954 [23:04<03:45,  2.66s/it] 91%|█████████ | 870/954 [23:05<03:08,  2.25s/it]                                                 {'loss': '3.204', 'grad_norm': '0.17', 'learning_rate': '0.0002138', 'tokens_per_second': '4.059e+05', 'total_tokens_seen': 455963638, 'epoch': '0.05833', 'num_input_tokens_seen': 455963638, 'train_runtime': '1387', 'train_tokens_per_second': '3.287e+05'}
+ 91%|█████████ | 870/954 [23:05<03:08,  2.25s/it] 91%|█████████▏| 871/954 [23:07<02:43,  1.96s/it] 91%|█████████▏| 872/954 [23:08<02:24,  1.77s/it] 92%|█████████▏| 873/954 [23:09<02:11,  1.63s/it] 92%|█████████▏| 874/954 [23:10<02:02,  1.53s/it] 92%|█████████▏| 875/954 [23:12<01:55,  1.46s/it] 92%|█████████▏| 876/954 [23:13<01:50,  1.42s/it] 92%|█████████▏| 877/954 [23:14<01:46,  1.38s/it] 92%|█████████▏| 878/954 [23:16<01:43,  1.37s/it] 92%|█████████▏| 879/954 [23:17<01:41,  1.36s/it] 92%|█████████▏| 880/954 [23:18<01:39,  1.34s/it]                                                 {'loss': '3.195', 'grad_norm': '0.1624', 'learning_rate': '0.0001887', 'tokens_per_second': '4.024e+05', 'total_tokens_seen': 461206022, 'epoch': '0.059', 'num_input_tokens_seen': 461206022, 'train_runtime': '1400', 'train_tokens_per_second': '3.294e+05'}
+ 92%|█████████▏| 880/954 [23:18<01:39,  1.34s/it] 92%|█████████▏| 881/954 [23:20<01:37,  1.33s/it] 92%|█████████▏| 882/954 [23:21<01:35,  1.32s/it] 93%|█████████▎| 883/954 [23:22<01:33,  1.31s/it] 93%|█████████▎| 884/954 [23:23<01:31,  1.31s/it] 93%|█████████▎| 885/954 [23:25<01:30,  1.31s/it] 93%|█████████▎| 886/954 [23:26<01:29,  1.31s/it] 93%|█████████▎| 887/954 [23:27<01:27,  1.31s/it] 93%|█████████▎| 888/954 [23:29<01:26,  1.31s/it] 93%|█████████▎| 889/954 [23:30<01:24,  1.30s/it] 93%|█████████▎| 890/954 [23:31<01:23,  1.31s/it]                                                 {'loss': '3.242', 'grad_norm': '0.1814', 'learning_rate': '0.0001635', 'tokens_per_second': '3.954e+05', 'total_tokens_seen': 466448542, 'epoch': '0.05967', 'num_input_tokens_seen': 466448542, 'train_runtime': '1413', 'train_tokens_per_second': '3.3e+05'}
+ 93%|█████████▎| 890/954 [23:31<01:23,  1.31s/it] 93%|█████████▎| 891/954 [23:33<01:22,  1.31s/it] 94%|█████████▎| 892/954 [23:34<01:21,  1.31s/it] 94%|█████████▎| 893/954 [23:35<01:19,  1.31s/it] 94%|█████████▎| 894/954 [23:37<01:17,  1.30s/it] 94%|█████████▍| 895/954 [23:38<01:16,  1.30s/it] 94%|█████████▍| 896/954 [23:39<01:16,  1.31s/it] 94%|█████████▍| 897/954 [23:41<01:14,  1.31s/it] 94%|█████████▍| 898/954 [23:42<01:13,  1.31s/it] 94%|█████████▍| 899/954 [23:43<01:12,  1.31s/it] 94%|█████████▍| 900/954 [23:44<01:11,  1.32s/it]                                                 {'loss': '3.195', 'grad_norm': '0.1699', 'learning_rate': '0.0001384', 'tokens_per_second': '3.937e+05', 'total_tokens_seen': 471690793, 'epoch': '0.06034', 'num_input_tokens_seen': 471690793, 'train_runtime': '1426', 'train_tokens_per_second': '3.307e+05'}
+ 94%|█████████▍| 900/954 [23:44<01:11,  1.32s/it] 94%|█████████▍| 901/954 [23:46<01:09,  1.32s/it] 95%|█████████▍| 902/954 [23:47<01:08,  1.31s/it] 95%|█████████▍| 903/954 [23:48<01:07,  1.32s/it] 95%|█████████▍| 904/954 [23:50<01:05,  1.31s/it] 95%|█████████▍| 905/954 [23:51<01:04,  1.32s/it] 95%|█████████▍| 906/954 [23:52<01:03,  1.32s/it] 95%|█████████▌| 907/954 [23:54<01:01,  1.32s/it] 95%|█████████▌| 908/954 [23:55<01:00,  1.31s/it] 95%|█████████▌| 909/954 [23:56<00:58,  1.31s/it] 95%|█████████▌| 910/954 [23:58<00:57,  1.31s/it]                                                 {'loss': '3.197', 'grad_norm': '0.1668', 'learning_rate': '0.0001132', 'tokens_per_second': '3.967e+05', 'total_tokens_seen': 476933124, 'epoch': '0.06101', 'num_input_tokens_seen': 476933124, 'train_runtime': '1440', 'train_tokens_per_second': '3.313e+05'}
+ 95%|█████████▌| 910/954 [23:58<00:57,  1.31s/it] 95%|█████████▌| 911/954 [23:59<00:56,  1.31s/it] 96%|█████████▌| 912/954 [24:00<00:54,  1.31s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 11.38it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.48it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.75it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.44it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.29it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.19it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.14it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.01it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.06it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.13it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.19it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.22it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.29it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.31it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.27it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.31it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.38it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:04<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.50it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.56it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.56it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.56it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.56it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.56it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.60it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.63it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.61it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.61it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.65it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.70it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.70it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.69it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.72it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.76it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.75it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A                                                 
+                                               [A{'eval_loss': '3.171', 'eval_runtime': '9.155', 'eval_samples_per_second': '168.6', 'eval_steps_per_second': '5.352', 'eval_perplexity': '23.83', 'epoch': '0.06114', 'num_input_tokens_seen': 477981502}
+ 96%|█████████▌| 912/954 [24:09<00:54,  1.31s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.29it/s][A
+                                               [A 96%|█████████▌| 913/954 [24:11<02:46,  4.07s/it] 96%|█████████▌| 914/954 [24:12<02:09,  3.25s/it] 96%|█████████▌| 915/954 [24:13<01:44,  2.67s/it] 96%|█████████▌| 916/954 [24:15<01:25,  2.25s/it] 96%|█████████▌| 917/954 [24:16<01:13,  1.97s/it] 96%|█████████▌| 918/954 [24:17<01:03,  1.77s/it] 96%|█████████▋| 919/954 [24:19<00:57,  1.64s/it] 96%|█████████▋| 920/954 [24:20<00:52,  1.55s/it]                                                 {'loss': '3.212', 'grad_norm': '0.1745', 'learning_rate': '8.805e-05', 'tokens_per_second': '3.927e+05', 'total_tokens_seen': 482175330, 'epoch': '0.06168', 'num_input_tokens_seen': 482175330, 'train_runtime': '1462', 'train_tokens_per_second': '3.298e+05'}
+ 96%|█████████▋| 920/954 [24:20<00:52,  1.55s/it] 97%|█████████▋| 921/954 [24:21<00:48,  1.48s/it] 97%|█████████▋| 922/954 [24:23<00:45,  1.42s/it] 97%|█████████▋| 923/954 [24:24<00:42,  1.38s/it] 97%|█████████▋| 924/954 [24:25<00:41,  1.37s/it] 97%|█████████▋| 925/954 [24:26<00:39,  1.35s/it] 97%|█████████▋| 926/954 [24:28<00:37,  1.33s/it] 97%|█████████▋| 927/954 [24:29<00:35,  1.32s/it] 97%|█████████▋| 928/954 [24:30<00:34,  1.33s/it] 97%|█████████▋| 929/954 [24:32<00:33,  1.32s/it] 97%|█████████▋| 930/954 [24:33<00:31,  1.33s/it]                                                 {'loss': '3.174', 'grad_norm': '0.1701', 'learning_rate': '6.289e-05', 'tokens_per_second': '3.962e+05', 'total_tokens_seen': 487417671, 'epoch': '0.06235', 'num_input_tokens_seen': 487417671, 'train_runtime': '1475', 'train_tokens_per_second': '3.304e+05'}
+ 97%|█████████▋| 930/954 [24:33<00:31,  1.33s/it] 98%|█████████▊| 931/954 [24:34<00:30,  1.32s/it] 98%|█████████▊| 932/954 [24:36<00:28,  1.32s/it] 98%|█████████▊| 933/954 [24:37<00:27,  1.31s/it] 98%|█████████▊| 934/954 [24:38<00:26,  1.31s/it] 98%|█████████▊| 935/954 [24:40<00:24,  1.31s/it] 98%|█████████▊| 936/954 [24:41<00:23,  1.30s/it] 98%|█████████▊| 937/954 [24:42<00:22,  1.31s/it] 98%|█████████▊| 938/954 [24:44<00:20,  1.31s/it] 98%|█████████▊| 939/954 [24:45<00:19,  1.31s/it] 99%|█████████▊| 940/954 [24:46<00:18,  1.31s/it]                                                 {'loss': '3.174', 'grad_norm': '0.1602', 'learning_rate': '3.774e-05', 'tokens_per_second': '3.992e+05', 'total_tokens_seen': 492650923, 'epoch': '0.06302', 'num_input_tokens_seen': 492650923, 'train_runtime': '1488', 'train_tokens_per_second': '3.311e+05'}
+ 99%|█████████▊| 940/954 [24:46<00:18,  1.31s/it] 99%|█████████▊| 941/954 [24:47<00:16,  1.31s/it] 99%|█████████▊| 942/954 [24:49<00:15,  1.31s/it] 99%|█████████▉| 943/954 [24:50<00:14,  1.30s/it] 99%|█████████▉| 944/954 [24:51<00:13,  1.31s/it] 99%|█████████▉| 945/954 [24:53<00:11,  1.30s/it] 99%|█████████▉| 946/954 [24:54<00:10,  1.29s/it] 99%|█████████▉| 947/954 [24:55<00:09,  1.30s/it] 99%|█████████▉| 948/954 [24:57<00:07,  1.30s/it] 99%|█████████▉| 949/954 [24:58<00:06,  1.30s/it]100%|█████████▉| 950/954 [24:59<00:05,  1.30s/it]                                                 {'loss': '3.173', 'grad_norm': '0.1504', 'learning_rate': '1.258e-05', 'tokens_per_second': '4.001e+05', 'total_tokens_seen': 497893256, 'epoch': '0.06369', 'num_input_tokens_seen': 497893256, 'train_runtime': '1501', 'train_tokens_per_second': '3.317e+05'}
+100%|█████████▉| 950/954 [24:59<00:05,  1.30s/it]100%|█████████▉| 951/954 [25:00<00:03,  1.30s/it]100%|█████████▉| 952/954 [25:02<00:02,  1.30s/it]100%|█████████▉| 953/954 [25:03<00:01,  1.30s/it]100%|██████████| 954/954 [25:04<00:00,  1.30s/it]
+  0%|          | 0/48 [00:00<?, ?it/s][A
+  4%|▍         | 2/48 [00:00<00:04, 10.07it/s][A
+  8%|▊         | 4/48 [00:00<00:06,  6.31it/s][A
+ 10%|█         | 5/48 [00:00<00:07,  5.69it/s][A
+ 12%|█▎        | 6/48 [00:01<00:07,  5.40it/s][A
+ 15%|█▍        | 7/48 [00:01<00:07,  5.23it/s][A
+ 17%|█▋        | 8/48 [00:01<00:07,  5.16it/s][A
+ 19%|█▉        | 9/48 [00:01<00:07,  5.15it/s][A
+ 21%|██        | 10/48 [00:01<00:07,  5.01it/s][A
+ 23%|██▎       | 11/48 [00:02<00:07,  5.03it/s][A
+ 25%|██▌       | 12/48 [00:02<00:07,  5.09it/s][A
+ 27%|██▋       | 13/48 [00:02<00:06,  5.19it/s][A
+ 29%|██▉       | 14/48 [00:02<00:06,  5.23it/s][A
+ 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s][A
+ 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s][A
+ 35%|███▌      | 17/48 [00:03<00:05,  5.23it/s][A
+ 38%|███▊      | 18/48 [00:03<00:05,  5.27it/s][A
+ 40%|███▉      | 19/48 [00:03<00:05,  5.32it/s][A
+ 42%|████▏     | 20/48 [00:03<00:05,  5.26it/s][A
+ 44%|████▍     | 21/48 [00:03<00:05,  5.25it/s][A
+ 46%|████▌     | 22/48 [00:04<00:04,  5.31it/s][A
+ 48%|████▊     | 23/48 [00:04<00:04,  5.39it/s][A
+ 50%|█████     | 24/48 [00:04<00:04,  5.44it/s][A
+ 52%|█████▏    | 25/48 [00:04<00:04,  5.45it/s][A
+ 54%|█████▍    | 26/48 [00:04<00:04,  5.44it/s][A
+ 56%|█████▋    | 27/48 [00:05<00:03,  5.47it/s][A
+ 58%|█████▊    | 28/48 [00:05<00:03,  5.50it/s][A
+ 60%|██████    | 29/48 [00:05<00:03,  5.56it/s][A
+ 62%|██████▎   | 30/48 [00:05<00:03,  5.55it/s][A
+ 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s][A
+ 67%|██████▋   | 32/48 [00:05<00:02,  5.55it/s][A
+ 69%|██████▉   | 33/48 [00:06<00:02,  5.57it/s][A
+ 71%|███████   | 34/48 [00:06<00:02,  5.62it/s][A
+ 73%|███████▎  | 35/48 [00:06<00:02,  5.62it/s][A
+ 75%|███████▌  | 36/48 [00:06<00:02,  5.63it/s][A
+ 77%|███████▋  | 37/48 [00:06<00:01,  5.64it/s][A
+ 79%|███████▉  | 38/48 [00:06<00:01,  5.63it/s][A
+ 81%|████████▏ | 39/48 [00:07<00:01,  5.63it/s][A
+ 83%|████████▎ | 40/48 [00:07<00:01,  5.69it/s][A
+ 85%|████████▌ | 41/48 [00:07<00:01,  5.72it/s][A
+ 88%|████████▊ | 42/48 [00:07<00:01,  5.70it/s][A
+ 90%|████████▉ | 43/48 [00:07<00:00,  5.70it/s][A
+ 92%|█████████▏| 44/48 [00:08<00:00,  5.69it/s][A
+ 94%|█████████▍| 45/48 [00:08<00:00,  5.70it/s][A
+ 96%|█████████▌| 46/48 [00:08<00:00,  5.74it/s][A
+ 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s][A
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A                                                 
+                                               [A{'eval_loss': '3.157', 'eval_runtime': '9.094', 'eval_samples_per_second': '169.8', 'eval_steps_per_second': '5.388', 'eval_perplexity': '23.5', 'epoch': '0.06396', 'num_input_tokens_seen': 499990093}
+100%|██████████| 954/954 [25:13<00:00,  1.30s/it]
+100%|██████████| 48/48 [00:08<00:00,  5.31it/s][A
+                                               [A
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it][AWriting model shards: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it]
+                                                 {'train_runtime': '1524', 'train_samples_per_second': '40.06', 'train_steps_per_second': '0.626', 'train_loss': '4.16', 'epoch': '0.06396', 'num_input_tokens_seen': 499990093}
+100%|██████████| 954/954 [25:22<00:00,  1.30s/it]100%|██████████| 954/954 [25:22<00:00,  1.60s/it]
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+  0%|          | 0/48 [00:00<?, ?it/s]  4%|▍         | 2/48 [00:00<00:04, 10.16it/s]  8%|▊         | 4/48 [00:00<00:06,  6.35it/s] 10%|█         | 5/48 [00:00<00:07,  5.70it/s] 12%|█▎        | 6/48 [00:01<00:07,  5.42it/s] 15%|█▍        | 7/48 [00:01<00:07,  5.26it/s] 17%|█▋        | 8/48 [00:01<00:07,  5.16it/s] 19%|█▉        | 9/48 [00:01<00:07,  5.14it/s] 21%|██        | 10/48 [00:01<00:07,  5.03it/s] 23%|██▎       | 11/48 [00:02<00:07,  5.06it/s] 25%|██▌       | 12/48 [00:02<00:07,  5.10it/s] 27%|██▋       | 13/48 [00:02<00:06,  5.16it/s] 29%|██▉       | 14/48 [00:02<00:06,  5.22it/s] 31%|███▏      | 15/48 [00:02<00:06,  5.18it/s] 33%|███▎      | 16/48 [00:02<00:06,  5.18it/s] 35%|███▌      | 17/48 [00:03<00:05,  5.21it/s] 38%|███▊      | 18/48 [00:03<00:05,  5.25it/s] 40%|███▉      | 19/48 [00:03<00:05,  5.29it/s] 42%|████▏     | 20/48 [00:03<00:05,  5.27it/s] 44%|████▍     | 21/48 [00:03<00:05,  5.24it/s] 46%|████▌     | 22/48 [00:04<00:04,  5.30it/s] 48%|████▊     | 23/48 [00:04<00:04,  5.36it/s] 50%|█████     | 24/48 [00:04<00:04,  5.43it/s] 52%|█████▏    | 25/48 [00:04<00:04,  5.43it/s] 54%|█████▍    | 26/48 [00:04<00:04,  5.42it/s] 56%|█████▋    | 27/48 [00:05<00:03,  5.44it/s] 58%|█████▊    | 28/48 [00:05<00:03,  5.49it/s] 60%|██████    | 29/48 [00:05<00:03,  5.54it/s] 62%|██████▎   | 30/48 [00:05<00:03,  5.57it/s] 65%|██████▍   | 31/48 [00:05<00:03,  5.54it/s] 67%|██████▋   | 32/48 [00:05<00:02,  5.54it/s] 69%|██████▉   | 33/48 [00:06<00:02,  5.55it/s] 71%|███████   | 34/48 [00:06<00:02,  5.60it/s] 73%|███████▎  | 35/48 [00:06<00:02,  5.64it/s] 75%|███████▌  | 36/48 [00:06<00:02,  5.65it/s] 77%|███████▋  | 37/48 [00:06<00:01,  5.63it/s] 79%|███████▉  | 38/48 [00:06<00:01,  5.62it/s] 81%|████████▏ | 39/48 [00:07<00:01,  5.62it/s] 83%|████████▎ | 40/48 [00:07<00:01,  5.67it/s] 85%|████████▌ | 41/48 [00:07<00:01,  5.68it/s] 88%|████████▊ | 42/48 [00:07<00:01,  5.68it/s] 90%|████████▉ | 43/48 [00:07<00:00,  5.68it/s] 92%|█████████▏| 44/48 [00:08<00:00,  5.70it/s] 94%|█████████▍| 45/48 [00:08<00:00,  5.71it/s] 96%|█████████▌| 46/48 [00:08<00:00,  5.74it/s] 98%|█████████▊| 47/48 [00:08<00:00,  5.74it/s]100%|██████████| 48/48 [00:08<00:00,  5.31it/s]100%|██████████| 48/48 [00:08<00:00,  5.44it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.09s/it]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.10s/it]
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mlab5-yoru-AP-540298[0m at: [34mhttps://wandb.ai/cerulean-labs/lab5-training-llama/runs/ab8l4a21[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20261014_123413-ab8l4a21/logs[0m

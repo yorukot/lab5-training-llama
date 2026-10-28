@@ -1,0 +1,390 @@
+Run name: lab5-yoru-AX-542579
+Checked 97 packages in 12ms
+W1014 17:47:11.953000 928030 torch/distributed/run.py:982] 
+W1014 17:47:11.953000 928030 torch/distributed/run.py:982] *****************************************
+W1014 17:47:11.953000 928030 torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1014 17:47:11.953000 928030 torch/distributed/run.py:982] *****************************************
+/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:1174: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+[transformers] Flash Attention 3 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in LlamaModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_3", dtype=torch.float16)`
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+Unable to determine the device handle for GPU7: 0000:DA:00.0: Unknown Error
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128004}.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank6]:     trainer.train()
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank6]:     return inner_training_loop(
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank6]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank6]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank6]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank6]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank6]:     result = tuple(
+[rank6]:              ^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank6]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank6]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank6]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank6]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank6]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank6]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank6]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank6]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank6]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank6]: Last error:
+[rank6]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank3]:     trainer.train()
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank3]:     return inner_training_loop(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank3]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank3]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank3]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank3]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank3]:     result = tuple(
+[rank3]:              ^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank3]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank3]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank3]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank3]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank3]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank3]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank3]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank3]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank3]: Last error:
+[rank3]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank2]:     trainer.train()
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank2]:     return inner_training_loop(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank2]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank2]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank2]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank2]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank2]:     result = tuple(
+[rank2]:              ^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank2]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank2]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank2]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank2]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank2]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank2]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank2]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank2]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank2]: Last error:
+[rank2]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank5]:     trainer.train()
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank5]:     return inner_training_loop(
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank5]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank5]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank5]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank5]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank5]:     result = tuple(
+[rank5]:              ^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank5]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank5]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank5]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank5]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank5]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank5]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank5]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank5]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank5]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank5]: Last error:
+[rank5]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank4]:     trainer.train()
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank4]:     return inner_training_loop(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank4]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank4]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank4]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank4]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank4]:     result = tuple(
+[rank4]:              ^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank4]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank4]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank4]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank4]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank4]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank4]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank4]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank4]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank4]: Last error:
+[rank4]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank1]:     trainer.train()
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank1]:     return inner_training_loop(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank1]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank1]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank1]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank1]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank1]:     result = tuple(
+[rank1]:              ^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank1]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank1]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank1]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank1]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank1]: Last error:
+[rank1]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank0]:     trainer.train()
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank0]:     return inner_training_loop(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank0]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank0]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank0]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank0]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank0]:     result = tuple(
+[rank0]:              ^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank0]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank0]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank0]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank0]: Last error:
+[rank0]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/home/u9603854/lab5-training-llama/src/training.py", line 199, in <module>
+[rank7]:     trainer.train()
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1562, in train
+[rank7]:     return inner_training_loop(
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1601, in _inner_training_loop
+[rank7]:     model, train_dataloader = self._prepare_for_training(max_steps, train_dataloader, resume_from_checkpoint)
+[rank7]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 1751, in _prepare_for_training
+[rank7]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank7]:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1558, in prepare
+[rank7]:     result = tuple(
+[rank7]:              ^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1559, in <genexpr>
+[rank7]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank7]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1404, in _prepare_one
+[rank7]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 1898, in prepare_model
+[rank7]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank7]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1064, in __init__
+[rank7]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank7]:   File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/utils.py", line 299, in _verify_param_shape_across_processes
+[rank7]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: torch.distributed.DistBackendError: NCCL error in: /__w/pytorch/pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:92, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.30.7
+[rank7]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank7]: Last error:
+[rank7]: nvmlDeviceGetHandleByIndex(7) failed: Unknown Error
+W1014 17:47:56.144000 928030 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 928135 closing signal SIGTERM
+W1014 17:47:56.148000 928030 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 928136 closing signal SIGTERM
+W1014 17:47:56.148000 928030 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 928137 closing signal SIGTERM
+W1014 17:47:56.148000 928030 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 928140 closing signal SIGTERM
+W1014 17:47:56.148000 928030 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 928142 closing signal SIGTERM
+E1014 17:47:56.626000 928030 torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 3 (pid: 928138) of binary: /home/u9603854/lab5-training-llama/.venv/bin/python
+Traceback (most recent call last):
+  File "/home/u9603854/lab5-training-llama/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+  File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+  File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/home/u9603854/lab5-training-llama/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/training.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 928139) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 928141) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 928135) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 928136) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 928137)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 928137
+[6]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 928140) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 928142) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-14_17:47:56
+  host      : 25a-hgpn071
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 928138) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
